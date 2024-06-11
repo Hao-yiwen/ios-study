@@ -9,20 +9,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--首页-->
+        <!--大首页-->
+        <scene sceneID="OiH-S5-ACV">
+            <objects>
+                <viewController id="Gsu-dW-P1c" customClass="ViewController" customModule="ios_study" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F65-SH-itG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJz-Dz-SsV">
+                                <rect key="frame" x="155" y="94" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ios基础"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="SGw-JA-8h1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rGU-il-PfN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="大首页" id="iIF-Ev-H0p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcz-Jb-vrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1066" y="-600"/>
+        </scene>
+        <!--IOS基础-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_study" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IOSViewController" customModule="ios_study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-xi-Lhn">
-                                <rect key="frame" x="51" y="119" width="50" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lut-vy-nHn">
                                 <rect key="frame" x="171" y="119" width="50" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,29 +71,59 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCX-PC-5bX">
-                                <rect key="frame" x="169" y="239" width="59" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCX-PC-5bX">
+                                <rect key="frame" x="167" y="203" width="59" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="计算"/>
                                 <connections>
                                     <action selector="compute" destination="BYZ-38-t0r" eventType="touchUpInside" id="d38-qh-Uwt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsH-Cq-gc3">
-                                <rect key="frame" x="152" y="316" width="94" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsH-Cq-gc3">
+                                <rect key="frame" x="149.66666666666666" y="264" width="94" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="跳转测试"/>
                                 <connections>
                                     <segue destination="lcG-oE-ahB" kind="push" id="G1y-pB-Rqd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-0J-se3">
+                                <rect key="frame" x="120" y="316" width="153" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="xib容器跳转测试"/>
+                                <connections>
+                                    <segue destination="Aee-kd-TBI" kind="push" id="JkF-oQ-s4m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-3s-piF">
+                                <rect key="frame" x="120" y="370.33333333333331" width="153" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="来自子模块的xib"/>
+                                <connections>
+                                    <segue destination="wwH-xS-93d" kind="push" id="5sr-N0-4Kv"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-xi-Lhn">
+                                <rect key="frame" x="37" y="119" width="50" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tsH-Cq-gc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Tq-k2-e1k"/>
+                            <constraint firstItem="tsH-Cq-gc3" firstAttribute="top" secondItem="QCX-PC-5bX" secondAttribute="bottom" constant="26" id="IRV-gX-5Fy"/>
+                            <constraint firstItem="AC3-0J-se3" firstAttribute="top" secondItem="tsH-Cq-gc3" secondAttribute="bottom" constant="17" id="SKf-3Z-Wew"/>
+                            <constraint firstItem="AC3-0J-se3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQl-eW-D3Q"/>
+                            <constraint firstItem="N6e-3s-piF" firstAttribute="top" secondItem="AC3-0J-se3" secondAttribute="bottom" constant="20" id="epZ-zp-HTC"/>
+                            <constraint firstItem="QCX-PC-5bX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="hbb-gh-3PE"/>
+                            <constraint firstItem="QCX-PC-5bX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hfS-eX-DQL"/>
+                            <constraint firstItem="N6e-3s-piF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vhl-53-QuD"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="首页" id="iEY-6r-8vA"/>
+                    <navigationItem key="navigationItem" title="IOS基础" id="iEY-6r-8vA"/>
                     <connections>
                         <outlet property="number1" destination="AtO-xi-Lhn" id="5YJ-8M-miC"/>
                         <outlet property="number2" destination="lut-vy-nHn" id="dRG-kj-i5w"/>
@@ -84,7 +135,39 @@
             </objects>
             <point key="canvasLocation" x="-319.84732824427482" y="-600"/>
         </scene>
-        <!--第二个页面-->
+        <!--View Controller-->
+        <scene sceneID="Jer-C2-nae">
+            <objects>
+                <viewController id="Aee-kd-TBI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0g2-yy-KCJ" customClass="XibScreen" customModule="ios_study" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Cdd-nD-ZEr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AfR-gp-nuE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YkX-FQ-SD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="-339"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x1q-Nq-xEL">
+            <objects>
+                <viewController id="wwH-xS-93d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rut-IG-cPi" customClass="XibTestModuleContainer" customModule="ios_study" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cxj-IP-0e5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bh4-Oa-rbJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1h-pR-OAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="315"/>
+        </scene>
+        <!--跳转测试-->
         <scene sceneID="8FT-hZ-RJF">
             <objects>
                 <viewController id="lcG-oE-ahB" sceneMemberID="viewController">
@@ -92,8 +175,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第二个页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onw-l0-mS0">
-                                <rect key="frame" x="175" y="285" width="87" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="测试页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onw-l0-mS0">
+                                <rect key="frame" x="161" y="180" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -103,11 +186,11 @@
                         <viewLayoutGuide key="safeArea" id="97b-Gk-N0o"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="第二个页面" prompt="这是第二个页面哦!" id="VfH-wq-zSK"/>
+                    <navigationItem key="navigationItem" title="跳转测试" id="VfH-wq-zSK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPF-A8-K8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405.34351145038164" y="-600"/>
+            <point key="canvasLocation" x="462" y="-1029"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5vj-gU-J3p">
@@ -120,12 +203,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DUI-B0-H5U"/>
+                        <segue destination="Gsu-dW-P1c" kind="relationship" relationship="rootViewController" id="biJ-Ej-ATy"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3Y-bg-EhL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1246.5648854961833" y="-600"/>
+            <point key="canvasLocation" x="-1784" y="-600"/>
         </scene>
     </scenes>
     <resources>
