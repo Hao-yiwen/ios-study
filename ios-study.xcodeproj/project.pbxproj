@@ -13,6 +13,8 @@
 		F646CDA22C1735E90029E950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F646CDA02C1735E90029E950 /* Main.storyboard */; };
 		F646CDA42C1735EA0029E950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F646CDA32C1735EA0029E950 /* Assets.xcassets */; };
 		F646CDA72C1735EA0029E950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F646CDA52C1735EA0029E950 /* LaunchScreen.storyboard */; };
+		F6A9185B2C17DAA500B4DC90 /* second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A9185A2C17DAA500B4DC90 /* second.storyboard */; };
+		F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9185E2C17DFA100B4DC90 /* SecondController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		F646CDA32C1735EA0029E950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F646CDA62C1735EA0029E950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F646CDA82C1735EA0029E950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A9185A2C17DAA500B4DC90 /* second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = second.storyboard; sourceTree = "<group>"; };
+		F6A9185C2C17DF8E00B4DC90 /* SecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
+		F6A9185D2C17DFA000B4DC90 /* ios-study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-study-Bridging-Header.h"; sourceTree = "<group>"; };
+		F6A9185E2C17DFA100B4DC90 /* SecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				F646CDA32C1735EA0029E950 /* Assets.xcassets */,
 				F646CDA52C1735EA0029E950 /* LaunchScreen.storyboard */,
 				F646CDA82C1735EA0029E950 /* Info.plist */,
+				F6A9185A2C17DAA500B4DC90 /* second.storyboard */,
+				F6A9185C2C17DF8E00B4DC90 /* SecondController.h */,
+				F6A9185E2C17DFA100B4DC90 /* SecondController.m */,
+				F6A9185D2C17DFA000B4DC90 /* ios-study-Bridging-Header.h */,
 			);
 			path = "ios-study";
 			sourceTree = "<group>";
@@ -99,6 +109,7 @@
 				TargetAttributes = {
 					F646CD962C1735E90029E950 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A9185B2C17DAA500B4DC90 /* second.storyboard in Resources */,
 				F646CDA72C1735EA0029E950 /* LaunchScreen.storyboard in Resources */,
 				F646CDA42C1735EA0029E950 /* Assets.xcassets in Resources */,
 				F646CDA22C1735E90029E950 /* Main.storyboard in Resources */,
@@ -139,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F646CD9F2C1735E90029E950 /* ViewController.swift in Sources */,
+				F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */,
 				F646CD9B2C1735E90029E950 /* AppDelegate.swift in Sources */,
 				F646CD9D2C1735E90029E950 /* SceneDelegate.swift in Sources */,
 			);
@@ -290,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 84F8R9TAQN;
@@ -297,10 +311,11 @@
 				INFOPLIST_FILE = "ios-study/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ios-study";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +324,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-study/ios-study-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 84F8R9TAQN;
@@ -326,10 +344,11 @@
 				INFOPLIST_FILE = "ios-study/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ios-study";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-study/ios-study-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
