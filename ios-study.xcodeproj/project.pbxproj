@@ -247,6 +247,7 @@
 				39A8A3672C195C2000FA1B1E /* Xib.storyboard in Resources */,
 				F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */,
 				F646CDA72C1735EA0029E950 /* LaunchScreen.storyboard in Resources */,
+				39A8A36E2C196B0900FA1B1E /* ComputeBaseScreen.storyboard in Resources */,
 				F646CDA42C1735EA0029E950 /* Assets.xcassets in Resources */,
 				F646CDA22C1735E90029E950 /* Main.storyboard in Resources */,
 				F62CE0E52C189BB0003D7C5E /* XibScreen.xib in Resources */,
