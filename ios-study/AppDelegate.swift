@@ -14,6 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if #available(iOS 13.0, *){
+//            let apperance = UINavigationBarAppearance()
+//            
+//            apperance.configureWithOpaqueBackground()
+//            apperance.backgroundColor = UIColor.red
+//            
+//            let navigationBar = UINavigationBar.appearance()
+//            navigationBar.standardAppearance = apperance
+//            navigationBar.scrollEdgeAppearance = apperance
+        }
         return true
     }
 
