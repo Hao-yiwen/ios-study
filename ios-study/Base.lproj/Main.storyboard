@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lXr-kn-JOT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lXr-kn-JOT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--SwiftUIStoryboard-->
+        <scene sceneID="vBz-p6-FmH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SwiftUIStoryboard" id="tua-Ux-oO3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VHl-cK-SBe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPd-P4-5Mt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1025" y="-1097"/>
+        </scene>
         <!--大首页-->
         <scene sceneID="OiH-S5-ACV">
             <objects>
@@ -22,15 +33,25 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ios基础"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="SGw-JA-8h1"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="bGl-lD-SKZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ8-ju-IKk">
+                                <rect key="frame" x="139.66666666666666" y="178" width="114" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="swiftUI模块"/>
+                                <connections>
+                                    <segue destination="tua-Ux-oO3" kind="push" id="I9Z-SM-hdz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rGU-il-PfN"/>
                         <color key="backgroundColor" red="0.89411771299999998" green="0.90196079019999997" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="wJ8-ju-IKk" firstAttribute="top" secondItem="kJz-Dz-SsV" secondAttribute="bottom" constant="20" id="9Xn-Kn-eXx"/>
                             <constraint firstItem="kJz-Dz-SsV" firstAttribute="top" secondItem="rGU-il-PfN" secondAttribute="top" constant="20" id="Nd0-WS-GTE"/>
                             <constraint firstItem="kJz-Dz-SsV" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="fNn-UC-6Jl"/>
+                            <constraint firstItem="wJ8-ju-IKk" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="xDF-P0-Bah"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="大首页" id="iIF-Ev-H0p"/>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUIModule
 
 class ViewController: UIViewController {
     

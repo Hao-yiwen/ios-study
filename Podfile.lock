@@ -1,16 +1,21 @@
 PODS:
+  - SwiftUIModule (0.1.0)
   - TestModule (0.1.0)
 
 DEPENDENCIES:
+  - SwiftUIModule (from `./SwiftUIModule`)
   - TestModule (from `./TestModule`)
 
 EXTERNAL SOURCES:
+  SwiftUIModule:
+    :path: "./SwiftUIModule"
   TestModule:
     :path: "./TestModule"
 
 SPEC CHECKSUMS:
+  SwiftUIModule: f03891885b92a4e0571dd0fce6161a1a22d35a70
   TestModule: d9ffaef755f0492578073bebc4c55cf61f0403ef
 
-PODFILE CHECKSUM: 54c8ad9a2786e6c71420f4f22667e511f53e0435
+PODFILE CHECKSUM: 3acea867fc4220e177c7b23b465ba85f3c6b5ee3
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.0

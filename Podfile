@@ -8,4 +8,6 @@ target 'ios-study' do
   # Pods for ios-study
 
   pod 'TestModule', :path => './TestModule'
+  
+  pod 'SwiftUIModule', :path => './SwiftUIModule'
 end
