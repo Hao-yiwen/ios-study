@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TestModule'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A useful description of TestModule.'
 
 # This description is used to generate tags and improve search results.
@@ -26,13 +26,13 @@ TODO: Add long description of the pod here.
  s.license          = { :type => 'MIT', :file => 'LICENSE' }
  s.author           = { 'Hao-yiwen' => 'yiwenlemo@gamil.com' }
  s.source           = { :git => 'https://github.com/Hao-yiwen/ios-study.git', :tag => s.version.to_s }
- s.social_media_url = '1552975589@qq.com'
+ s.social_media_url = 'yiwenlemo@gmail.com'
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'TestModule/Classes/**/*.{swift,h}'
+  s.source_files = 'TestModule/Classes/**/*.{swift}'
   s.resource_bundles = {
-    'TestModule' => ['TestModule/Classes/**/*.{storyboard,xib,xcassets}']
+    'TestModule' => ['TestModule/Classes/**/*.{xib}']
   }
   
   # s.resource_bundles = {
