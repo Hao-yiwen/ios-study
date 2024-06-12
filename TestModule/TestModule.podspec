@@ -30,10 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'TestModule/Classes/**/*'
-  
+  s.source_files = 'TestModule/Classes/**/*.{swift,h}'
   s.resource_bundles = {
-    'TestModule' => ['TestModule/Classes/**/*.xib']
+    'TestModule' => ['TestModule/Classes/**/*.{storyboard,xib,xcassets}']
   }
   
   # s.resource_bundles = {
