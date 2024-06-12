@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39A8A3662C195C2000FA1B1E /* SubXib.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A8A3642C195C2000FA1B1E /* SubXib.storyboard */; };
+		39A8A3672C195C2000FA1B1E /* Xib.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A8A3652C195C2000FA1B1E /* Xib.storyboard */; };
 		4550AA012CC58923539A304D /* Pods_ios_study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15DD668E3444B7D11E57230 /* Pods_ios_study.framework */; };
 		F62CE0E02C1898D3003D7C5E /* IOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CE0DF2C1898D3003D7C5E /* IOSViewController.swift */; };
 		F62CE0E52C189BB0003D7C5E /* XibScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62CE0E42C189BB0003D7C5E /* XibScreen.xib */; };
@@ -20,12 +22,12 @@
 		F646CDA42C1735EA0029E950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F646CDA32C1735EA0029E950 /* Assets.xcassets */; };
 		F646CDA72C1735EA0029E950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F646CDA52C1735EA0029E950 /* LaunchScreen.storyboard */; };
 		F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9185E2C17DFA100B4DC90 /* SecondController.m */; };
-		F6B67BF02C18C485005CF13F /* Xib.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62CE0F62C18C372003D7C5E /* Xib.storyboard */; };
-		F6B67BF22C18C4C9005CF13F /* SubXib.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF12C18C4C1005CF13F /* SubXib.storyboard */; };
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39A8A3642C195C2000FA1B1E /* SubXib.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubXib.storyboard; sourceTree = "<group>"; };
+		39A8A3652C195C2000FA1B1E /* Xib.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Xib.storyboard; sourceTree = "<group>"; };
 		A15DD668E3444B7D11E57230 /* Pods_ios_study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0DB23283CA55620B0E6FC3 /* Pods-ios-study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.debug.xcconfig"; path = "Target Support Files/Pods-ios-study/Pods-ios-study.debug.xcconfig"; sourceTree = "<group>"; };
 		C1AF92899C40C1C2EF5FF3EB /* Pods-ios-study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.release.xcconfig"; path = "Target Support Files/Pods-ios-study/Pods-ios-study.release.xcconfig"; sourceTree = "<group>"; };
@@ -34,7 +36,6 @@
 		F62CE0E62C189DE4003D7C5E /* XibScreenContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibScreenContainer.swift; sourceTree = "<group>"; };
 		F62CE0E82C18A22F003D7C5E /* XibScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibScreenController.swift; sourceTree = "<group>"; };
 		F62CE0EF2C18B190003D7C5E /* XibTestModuleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XibTestModuleContainer.swift; path = "ios-study/views/IOSBaseScreen/XibTestModuleContainer.swift"; sourceTree = SOURCE_ROOT; };
-		F62CE0F62C18C372003D7C5E /* Xib.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Xib.storyboard; path = "/Users/haoyiwen/Documents/ios/ios-study/ios-study/resources/Xib.storyboard"; sourceTree = "<absolute>"; };
 		F646CD972C1735E90029E950 /* ios-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F646CD9A2C1735E90029E950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F646CD9C2C1735E90029E950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		F6A9185C2C17DF8E00B4DC90 /* SecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
 		F6A9185D2C17DFA000B4DC90 /* ios-study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-study-Bridging-Header.h"; sourceTree = "<group>"; };
 		F6A9185E2C17DFA100B4DC90 /* SecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
-		F6B67BF12C18C4C1005CF13F /* SubXib.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SubXib.storyboard; path = "/Users/haoyiwen/Documents/ios/ios-study/ios-study/resources/SubXib.storyboard"; sourceTree = "<absolute>"; };
 		F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationTest.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,8 +120,8 @@
 		F62CE0F32C18BA01003D7C5E /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				F6B67BF12C18C4C1005CF13F /* SubXib.storyboard */,
-				F62CE0F62C18C372003D7C5E /* Xib.storyboard */,
+				39A8A3642C195C2000FA1B1E /* SubXib.storyboard */,
+				39A8A3652C195C2000FA1B1E /* Xib.storyboard */,
 				F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */,
 			);
 			path = resources;
@@ -223,13 +223,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B67BF02C18C485005CF13F /* Xib.storyboard in Resources */,
-				F6B67BF22C18C4C9005CF13F /* SubXib.storyboard in Resources */,
+				39A8A3672C195C2000FA1B1E /* Xib.storyboard in Resources */,
 				F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */,
 				F646CDA72C1735EA0029E950 /* LaunchScreen.storyboard in Resources */,
 				F646CDA42C1735EA0029E950 /* Assets.xcassets in Resources */,
 				F646CDA22C1735E90029E950 /* Main.storyboard in Resources */,
 				F62CE0E52C189BB0003D7C5E /* XibScreen.xib in Resources */,
+				39A8A3662C195C2000FA1B1E /* SubXib.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
