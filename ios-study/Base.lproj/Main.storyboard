@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJz-Dz-SsV">
-                                <rect key="frame" x="155" y="94" width="83" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJz-Dz-SsV">
+                                <rect key="frame" x="155" y="123" width="83" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ios基础"/>
                                 <connections>
@@ -29,6 +28,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rGU-il-PfN"/>
                         <color key="backgroundColor" red="0.89411771299999998" green="0.90196079019999997" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kJz-Dz-SsV" firstAttribute="top" secondItem="rGU-il-PfN" secondAttribute="top" constant="20" id="Nd0-WS-GTE"/>
+                            <constraint firstItem="kJz-Dz-SsV" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="fNn-UC-6Jl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="大首页" id="iIF-Ev-H0p"/>
                 </viewController>
@@ -44,43 +47,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lut-vy-nHn">
-                                <rect key="frame" x="171" y="119" width="50" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mg-xT-r6B">
-                                <rect key="frame" x="126" y="126" width="12" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDd-8R-2RM">
-                                <rect key="frame" x="247" y="125" width="12" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hH-E7-xuf">
-                                <rect key="frame" x="297" y="126" width="80" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCX-PC-5bX">
-                                <rect key="frame" x="167" y="203" width="59" height="35"/>
+                                <rect key="frame" x="132.66666666666666" y="123" width="127.99999999999997" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="计算"/>
+                                <buttonConfiguration key="configuration" style="plain" title="计算测试页面"/>
                                 <connections>
-                                    <action selector="compute" destination="BYZ-38-t0r" eventType="touchUpInside" id="d38-qh-Uwt"/>
+                                    <segue destination="Pak-HU-q5V" kind="push" id="zSY-dL-c92"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsH-Cq-gc3">
-                                <rect key="frame" x="149.66666666666666" y="264" width="94" height="35"/>
+                                <rect key="frame" x="149.66666666666666" y="184" width="94" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="跳转测试"/>
                                 <connections>
@@ -88,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-0J-se3">
-                                <rect key="frame" x="120" y="316" width="153" height="34.333333333333314"/>
+                                <rect key="frame" x="120" y="239.00000000000003" width="153" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="xib容器跳转测试"/>
                                 <connections>
@@ -96,39 +72,30 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-3s-piF">
-                                <rect key="frame" x="120" y="370.33333333333331" width="153" height="35"/>
+                                <rect key="frame" x="120" y="293.33333333333331" width="153" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="来自子模块的xib"/>
                                 <connections>
                                     <segue destination="Erx-wV-zs1" kind="push" id="5sr-N0-4Kv"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-xi-Lhn">
-                                <rect key="frame" x="37" y="119" width="50" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tsH-Cq-gc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Tq-k2-e1k"/>
                             <constraint firstItem="tsH-Cq-gc3" firstAttribute="top" secondItem="QCX-PC-5bX" secondAttribute="bottom" constant="26" id="IRV-gX-5Fy"/>
-                            <constraint firstItem="AC3-0J-se3" firstAttribute="top" secondItem="tsH-Cq-gc3" secondAttribute="bottom" constant="17" id="SKf-3Z-Wew"/>
                             <constraint firstItem="AC3-0J-se3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQl-eW-D3Q"/>
                             <constraint firstItem="N6e-3s-piF" firstAttribute="top" secondItem="AC3-0J-se3" secondAttribute="bottom" constant="20" id="epZ-zp-HTC"/>
-                            <constraint firstItem="QCX-PC-5bX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="hbb-gh-3PE"/>
+                            <constraint firstItem="AC3-0J-se3" firstAttribute="top" secondItem="tsH-Cq-gc3" secondAttribute="bottom" constant="20" id="h7x-Pf-1U4"/>
                             <constraint firstItem="QCX-PC-5bX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hfS-eX-DQL"/>
+                            <constraint firstItem="QCX-PC-5bX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hgg-0V-K3O"/>
                             <constraint firstItem="N6e-3s-piF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vhl-53-QuD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="IOS基础" id="iEY-6r-8vA"/>
                     <connections>
-                        <outlet property="number1" destination="AtO-xi-Lhn" id="5YJ-8M-miC"/>
-                        <outlet property="number2" destination="lut-vy-nHn" id="dRG-kj-i5w"/>
-                        <outlet property="sumButton" destination="QCX-PC-5bX" id="d5J-zg-JVK"/>
-                        <outlet property="sumnumber" destination="3hH-E7-xuf" id="X8c-uV-LWh"/>
+                        <outlet property="xibSubContainer" destination="N6e-3s-piF" id="cCx-cQ-eSe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -189,6 +156,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcL-IW-FsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="462" y="83"/>
+        </scene>
+        <!--ComputeBaseScreen-->
+        <scene sceneID="vzH-Eg-aam">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComputeBaseScreen" id="Pak-HU-q5V" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bS1-Ef-mfj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvc-lx-jrh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="-1360"/>
         </scene>
     </scenes>
     <resources>
