@@ -1,0 +1,83 @@
+# Xcode
+#
+.netrc
+.DS_Store
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.xcscmblueprint/
+
+# Xcode Patch Logs
+xcdebugger/
+
+# Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Cocoapods
+#
+Pods/
+Podfile.lock
+
+# Carthage
+#
+Carthage/Build/
+
+# fastlane
+#
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+!fastlane/README.md
+
+# Code Injection
+#
+ci/
+
+# Bundle
+.bundle/
+
+# SPM
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Dependency directories
+node_modules/
+Carthage/Build/
+
+# Swift Package Manager
+.build/
+Packages
+
+# User-specific files
+*.swp
+*.swo
+*~
+
+# Firebase specific
+GoogleService-Info.plist
+
+# xcresult bundles
+*.xcresult
+
+# Generated files
+*.generated.swift
