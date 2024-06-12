@@ -25,6 +25,7 @@
 		F646CDA72C1735EA0029E950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F646CDA52C1735EA0029E950 /* LaunchScreen.storyboard */; };
 		F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */; };
 		F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */; };
+		F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */; };
 		F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9185E2C17DFA100B4DC90 /* SecondController.m */; };
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		F646CDA82C1735EA0029E950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComputeBaseScreen.storyboard; sourceTree = "<group>"; };
 		F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SwiftUIStoryboard.storyboard; path = SwiftUIModule/SwiftUIModule/Classes/SwiftUIStoryboard.storyboard; sourceTree = "<group>"; };
+		F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestModuleXib.xib; path = TestModule/TestModule/Assets/TestModuleXib.xib; sourceTree = "<group>"; };
 		F6A9185C2C17DF8E00B4DC90 /* SecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
 		F6A9185D2C17DFA000B4DC90 /* ios-study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-study-Bridging-Header.h"; sourceTree = "<group>"; };
 		F6A9185E2C17DFA100B4DC90 /* SecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		F646CD8E2C1735E90029E950 = {
 			isa = PBXGroup;
 			children = (
+				F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */,
 				F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */,
 				F646CD992C1735E90029E950 /* ios-study */,
 				F646CD982C1735E90029E950 /* Products */,
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */,
 				F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */,
 				39A8A3672C195C2000FA1B1E /* Xib.storyboard in Resources */,
 				F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */,
