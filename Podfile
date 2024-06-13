@@ -17,9 +17,10 @@ target 'ios-study' do
   config = use_native_modules!
 
   use_react_native!(
-    :path => config[:reactNativePath],
+    :path => "./node_modules/react-native",
     # An absolute path to your application root.
-    :app_path => "#{Pod::Config.instance.installation_root}/.."
+    :app_path => "#{Pod::Config.instance.installation_root}",
+    :hermes_enabled => true
   )
   
   # Pods for ios-study
@@ -30,7 +31,7 @@ target 'ios-study' do
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,
-      config[:reactNativePath],
+      "./node_modules/react-native",
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
