@@ -8,12 +8,14 @@
 import UIKit
 import React
 
-class RNScreenController: UIViewController{
+class RNScreenController: UIViewController, UIGestureRecognizerDelegate{
+    var popRecognizer: InteractivePopRecognizer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         #if DEBUG
             let jsCodeLocation: URL
-            if let debugURL = URL(string: "http://localhost:8081/index.bundle?platform=ios") {
+            if let debugURL = URL(string: "http://192.168.1.7:8081/index.bundle?platform=ios") {
                 jsCodeLocation = debugURL
             } else {
                 jsCodeLocation = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
@@ -36,5 +38,23 @@ class RNScreenController: UIViewController{
         )
         
         self.view = rootView
+    }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setInteractiveRecognizer()
+    }
+    
+    private func setInteractiveRecognizer() {
+        guard let controller = navigationController else { return }
+        popRecognizer = InteractivePopRecognizer(controller: controller)
+        controller.interactivePopGestureRecognizer?.delegate = popRecognizer
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
 }

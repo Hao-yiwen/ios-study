@@ -26,6 +26,7 @@
 		F646CDA42C1735EA0029E950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F646CDA32C1735EA0029E950 /* Assets.xcassets */; };
 		F646CDA72C1735EA0029E950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F646CDA52C1735EA0029E950 /* LaunchScreen.storyboard */; };
 		F65E50792C1B683900AB0F72 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = F65E50782C1B683900AB0F72 /* main.jsbundle */; };
+		F65E507B2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E507A2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift */; };
 		F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */; };
 		F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */; };
 		F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */; };
@@ -59,6 +60,7 @@
 		F646CDA62C1735EA0029E950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F646CDA82C1735EA0029E950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65E50782C1B683900AB0F72 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = "../../../rn/reactNative-study/rnDemo0742/ios/main.jsbundle"; sourceTree = "<group>"; };
+		F65E507A2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractivePopRecognizer.swift; sourceTree = "<group>"; };
 		F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComputeBaseScreen.storyboard; sourceTree = "<group>"; };
 		F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SwiftUIStoryboard.storyboard; path = SwiftUIModule/SwiftUIModule/Classes/SwiftUIStoryboard.storyboard; sourceTree = "<group>"; };
 		F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestModuleXib.xib; path = TestModule/TestModule/Assets/TestModuleXib.xib; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				39F5967D2C1A98E300A05634 /* RNScreenController.swift */,
+				F65E507A2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift */,
 			);
 			path = RNScreen;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				39A8A36A2C19621D00FA1B1E /* BaseView.swift in Sources */,
 				F646CD9B2C1735E90029E950 /* AppDelegate.swift in Sources */,
 				39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */,
+				F65E507B2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift in Sources */,
 				F646CD9D2C1735E90029E950 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,10 +450,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -512,10 +513,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
