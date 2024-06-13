@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lXr-kn-JOT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lXr-kn-JOT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +18,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h17-8z-d9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1040" y="-1025"/>
+            <point key="canvasLocation" x="-1257" y="-1026"/>
+        </scene>
+        <!--RNStoryboard-->
+        <scene sceneID="oR2-2c-lVr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RNStoryboard" id="OG2-ji-kUD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Fj3-Yj-pNk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9s-aq-bwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-893" y="-1020"/>
         </scene>
         <!--大首页-->
         <scene sceneID="OiH-S5-ACV">
@@ -44,14 +54,24 @@
                                     <segue destination="UXE-eM-GXp" kind="push" id="tOi-wc-JOf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etH-3e-5c0">
+                                <rect key="frame" x="158" y="233" width="77" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="rn模块"/>
+                                <connections>
+                                    <segue destination="OG2-ji-kUD" kind="push" id="7cI-QB-127"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rGU-il-PfN"/>
                         <color key="backgroundColor" red="0.89411771299999998" green="0.90196079019999997" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="etH-3e-5c0" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="7p6-vC-XWO"/>
                             <constraint firstItem="kJz-Dz-SsV" firstAttribute="top" secondItem="rGU-il-PfN" secondAttribute="top" constant="20" id="Nd0-WS-GTE"/>
                             <constraint firstItem="RuV-EQ-ZKF" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="Uyp-qN-cvM"/>
                             <constraint firstItem="kJz-Dz-SsV" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="fNn-UC-6Jl"/>
                             <constraint firstItem="RuV-EQ-ZKF" firstAttribute="top" secondItem="kJz-Dz-SsV" secondAttribute="bottom" constant="20" id="r2j-fC-8p8"/>
+                            <constraint firstItem="etH-3e-5c0" firstAttribute="top" secondItem="RuV-EQ-ZKF" secondAttribute="bottom" constant="20" id="scm-YY-bX4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="大首页" id="iIF-Ev-H0p"/>

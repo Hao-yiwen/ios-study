@@ -11,6 +11,8 @@
 		39A8A3672C195C2000FA1B1E /* Xib.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A8A3652C195C2000FA1B1E /* Xib.storyboard */; };
 		39A8A36A2C19621D00FA1B1E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8A3692C19621D00FA1B1E /* BaseView.swift */; };
 		39A8A36C2C1966EC00FA1B1E /* ComputeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8A36B2C1966EC00FA1B1E /* ComputeScreenController.swift */; };
+		39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5967D2C1A98E300A05634 /* RNScreenController.swift */; };
+		39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F5967F2C1AAC4900A05634 /* RNStoryboard.storyboard */; };
 		4550AA012CC58923539A304D /* Pods_ios_study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15DD668E3444B7D11E57230 /* Pods_ios_study.framework */; };
 		F62CE0E02C1898D3003D7C5E /* IOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CE0DF2C1898D3003D7C5E /* IOSViewController.swift */; };
 		F62CE0E52C189BB0003D7C5E /* XibScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62CE0E42C189BB0003D7C5E /* XibScreen.xib */; };
@@ -35,6 +37,8 @@
 		39A8A3652C195C2000FA1B1E /* Xib.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Xib.storyboard; sourceTree = "<group>"; };
 		39A8A3692C19621D00FA1B1E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		39A8A36B2C1966EC00FA1B1E /* ComputeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeScreenController.swift; sourceTree = "<group>"; };
+		39F5967D2C1A98E300A05634 /* RNScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNScreenController.swift; sourceTree = "<group>"; };
+		39F5967F2C1AAC4900A05634 /* RNStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RNStoryboard.storyboard; sourceTree = "<group>"; };
 		A15DD668E3444B7D11E57230 /* Pods_ios_study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0DB23283CA55620B0E6FC3 /* Pods-ios-study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.debug.xcconfig"; path = "Target Support Files/Pods-ios-study/Pods-ios-study.debug.xcconfig"; sourceTree = "<group>"; };
 		C1AF92899C40C1C2EF5FF3EB /* Pods-ios-study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.release.xcconfig"; path = "Target Support Files/Pods-ios-study/Pods-ios-study.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +93,14 @@
 			path = baseScreen;
 			sourceTree = "<group>";
 		};
+		39F5967C2C1A98CE00A05634 /* RNScreen */ = {
+			isa = PBXGroup;
+			children = (
+				39F5967D2C1A98E300A05634 /* RNScreenController.swift */,
+			);
+			path = RNScreen;
+			sourceTree = "<group>";
+		};
 		C432FD7372ED179792800F36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +112,7 @@
 		F62CE0DE2C189839003D7C5E /* views */ = {
 			isa = PBXGroup;
 			children = (
+				39F5967C2C1A98CE00A05634 /* RNScreen */,
 				39A8A3682C19620B00FA1B1E /* baseScreen */,
 				F62CE0E32C189B9B003D7C5E /* XibScreen */,
 				F62CE0E22C189B81003D7C5E /* IOSBaseScreen */,
@@ -144,6 +157,7 @@
 				39A8A3642C195C2000FA1B1E /* SubXib.storyboard */,
 				39A8A3652C195C2000FA1B1E /* Xib.storyboard */,
 				F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */,
+				39F5967F2C1AAC4900A05634 /* RNStoryboard.storyboard */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -256,6 +270,7 @@
 				F62CE0E52C189BB0003D7C5E /* XibScreen.xib in Resources */,
 				39A8A3662C195C2000FA1B1E /* SubXib.storyboard in Resources */,
 				F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */,
+				39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +332,7 @@
 				F62CE0E92C18A22F003D7C5E /* XibScreenController.swift in Sources */,
 				39A8A36A2C19621D00FA1B1E /* BaseView.swift in Sources */,
 				F646CD9B2C1735E90029E950 /* AppDelegate.swift in Sources */,
+				39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */,
 				F646CD9D2C1735E90029E950 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
