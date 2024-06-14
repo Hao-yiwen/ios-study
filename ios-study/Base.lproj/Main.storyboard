@@ -62,11 +62,21 @@
                                     <segue destination="OG2-ji-kUD" kind="push" id="7cI-QB-127"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05I-Sy-6yf">
+                                <rect key="frame" x="141" y="288" width="111" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Flutter模块"/>
+                                <connections>
+                                    <segue destination="JJy-cZ-GKV" kind="push" id="Tdn-Pb-wN6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rGU-il-PfN"/>
                         <color key="backgroundColor" red="0.89411771299999998" green="0.90196079019999997" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="etH-3e-5c0" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="7p6-vC-XWO"/>
+                            <constraint firstItem="05I-Sy-6yf" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="8Bw-eQ-iDR"/>
+                            <constraint firstItem="05I-Sy-6yf" firstAttribute="top" secondItem="etH-3e-5c0" secondAttribute="bottom" constant="20" id="MYq-SS-PNw"/>
                             <constraint firstItem="kJz-Dz-SsV" firstAttribute="top" secondItem="rGU-il-PfN" secondAttribute="top" constant="20" id="Nd0-WS-GTE"/>
                             <constraint firstItem="RuV-EQ-ZKF" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="Uyp-qN-cvM"/>
                             <constraint firstItem="kJz-Dz-SsV" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="fNn-UC-6Jl"/>
@@ -141,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-319.84732824427482" y="-600"/>
+            <point key="canvasLocation" x="158" y="-635"/>
         </scene>
         <!--NavigationTest-->
         <scene sceneID="VpB-Lx-ybA">
@@ -207,6 +217,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvc-lx-jrh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="308" y="-1360"/>
+        </scene>
+        <!--FlutterStoryboard-->
+        <scene sceneID="szL-rQ-Hqq">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FlutterStoryboard" storyboardName="FlutterStoryboard" id="JJy-cZ-GKV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="p0Z-jO-12l"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kN-Tb-VsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506" y="-830"/>
         </scene>
     </scenes>
     <resources>

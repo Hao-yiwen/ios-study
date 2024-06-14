@@ -13,6 +13,10 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
+# flutter path
+flutter_application_path = '/Users/yw.hao/Documents/android/android-study/my_flutter'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
 target 'ios-study' do
   config = use_native_modules!
 
@@ -22,6 +26,8 @@ target 'ios-study' do
     :app_path => "#{Pod::Config.instance.installation_root}",
     :hermes_enabled => true
   )
+  
+  install_all_flutter_pods(flutter_application_path)
   
   # Pods for ios-study
   pod 'TestModule', :path => './TestModule'
@@ -35,5 +41,7 @@ target 'ios-study' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+    
+    flutter_post_install(installer) if defined?(flutter_post_install)
   end
 end
