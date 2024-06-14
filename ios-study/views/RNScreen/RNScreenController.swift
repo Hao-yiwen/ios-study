@@ -15,7 +15,8 @@ class RNScreenController: UIViewController, UIGestureRecognizerDelegate{
         super.viewDidLoad()
         #if DEBUG
             let jsCodeLocation: URL
-            if let debugURL = URL(string: "http://192.168.1.7:8081/index.bundle?platform=ios") {
+//            if let debugURL = URL(string: "http://192.168.1.7:8081/index.bundle?platform=ios") {
+            if let debugURL = URL(string: "http://127.0.0.1:8081/index.bundle?platform=ios") {
                 jsCodeLocation = debugURL
             } else {
                 jsCodeLocation = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
