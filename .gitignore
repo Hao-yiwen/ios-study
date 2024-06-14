@@ -81,3 +81,5 @@ GoogleService-Info.plist
 
 # Generated files
 *.generated.swift
+
+.xcode.env.local
