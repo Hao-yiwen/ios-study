@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lXr-kn-JOT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lXr-kn-JOT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -43,7 +43,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ios基础"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="SGw-JA-8h1"/>
+                                    <segue destination="Ylp-er-eOi" kind="push" id="SGw-JA-8h1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuV-EQ-ZKF">
@@ -70,6 +70,14 @@
                                     <segue destination="JJy-cZ-GKV" kind="push" id="Tdn-Pb-wN6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSX-HQ-Ume">
+                                <rect key="frame" x="125" y="343" width="143" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="第三方sdk模块"/>
+                                <connections>
+                                    <segue destination="C7d-jX-7t2" kind="push" id="oIK-t6-tfF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rGU-il-PfN"/>
                         <color key="backgroundColor" red="0.89411771299999998" green="0.90196079019999997" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -78,7 +86,9 @@
                             <constraint firstItem="05I-Sy-6yf" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="8Bw-eQ-iDR"/>
                             <constraint firstItem="05I-Sy-6yf" firstAttribute="top" secondItem="etH-3e-5c0" secondAttribute="bottom" constant="20" id="MYq-SS-PNw"/>
                             <constraint firstItem="kJz-Dz-SsV" firstAttribute="top" secondItem="rGU-il-PfN" secondAttribute="top" constant="20" id="Nd0-WS-GTE"/>
+                            <constraint firstItem="MSX-HQ-Ume" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="Nky-5f-ox0"/>
                             <constraint firstItem="RuV-EQ-ZKF" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="Uyp-qN-cvM"/>
+                            <constraint firstItem="MSX-HQ-Ume" firstAttribute="top" secondItem="05I-Sy-6yf" secondAttribute="bottom" constant="20" id="YOf-40-0LT"/>
                             <constraint firstItem="kJz-Dz-SsV" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="fNn-UC-6Jl"/>
                             <constraint firstItem="RuV-EQ-ZKF" firstAttribute="top" secondItem="kJz-Dz-SsV" secondAttribute="bottom" constant="20" id="r2j-fC-8p8"/>
                             <constraint firstItem="etH-3e-5c0" firstAttribute="top" secondItem="RuV-EQ-ZKF" secondAttribute="bottom" constant="20" id="scm-YY-bX4"/>
@@ -90,78 +100,15 @@
             </objects>
             <point key="canvasLocation" x="-1066" y="-600"/>
         </scene>
-        <!--IOS基础-->
-        <scene sceneID="tne-QT-ifu">
+        <!--ThirdSDKStoryboard-->
+        <scene sceneID="22P-7I-mvx">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="IOSViewController" customModule="ios_study" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCX-PC-5bX">
-                                <rect key="frame" x="132.66666666666666" y="123" width="127.99999999999997" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="计算测试页面"/>
-                                <connections>
-                                    <segue destination="Pak-HU-q5V" kind="push" id="zSY-dL-c92"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsH-Cq-gc3">
-                                <rect key="frame" x="149.66666666666666" y="184" width="94" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="跳转测试"/>
-                                <connections>
-                                    <segue destination="T0M-SI-5tS" kind="push" id="a6c-DX-KCK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-0J-se3">
-                                <rect key="frame" x="120" y="239.00000000000003" width="153" height="34.333333333333343"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="xib容器跳转测试"/>
-                                <connections>
-                                    <segue destination="cfY-V8-tui" kind="push" id="JkF-oQ-s4m"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-3s-piF">
-                                <rect key="frame" x="120" y="293.33333333333331" width="153" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="来自子模块的xib"/>
-                                <connections>
-                                    <segue destination="Erx-wV-zs1" kind="push" id="5sr-N0-4Kv"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="tsH-Cq-gc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Tq-k2-e1k"/>
-                            <constraint firstItem="tsH-Cq-gc3" firstAttribute="top" secondItem="QCX-PC-5bX" secondAttribute="bottom" constant="26" id="IRV-gX-5Fy"/>
-                            <constraint firstItem="AC3-0J-se3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQl-eW-D3Q"/>
-                            <constraint firstItem="N6e-3s-piF" firstAttribute="top" secondItem="AC3-0J-se3" secondAttribute="bottom" constant="20" id="epZ-zp-HTC"/>
-                            <constraint firstItem="AC3-0J-se3" firstAttribute="top" secondItem="tsH-Cq-gc3" secondAttribute="bottom" constant="20" id="h7x-Pf-1U4"/>
-                            <constraint firstItem="QCX-PC-5bX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hfS-eX-DQL"/>
-                            <constraint firstItem="QCX-PC-5bX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hgg-0V-K3O"/>
-                            <constraint firstItem="N6e-3s-piF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vhl-53-QuD"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="IOS基础" id="iEY-6r-8vA"/>
-                    <connections>
-                        <outlet property="xibSubContainer" destination="N6e-3s-piF" id="cCx-cQ-eSe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="158" y="-635"/>
-        </scene>
-        <!--NavigationTest-->
-        <scene sceneID="VpB-Lx-ybA">
-            <objects>
-                <viewControllerPlaceholder storyboardName="NavigationTest" id="T0M-SI-5tS" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="wBb-Fw-i1N"/>
+                <viewControllerPlaceholder storyboardName="ThirdSDKStoryboard" id="C7d-jX-7t2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="It5-3J-AIg"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VW8-HM-Rm3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2n-ye-zRL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418" y="-851"/>
+            <point key="canvasLocation" x="-544" y="-518"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5vj-gU-J3p">
@@ -187,16 +134,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3Y-bg-EhL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1784" y="-600"/>
-        </scene>
-        <!--Xib-->
-        <scene sceneID="WtM-4D-Xx6">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Xib" id="cfY-V8-tui" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="0z3-Xa-YEl"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Yd-10-7fX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="462" y="-339"/>
         </scene>
         <!--SubXib-->
         <scene sceneID="TjJ-WV-Fmi">
@@ -227,6 +164,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kN-Tb-VsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-506" y="-830"/>
+        </scene>
+        <!--IOSBaseStoryboard-->
+        <scene sceneID="OCV-dL-brO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="IOSBaseStoryboard" id="Ylp-er-eOi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="g1S-5v-HVb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrM-xO-oT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="-606"/>
         </scene>
     </scenes>
     <resources>

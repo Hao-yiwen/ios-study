@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IOS基础-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IOSViewController" customModule="ios_study" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCX-PC-5bX">
+                                <rect key="frame" x="132.66666666666666" y="79" width="127.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="计算测试页面"/>
+                                <connections>
+                                    <segue destination="Pak-HU-q5V" kind="push" id="zSY-dL-c92"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsH-Cq-gc3">
+                                <rect key="frame" x="149.66666666666666" y="134" width="94" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="跳转测试"/>
+                                <connections>
+                                    <segue destination="T0M-SI-5tS" kind="push" id="a6c-DX-KCK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-0J-se3">
+                                <rect key="frame" x="120" y="189" width="153" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="xib容器跳转测试"/>
+                                <connections>
+                                    <segue destination="cfY-V8-tui" kind="push" id="JkF-oQ-s4m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-3s-piF">
+                                <rect key="frame" x="120" y="243.33333333333337" width="153" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="来自子模块的xib"/>
+                                <connections>
+                                    <segue destination="Erx-wV-zs1" kind="push" id="5sr-N0-4Kv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vt-Ak-ze3">
+                                <rect key="frame" x="132.66666666666666" y="298.33333333333331" width="127.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="委托模式测试"/>
+                                <connections>
+                                    <segue destination="HAm-aD-K0f" kind="push" id="XSP-gy-SaE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tsH-Cq-gc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Tq-k2-e1k"/>
+                            <constraint firstItem="tsH-Cq-gc3" firstAttribute="top" secondItem="QCX-PC-5bX" secondAttribute="bottom" constant="26" id="IRV-gX-5Fy"/>
+                            <constraint firstItem="AC3-0J-se3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQl-eW-D3Q"/>
+                            <constraint firstItem="7Vt-Ak-ze3" firstAttribute="top" secondItem="N6e-3s-piF" secondAttribute="bottom" constant="20" id="UUu-5e-U1M"/>
+                            <constraint firstItem="tsH-Cq-gc3" firstAttribute="top" secondItem="QCX-PC-5bX" secondAttribute="bottom" constant="20" id="Y7Y-IU-Eoj"/>
+                            <constraint firstItem="7Vt-Ak-ze3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a1c-Xl-OYh"/>
+                            <constraint firstItem="AC3-0J-se3" firstAttribute="top" secondItem="tsH-Cq-gc3" secondAttribute="bottom" constant="20" id="b5x-G8-FYJ"/>
+                            <constraint firstItem="QCX-PC-5bX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dWk-ag-IIU"/>
+                            <constraint firstItem="N6e-3s-piF" firstAttribute="top" secondItem="AC3-0J-se3" secondAttribute="bottom" constant="20" id="epZ-zp-HTC"/>
+                            <constraint firstItem="AC3-0J-se3" firstAttribute="top" secondItem="tsH-Cq-gc3" secondAttribute="bottom" constant="20" id="h7x-Pf-1U4"/>
+                            <constraint firstItem="QCX-PC-5bX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hfS-eX-DQL"/>
+                            <constraint firstItem="QCX-PC-5bX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hgg-0V-K3O"/>
+                            <constraint firstItem="N6e-3s-piF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vhl-53-QuD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="IOS基础" id="iEY-6r-8vA"/>
+                    <connections>
+                        <outlet property="xibSubContainer" destination="N6e-3s-piF" id="cCx-cQ-eSe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="-606"/>
+        </scene>
+        <!--NavigationTest-->
+        <scene sceneID="VpB-Lx-ybA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NavigationTest" id="T0M-SI-5tS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wBb-Fw-i1N"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VW8-HM-Rm3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="418" y="-851"/>
+        </scene>
+        <!--Xib-->
+        <scene sceneID="WtM-4D-Xx6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Xib" id="cfY-V8-tui" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0z3-Xa-YEl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Yd-10-7fX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="-339"/>
+        </scene>
+        <!--SubXib-->
+        <scene sceneID="TjJ-WV-Fmi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SubXib" id="Erx-wV-zs1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FIj-X8-yB5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FcL-IW-FsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="-373"/>
+        </scene>
+        <!--ComputeBaseScreen-->
+        <scene sceneID="vzH-Eg-aam">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComputeBaseScreen" id="Pak-HU-q5V" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bS1-Ef-mfj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvc-lx-jrh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="-904"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a5y-u4-PJA">
+            <objects>
+                <viewController id="HAm-aD-K0f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x68-QE-859">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bHX-pW-LXY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PmJ-O3-0bB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eta-DR-uQG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="-606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
