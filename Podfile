@@ -14,7 +14,8 @@ if linkage != nil
 end
 
 # flutter path
-flutter_application_path = '/Users/yw.hao/Documents/android/android-study/my_flutter'
+flutter_application_path = '/Users/haoyiwen/Documents/android/android-study/my_flutter'
+#flutter_application_path = '/Users/yw.hao/Documents/android/android-study/my_flutter'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 
 target 'ios-study' do

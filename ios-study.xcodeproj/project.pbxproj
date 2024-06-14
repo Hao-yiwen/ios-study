@@ -21,6 +21,11 @@
 		F62CE0E72C189DE4003D7C5E /* XibScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CE0E62C189DE4003D7C5E /* XibScreenContainer.swift */; };
 		F62CE0E92C18A22F003D7C5E /* XibScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CE0E82C18A22F003D7C5E /* XibScreenController.swift */; };
 		F62CE0F02C18B190003D7C5E /* XibTestModuleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CE0EF2C18B190003D7C5E /* XibTestModuleContainer.swift */; };
+		F63DE18B2C1C79A100B1BF2F /* ThirdSDKStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63DE18A2C1C79A100B1BF2F /* ThirdSDKStoryboard.storyboard */; };
+		F63DE18D2C1C79D100B1BF2F /* ThirdSDKHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DE18C2C1C79D100B1BF2F /* ThirdSDKHomeController.swift */; };
+		F63DE18F2C1C7B6700B1BF2F /* ScanCodeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DE18E2C1C7B6700B1BF2F /* ScanCodeScreenController.swift */; };
+		F63DE1912C1C8C3100B1BF2F /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DE1902C1C8C3100B1BF2F /* BaseController.swift */; };
+		F63DE1942C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63DE1932C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard */; };
 		F646CD9B2C1735E90029E950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646CD9A2C1735E90029E950 /* AppDelegate.swift */; };
 		F646CD9D2C1735E90029E950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646CD9C2C1735E90029E950 /* SceneDelegate.swift */; };
 		F646CD9F2C1735E90029E950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646CD9E2C1735E90029E950 /* ViewController.swift */; };
@@ -55,6 +60,11 @@
 		F62CE0E62C189DE4003D7C5E /* XibScreenContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibScreenContainer.swift; sourceTree = "<group>"; };
 		F62CE0E82C18A22F003D7C5E /* XibScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibScreenController.swift; sourceTree = "<group>"; };
 		F62CE0EF2C18B190003D7C5E /* XibTestModuleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XibTestModuleContainer.swift; path = "ios-study/views/IOSBaseScreen/XibTestModuleContainer.swift"; sourceTree = SOURCE_ROOT; };
+		F63DE18A2C1C79A100B1BF2F /* ThirdSDKStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdSDKStoryboard.storyboard; sourceTree = "<group>"; };
+		F63DE18C2C1C79D100B1BF2F /* ThirdSDKHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSDKHomeController.swift; sourceTree = "<group>"; };
+		F63DE18E2C1C7B6700B1BF2F /* ScanCodeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCodeScreenController.swift; sourceTree = "<group>"; };
+		F63DE1902C1C8C3100B1BF2F /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F63DE1932C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IOSBaseStoryboard.storyboard; sourceTree = "<group>"; };
 		F646CD972C1735E90029E950 /* ios-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F646CD9A2C1735E90029E950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F646CD9C2C1735E90029E950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F65E507A2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift */,
+				F63DE1902C1C8C3100B1BF2F /* BaseController.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 		F62CE0DE2C189839003D7C5E /* views */ = {
 			isa = PBXGroup;
 			children = (
+				F63DE1882C1C795700B1BF2F /* thirdSDK */,
 				392221742C1C089C00EB40E9 /* FlutterScreen */,
 				39F5967C2C1A98CE00A05634 /* RNScreen */,
 				39A8A3682C19620B00FA1B1E /* baseScreen */,
@@ -160,6 +172,7 @@
 		F62CE0E22C189B81003D7C5E /* IOSBaseScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F63DE1952C1C9B0D00B1BF2F /* delegate */,
 				F62CE0EF2C18B190003D7C5E /* XibTestModuleContainer.swift */,
 				F62CE0E62C189DE4003D7C5E /* XibScreenContainer.swift */,
 				F62CE0DF2C1898D3003D7C5E /* IOSViewController.swift */,
@@ -180,14 +193,32 @@
 		F62CE0F32C18BA01003D7C5E /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				F63DE1932C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard */,
 				F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */,
 				39A8A3642C195C2000FA1B1E /* SubXib.storyboard */,
 				39A8A3652C195C2000FA1B1E /* Xib.storyboard */,
 				F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */,
 				39F5967F2C1AAC4900A05634 /* RNStoryboard.storyboard */,
 				392221752C1C08BF00EB40E9 /* FlutterStoryboard.storyboard */,
+				F63DE18A2C1C79A100B1BF2F /* ThirdSDKStoryboard.storyboard */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		F63DE1882C1C795700B1BF2F /* thirdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F63DE18C2C1C79D100B1BF2F /* ThirdSDKHomeController.swift */,
+				F63DE18E2C1C7B6700B1BF2F /* ScanCodeScreenController.swift */,
+			);
+			path = thirdSDK;
+			sourceTree = "<group>";
+		};
+		F63DE1952C1C9B0D00B1BF2F /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = delegate;
 			sourceTree = "<group>";
 		};
 		F646CD8E2C1735E90029E950 = {
@@ -296,10 +327,12 @@
 			files = (
 				F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */,
 				F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */,
+				F63DE1942C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard in Resources */,
 				392221762C1C08BF00EB40E9 /* FlutterStoryboard.storyboard in Resources */,
 				39A8A3672C195C2000FA1B1E /* Xib.storyboard in Resources */,
 				F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */,
 				F646CDA72C1735EA0029E950 /* LaunchScreen.storyboard in Resources */,
+				F63DE18B2C1C79A100B1BF2F /* ThirdSDKStoryboard.storyboard in Resources */,
 				F646CDA42C1735EA0029E950 /* Assets.xcassets in Resources */,
 				F646CDA22C1735E90029E950 /* Main.storyboard in Resources */,
 				F62CE0E52C189BB0003D7C5E /* XibScreen.xib in Resources */,
@@ -404,11 +437,14 @@
 				39A8A36C2C1966EC00FA1B1E /* ComputeScreenController.swift in Sources */,
 				F62CE0F02C18B190003D7C5E /* XibTestModuleContainer.swift in Sources */,
 				F62CE0E72C189DE4003D7C5E /* XibScreenContainer.swift in Sources */,
+				F63DE18F2C1C7B6700B1BF2F /* ScanCodeScreenController.swift in Sources */,
+				F63DE18D2C1C79D100B1BF2F /* ThirdSDKHomeController.swift in Sources */,
 				F62CE0E92C18A22F003D7C5E /* XibScreenController.swift in Sources */,
 				39A8A36A2C19621D00FA1B1E /* BaseView.swift in Sources */,
 				F646CD9B2C1735E90029E950 /* AppDelegate.swift in Sources */,
 				39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */,
 				F65E507B2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift in Sources */,
+				F63DE1912C1C8C3100B1BF2F /* BaseController.swift in Sources */,
 				F646CD9D2C1735E90029E950 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,11 +532,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -563,11 +595,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
