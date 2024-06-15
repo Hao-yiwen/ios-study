@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,6 +81,14 @@
                                     <segue destination="OiC-ah-1g4" kind="push" id="Kah-dy-Ohz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpg-Of-icX">
+                                <rect key="frame" x="132.66666666666666" y="558.33333333333337" width="127.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="视频播放示例"/>
+                                <connections>
+                                    <segue destination="Byw-pm-NWe" kind="push" id="Wve-1i-2BS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,8 +98,10 @@
                             <constraint firstItem="xgH-Ad-0mF" firstAttribute="top" secondItem="7Vt-Ak-ze3" secondAttribute="bottom" constant="20" id="7xs-of-3zO"/>
                             <constraint firstItem="zjs-q6-7h6" firstAttribute="top" secondItem="t5V-xK-PXN" secondAttribute="bottom" constant="20" id="EeM-dU-64v"/>
                             <constraint firstItem="tsH-Cq-gc3" firstAttribute="top" secondItem="QCX-PC-5bX" secondAttribute="bottom" constant="26" id="IRV-gX-5Fy"/>
+                            <constraint firstItem="lpg-Of-icX" firstAttribute="top" secondItem="zjs-q6-7h6" secondAttribute="bottom" constant="20" id="Mwb-BD-5kf"/>
                             <constraint firstItem="7Vt-Ak-ze3" firstAttribute="top" secondItem="N6e-3s-piF" secondAttribute="bottom" constant="60" id="NI1-zy-y8K"/>
                             <constraint firstItem="AC3-0J-se3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQl-eW-D3Q"/>
+                            <constraint firstItem="lpg-Of-icX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WLJ-Ba-Oro"/>
                             <constraint firstItem="tsH-Cq-gc3" firstAttribute="top" secondItem="QCX-PC-5bX" secondAttribute="bottom" constant="20" id="Y7Y-IU-Eoj"/>
                             <constraint firstItem="AC3-0J-se3" firstAttribute="top" secondItem="tsH-Cq-gc3" secondAttribute="bottom" constant="20" id="b5x-G8-FYJ"/>
                             <constraint firstItem="QCX-PC-5bX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dWk-ag-IIU"/>
@@ -176,6 +186,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7M9-2Z-zdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1384" y="-168"/>
+        </scene>
+        <!--Player View Screen Controller-->
+        <scene sceneID="FeH-Hx-SUA">
+            <objects>
+                <viewController id="Byw-pm-NWe" customClass="AVPlayerViewScreenController" customModule="ios_study" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F0H-rC-cIX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aNA-nK-HYG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e57-9b-rRU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1c-UV-7P3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2350" y="182"/>
         </scene>
         <!--Subview Over View2 Controller-->
         <scene sceneID="Kob-SJ-8iA">

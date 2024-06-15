@@ -13,6 +13,7 @@
 		39A8A3672C195C2000FA1B1E /* Xib.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A8A3652C195C2000FA1B1E /* Xib.storyboard */; };
 		39A8A36A2C19621D00FA1B1E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8A3692C19621D00FA1B1E /* BaseView.swift */; };
 		39A8A36C2C1966EC00FA1B1E /* ComputeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8A36B2C1966EC00FA1B1E /* ComputeScreenController.swift */; };
+		39D107882C1D5F9200F57D6F /* AVPlayerViewScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D107872C1D5F9200F57D6F /* AVPlayerViewScreenController.swift */; };
 		39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5967D2C1A98E300A05634 /* RNScreenController.swift */; };
 		39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F5967F2C1AAC4900A05634 /* RNStoryboard.storyboard */; };
 		9DE53BB87AE45CF7980AC662 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A6302CFD6DD636CEF8F87DD2 /* PrivacyInfo.xcprivacy */; };
@@ -57,6 +58,7 @@
 		39A8A3652C195C2000FA1B1E /* Xib.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Xib.storyboard; sourceTree = "<group>"; };
 		39A8A3692C19621D00FA1B1E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		39A8A36B2C1966EC00FA1B1E /* ComputeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeScreenController.swift; sourceTree = "<group>"; };
+		39D107872C1D5F9200F57D6F /* AVPlayerViewScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewScreenController.swift; sourceTree = "<group>"; };
 		39F5967D2C1A98E300A05634 /* RNScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNScreenController.swift; sourceTree = "<group>"; };
 		39F5967F2C1AAC4900A05634 /* RNStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RNStoryboard.storyboard; sourceTree = "<group>"; };
 		A6302CFD6DD636CEF8F87DD2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ../PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				F6482E5E2C1CAE410063DF23 /* WKWebViewScreenController.swift */,
 				F6482E602C1CB5CF0063DF23 /* SubviewOverView2Controller.swift */,
 				F6482E622C1CB5E70063DF23 /* View2OverSubViewController.swift */,
+				39D107872C1D5F9200F57D6F /* AVPlayerViewScreenController.swift */,
 			);
 			path = IOSBaseScreen;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				39A8A36C2C1966EC00FA1B1E /* ComputeScreenController.swift in Sources */,
 				F62CE0F02C18B190003D7C5E /* XibTestModuleContainer.swift in Sources */,
 				F62CE0E72C189DE4003D7C5E /* XibScreenContainer.swift in Sources */,
+				39D107882C1D5F9200F57D6F /* AVPlayerViewScreenController.swift in Sources */,
 				F6482E5D2C1CA85D0063DF23 /* ButtonClickDelegate.swift in Sources */,
 				F63DE19C2C1CA54400B1BF2F /* DelegateScreenController.swift in Sources */,
 				F63DE18F2C1C7B6700B1BF2F /* ScanCodeScreenController.swift in Sources */,
@@ -560,7 +564,11 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -623,7 +631,11 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;

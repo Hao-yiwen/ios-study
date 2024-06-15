@@ -82,10 +82,14 @@ class ScanCodeScreenController: BaseController {
     }
     
     func failed(){
-        let ac = UIAlertController(title: "扫码不支持", message: "您的设备不支持扫码", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "好的", style: .default))
-        present(ac, animated: true)
+        let ac = UIAlertController(title: "扫码不支持", message: "当前设备不支持扫码", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "好的", style: .default,handler: {_ in 
+            self.navigationController?.popViewController(animated: true)
+        }))
         captureSession = nil
+        DispatchQueue.main.async {
+            self.present(ac, animated: true)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
