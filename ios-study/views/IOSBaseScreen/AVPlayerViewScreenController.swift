@@ -9,12 +9,15 @@ import UIKit
 import AVKit
 
 class AVPlayerViewScreenController:UIViewController,AVPlayerViewControllerDelegate {
+    @IBOutlet weak var videoallscreen: UIButton!
     var playerViewControllerIfLoaded:AVPlayerViewController!
+    var playerViewControllerInline:AVPlayerViewController!
+    var avPlayer:AVPlayer!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadPlayerViewControllerIfNeeded()
+        setupVideoPlayer()
     }
     
     private func loadPlayerViewControllerIfNeeded() {
@@ -33,5 +36,34 @@ class AVPlayerViewScreenController:UIViewController,AVPlayerViewControllerDelega
                 player.play()
             }
         }
+    }
+    
+    @IBAction func handleAllScreenVideo(_ sender: Any) {
+        loadPlayerViewControllerIfNeeded()
+    }
+    
+    func setupVideoPlayer(){
+        guard let videoURL = URL(string: "https://media.w3.org/2010/05/sintel/trailer.mp4") else { return  }
+        avPlayer = AVPlayer(url: videoURL)
+        playerViewControllerInline = AVPlayerViewController()
+        playerViewControllerInline.player = avPlayer
+        playerViewControllerInline.view.backgroundColor = .black
+        
+        self.addChild(playerViewControllerInline)
+        self.view.addSubview(playerViewControllerInline.view)
+        playerViewControllerInline.didMove(toParent: self)
+        playerViewControllerInline.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            playerViewControllerInline.view.topAnchor.constraint(equalTo: videoallscreen.bottomAnchor, constant: 20),
+            playerViewControllerInline.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            playerViewControllerInline.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            playerViewControllerInline.view.heightAnchor.constraint(equalToConstant: 200)
+        ])
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        avPlayer.play()
     }
 }

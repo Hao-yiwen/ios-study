@@ -17,27 +17,166 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-Ps-pis">
-                                <rect key="frame" x="141" y="79" width="111" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="二维码扫描"/>
-                                <connections>
-                                    <segue destination="twT-UI-uUu" kind="push" id="isc-3K-BBQ"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-w5-zBC">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Q2-8iz">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="800"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoj-Ha-jBO">
+                                                <rect key="frame" x="128.33333333333331" y="55" width="136.33333333333331" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="scrollview测试"/>
+                                                <connections>
+                                                    <segue destination="3If-m9-qdT" kind="push" id="0dD-v6-SC1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC9-fu-sHk">
+                                                <rect key="frame" x="141" y="0.0" width="111" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="二维码扫描"/>
+                                                <connections>
+                                                    <segue destination="twT-UI-uUu" kind="push" id="841-93-FV1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld4-cp-lm9">
+                                                <rect key="frame" x="147" y="110" width="99" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="lottie测试"/>
+                                                <connections>
+                                                    <segue destination="69A-rM-FC4" kind="push" id="xdT-Zt-7my"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="fC9-fu-sHk" firstAttribute="top" secondItem="yb1-Q2-8iz" secondAttribute="top" id="Ib4-IO-RGY"/>
+                                            <constraint firstItem="ld4-cp-lm9" firstAttribute="centerX" secondItem="yb1-Q2-8iz" secondAttribute="centerX" id="JYR-fz-HR9"/>
+                                            <constraint firstItem="ld4-cp-lm9" firstAttribute="top" secondItem="hoj-Ha-jBO" secondAttribute="bottom" constant="20" id="Jdf-03-XSs"/>
+                                            <constraint firstItem="hoj-Ha-jBO" firstAttribute="top" secondItem="fC9-fu-sHk" secondAttribute="bottom" constant="20" id="cMR-Zg-IZZ"/>
+                                            <constraint firstItem="hoj-Ha-jBO" firstAttribute="centerX" secondItem="yb1-Q2-8iz" secondAttribute="centerX" id="e5f-vd-WWF"/>
+                                            <constraint firstItem="fC9-fu-sHk" firstAttribute="centerX" secondItem="yb1-Q2-8iz" secondAttribute="centerX" id="haV-Ai-bfF"/>
+                                            <constraint firstAttribute="bottom" secondItem="ld4-cp-lm9" secondAttribute="bottom" constant="655" id="uSg-fQ-wzV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yb1-Q2-8iz" firstAttribute="leading" secondItem="M9O-SB-iQH" secondAttribute="leading" id="FyA-cg-6kP"/>
+                                    <constraint firstItem="yb1-Q2-8iz" firstAttribute="bottom" secondItem="M9O-SB-iQH" secondAttribute="bottom" id="JQd-P2-MpX"/>
+                                    <constraint firstItem="yb1-Q2-8iz" firstAttribute="trailing" secondItem="M9O-SB-iQH" secondAttribute="trailing" id="dnU-kV-5ql"/>
+                                    <constraint firstItem="M9O-SB-iQH" firstAttribute="top" secondItem="yb1-Q2-8iz" secondAttribute="top" id="k2q-DH-ule"/>
+                                    <constraint firstItem="yb1-Q2-8iz" firstAttribute="centerX" secondItem="hlI-nm-mph" secondAttribute="centerX" id="ma1-IB-raA"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="M9O-SB-iQH"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="hlI-nm-mph"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="P8a-Ps-pis" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="63G-fl-mHa"/>
-                            <constraint firstItem="P8a-Ps-pis" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="lZE-fc-qaZ"/>
+                            <constraint firstItem="aaU-w5-zBC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="CS8-N9-iIr"/>
+                            <constraint firstItem="aaU-w5-zBC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="KiR-P3-FcC"/>
+                            <constraint firstItem="aaU-w5-zBC" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="hH9-3D-rCe"/>
+                            <constraint firstItem="aaU-w5-zBC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qBq-zq-N5R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="第三方sdk页面" id="P1Z-si-w2e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="4"/>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+        <!--Lottie Screen Controller-->
+        <scene sceneID="ARq-0B-rvV">
+            <objects>
+                <viewController id="69A-rM-FC4" customClass="LottieScreenController" customModule="ios_study" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R2v-QV-k9c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="a4T-88-nf6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nQV-vd-iaP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XV8-fG-uPT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="274"/>
+        </scene>
+        <!--scrollview测试-->
+        <scene sceneID="PZQ-WS-pfc">
+            <objects>
+                <viewController id="3If-m9-qdT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u0J-h7-S4H">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-YO-3fh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="1390"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPA-IG-wdu">
+                                        <rect key="frame" x="0.0" y="8" width="393" height="760"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4V-6G-U50">
+                                                <rect key="frame" x="123.66666666666669" y="235" width="146" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="scrollview测试1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76x-bb-XOl">
+                                                <rect key="frame" x="122.66666666666669" y="470" width="148" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="scrollview测试2"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjR-Go-oKG">
+                                                <rect key="frame" x="122.33333333333333" y="705" width="148.66666666666669" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="scrollview测试3"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdV-gQ-D7J">
+                                                <rect key="frame" x="122" y="0.0" width="149" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="scrollview测试0"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="PjR-Go-oKG" firstAttribute="top" secondItem="76x-bb-XOl" secondAttribute="bottom" constant="200" id="3XK-mM-iHY"/>
+                                            <constraint firstItem="qdV-gQ-D7J" firstAttribute="centerX" secondItem="RPA-IG-wdu" secondAttribute="centerX" id="Djv-X4-MeV"/>
+                                            <constraint firstItem="z4V-6G-U50" firstAttribute="top" secondItem="qdV-gQ-D7J" secondAttribute="bottom" constant="200" id="Fsz-D7-3DJ"/>
+                                            <constraint firstItem="PjR-Go-oKG" firstAttribute="centerX" secondItem="RPA-IG-wdu" secondAttribute="centerX" id="TX2-Cv-7y4"/>
+                                            <constraint firstItem="qdV-gQ-D7J" firstAttribute="top" secondItem="RPA-IG-wdu" secondAttribute="top" id="WHh-xu-QKi"/>
+                                            <constraint firstItem="76x-bb-XOl" firstAttribute="top" secondItem="z4V-6G-U50" secondAttribute="bottom" constant="200" id="WMI-Xm-TXD"/>
+                                            <constraint firstItem="z4V-6G-U50" firstAttribute="centerX" secondItem="RPA-IG-wdu" secondAttribute="centerX" id="WRy-71-Azs"/>
+                                            <constraint firstItem="76x-bb-XOl" firstAttribute="centerX" secondItem="RPA-IG-wdu" secondAttribute="centerX" id="y5p-XO-aaz"/>
+                                            <constraint firstAttribute="bottom" secondItem="PjR-Go-oKG" secondAttribute="bottom" constant="20" id="zkT-ds-EEt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RPA-IG-wdu" firstAttribute="bottom" secondItem="VWG-B7-g45" secondAttribute="bottom" id="E77-K1-84w"/>
+                                    <constraint firstItem="RPA-IG-wdu" firstAttribute="leading" secondItem="VWG-B7-g45" secondAttribute="leading" id="HfT-Va-1DU"/>
+                                    <constraint firstItem="RPA-IG-wdu" firstAttribute="top" secondItem="VWG-B7-g45" secondAttribute="top" constant="8" id="LIY-et-wv8"/>
+                                    <constraint firstItem="RPA-IG-wdu" firstAttribute="trailing" secondItem="VWG-B7-g45" secondAttribute="trailing" id="UvI-xn-19d"/>
+                                    <constraint firstItem="RPA-IG-wdu" firstAttribute="centerX" secondItem="k7N-7y-jdi" secondAttribute="centerX" id="vsc-Kx-019"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="VWG-B7-g45"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="k7N-7y-jdi"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oD0-zR-CAw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oD0-zR-CAw" firstAttribute="bottom" secondItem="cOm-YO-3fh" secondAttribute="bottom" id="9tc-Qy-pai"/>
+                            <constraint firstItem="cOm-YO-3fh" firstAttribute="top" secondItem="oD0-zR-CAw" secondAttribute="top" id="CJe-de-Ui9"/>
+                            <constraint firstItem="cOm-YO-3fh" firstAttribute="leading" secondItem="oD0-zR-CAw" secondAttribute="leading" id="kwF-vm-neh"/>
+                            <constraint firstItem="oD0-zR-CAw" firstAttribute="trailing" secondItem="cOm-YO-3fh" secondAttribute="trailing" id="vxw-uq-cKH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="scrollview测试" id="b2k-t8-vzr"/>
+                    <size key="freeformSize" width="393" height="1400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WO1-dr-zsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2712" y="-901"/>
         </scene>
         <!--Scan Code Screen Controller-->
         <scene sceneID="0Zz-qo-jJa">
@@ -53,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOd-my-Kwv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="4"/>
+            <point key="canvasLocation" x="1891" y="-424"/>
         </scene>
     </scenes>
     <resources>

@@ -14,8 +14,8 @@ if linkage != nil
 end
 
 # flutter path
-# flutter_application_path = '/Users/haoyiwen/Documents/android/android-study/my_flutter'
-flutter_application_path = '/Users/yw.hao/Documents/android/android-study/my_flutter'
+flutter_application_path = '/Users/haoyiwen/Documents/android/android-study/my_flutter'
+# flutter_application_path = '/Users/yw.hao/Documents/android/android-study/my_flutter'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 
 target 'ios-study' do
@@ -33,6 +33,7 @@ target 'ios-study' do
   # Pods for ios-study
   pod 'TestModule', :path => './TestModule'
   pod 'SwiftUIModule', :path => './SwiftUIModule'
+  pod 'lottie-ios'
   
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202

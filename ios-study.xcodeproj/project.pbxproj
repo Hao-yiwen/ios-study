@@ -45,6 +45,9 @@
 		F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */; };
 		F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */; };
 		F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */; };
+		F6A1E8052C1DE7D300E31AEF /* LottieIOSScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1E8042C1DE7D300E31AEF /* LottieIOSScreenController.swift */; };
+		F6A1E8072C1E03BA00E31AEF /* LottieScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1E8062C1E03BA00E31AEF /* LottieScreenController.swift */; };
+		F6A1E80C2C1E05C500E31AEF /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A1E80B2C1E05C500E31AEF /* loading.json */; };
 		F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9185E2C17DFA100B4DC90 /* SecondController.m */; };
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 		F76C1620A21F921391F2CACE /* libPods-ios-study.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662DA8AC4817FACEA9AAD86 /* libPods-ios-study.a */; };
@@ -94,6 +97,9 @@
 		F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComputeBaseScreen.storyboard; sourceTree = "<group>"; };
 		F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SwiftUIStoryboard.storyboard; path = SwiftUIModule/SwiftUIModule/Classes/SwiftUIStoryboard.storyboard; sourceTree = "<group>"; };
 		F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestModuleXib.xib; path = TestModule/TestModule/Assets/TestModuleXib.xib; sourceTree = "<group>"; };
+		F6A1E8042C1DE7D300E31AEF /* LottieIOSScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieIOSScreenController.swift; sourceTree = "<group>"; };
+		F6A1E8062C1E03BA00E31AEF /* LottieScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieScreenController.swift; sourceTree = "<group>"; };
+		F6A1E80B2C1E05C500E31AEF /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		F6A9185C2C17DF8E00B4DC90 /* SecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
 		F6A9185D2C17DFA000B4DC90 /* ios-study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-study-Bridging-Header.h"; sourceTree = "<group>"; };
 		F6A9185E2C17DFA100B4DC90 /* SecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
@@ -197,6 +203,7 @@
 				F6482E602C1CB5CF0063DF23 /* SubviewOverView2Controller.swift */,
 				F6482E622C1CB5E70063DF23 /* View2OverSubViewController.swift */,
 				39D107872C1D5F9200F57D6F /* AVPlayerViewScreenController.swift */,
+				F6A1E8042C1DE7D300E31AEF /* LottieIOSScreenController.swift */,
 			);
 			path = IOSBaseScreen;
 			sourceTree = "<group>";
@@ -213,6 +220,7 @@
 		F62CE0F32C18BA01003D7C5E /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				F6A1E80D2C1E078700E31AEF /* lottie */,
 				F63DE1932C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard */,
 				F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */,
 				39A8A3642C195C2000FA1B1E /* SubXib.storyboard */,
@@ -230,6 +238,7 @@
 			children = (
 				F63DE18C2C1C79D100B1BF2F /* ThirdSDKHomeController.swift */,
 				F63DE18E2C1C7B6700B1BF2F /* ScanCodeScreenController.swift */,
+				F6A1E8062C1E03BA00E31AEF /* LottieScreenController.swift */,
 			);
 			path = thirdSDK;
 			sourceTree = "<group>";
@@ -283,6 +292,14 @@
 				F65E50782C1B683900AB0F72 /* main.jsbundle */,
 			);
 			path = "ios-study";
+			sourceTree = "<group>";
+		};
+		F6A1E80D2C1E078700E31AEF /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				F6A1E80B2C1E05C500E31AEF /* loading.json */,
+			);
+			path = lottie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +370,7 @@
 				F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */,
 				F63DE1942C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard in Resources */,
 				392221762C1C08BF00EB40E9 /* FlutterStoryboard.storyboard in Resources */,
+				F6A1E80C2C1E05C500E31AEF /* loading.json in Resources */,
 				39A8A3672C195C2000FA1B1E /* Xib.storyboard in Resources */,
 				F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */,
 				F646CDA72C1735EA0029E950 /* LaunchScreen.storyboard in Resources */,
@@ -468,7 +486,9 @@
 				F6482E5D2C1CA85D0063DF23 /* ButtonClickDelegate.swift in Sources */,
 				F63DE19C2C1CA54400B1BF2F /* DelegateScreenController.swift in Sources */,
 				F63DE18F2C1C7B6700B1BF2F /* ScanCodeScreenController.swift in Sources */,
+				F6A1E8052C1DE7D300E31AEF /* LottieIOSScreenController.swift in Sources */,
 				F63DE18D2C1C79D100B1BF2F /* ThirdSDKHomeController.swift in Sources */,
+				F6A1E8072C1E03BA00E31AEF /* LottieScreenController.swift in Sources */,
 				F62CE0E92C18A22F003D7C5E /* XibScreenController.swift in Sources */,
 				F6482E612C1CB5CF0063DF23 /* SubviewOverView2Controller.swift in Sources */,
 				39A8A36A2C19621D00FA1B1E /* BaseView.swift in Sources */,
@@ -564,11 +584,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -631,11 +647,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
