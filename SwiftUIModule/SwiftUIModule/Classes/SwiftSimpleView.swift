@@ -6,13 +6,39 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SwiftSimpleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            ListDemo()
+                .navigationTitle("SwiftUI List")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button(action: {
+                            popToHome()
+                        }) {
+                            HStack {
+                                Image(systemName: "chevron.left")
+                                Text("Back")
+                            }
+                        }
+                    }
+                }
+        }
     }
-}
-
-#Preview {
-    SwiftSimpleView()
+    
+    private func popToHome(){
+        // 通过父视图的 navigationController 弹出当前视图
+       if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+          let window = windowScene.windows.first,
+          let rootViewController = window.rootViewController {
+           if let navigationController = rootViewController as? UINavigationController {
+               navigationController.popViewController(animated: true)
+           } else {
+               rootViewController.navigationController?.popViewController(animated: true)
+           }
+       }
+    }
 }
