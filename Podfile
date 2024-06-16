@@ -34,6 +34,7 @@ target 'ios-study' do
   pod 'TestModule', :path => './TestModule'
   pod 'SwiftUIModule', :path => './SwiftUIModule'
   pod 'lottie-ios'
+  pod 'Toast-Swift', '~> 5.1.1'
   
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202

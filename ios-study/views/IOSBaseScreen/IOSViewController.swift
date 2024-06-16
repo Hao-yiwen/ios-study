@@ -11,6 +11,10 @@ class IOSViewController: UIViewController {
     
     @IBOutlet weak var xibSubContainer: UIButton!
     
+    @IBOutlet weak var centerButton: UIButton!
+    
+    @IBOutlet weak var scrollInlineView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +27,22 @@ class IOSViewController: UIViewController {
             label1.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             label1.topAnchor.constraint(equalTo: xibSubContainer.bottomAnchor, constant: 20)
         ])
+        
+        var keyboardDissmissButton = UIButton(type: .system)
+        keyboardDissmissButton.setTitle("键盘隐藏设置", for: .normal)
+        keyboardDissmissButton.translatesAutoresizingMaskIntoConstraints = false
+        keyboardDissmissButton.addTarget(self, action: #selector(keyboardDissmissButtonTapped), for: .touchUpInside)
+        scrollInlineView.addSubview(keyboardDissmissButton)
+        NSLayoutConstraint.activate([
+            keyboardDissmissButton.topAnchor.constraint(equalTo: centerButton.bottomAnchor, constant: 20),
+            keyboardDissmissButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            keyboardDissmissButton.bottomAnchor.constraint(equalTo: scrollInlineView.bottomAnchor, constant: -20)
+        ])
+    }
+    
+    @objc func keyboardDissmissButtonTapped(){
+        let keyboardDissmissController = KeyboardDissmissController()
+        self.navigationController?.pushViewController(keyboardDissmissController, animated: true)
     }
 
 }
