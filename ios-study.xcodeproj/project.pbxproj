@@ -45,6 +45,11 @@
 		F679000E2C1EE6D1007E9774 /* CenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679000D2C1EE6D1007E9774 /* CenterController.swift */; };
 		F67900102C1EF049007E9774 /* KeyboardDissmissController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679000F2C1EF049007E9774 /* KeyboardDissmissController.swift */; };
 		F67900132C1EF45F007E9774 /* ViewBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67900122C1EF45F007E9774 /* ViewBaseController.swift */; };
+		F679001A2C1EF7C7007E9774 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67900192C1EF7C7007E9774 /* WidgetKit.framework */; };
+		F679001C2C1EF7C7007E9774 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F679001B2C1EF7C7007E9774 /* SwiftUI.framework */; };
+		F679001F2C1EF7C7007E9774 /* ios_study_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679001E2C1EF7C7007E9774 /* ios_study_widgetBundle.swift */; };
+		F67900272C1EF7C9007E9774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67900262C1EF7C9007E9774 /* Assets.xcassets */; };
+		F679002C2C1EF7C9007E9774 /* ios-study widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F67900182C1EF7C7007E9774 /* ios-study widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */; };
 		F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */; };
 		F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */; };
@@ -59,6 +64,30 @@
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 		F76C1620A21F921391F2CACE /* libPods-ios-study.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662DA8AC4817FACEA9AAD86 /* libPods-ios-study.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F67900292C1EF7C9007E9774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F646CD8F2C1735E90029E950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F67900172C1EF7C7007E9774;
+			remoteInfo = "ios-study widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F679002B2C1EF7C9007E9774 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F679002C2C1EF7C9007E9774 /* ios-study widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0662DA8AC4817FACEA9AAD86 /* libPods-ios-study.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-study.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +133,12 @@
 		F679000D2C1EE6D1007E9774 /* CenterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterController.swift; sourceTree = "<group>"; };
 		F679000F2C1EF049007E9774 /* KeyboardDissmissController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDissmissController.swift; sourceTree = "<group>"; };
 		F67900122C1EF45F007E9774 /* ViewBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBaseController.swift; sourceTree = "<group>"; };
+		F67900182C1EF7C7007E9774 /* ios-study widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ios-study widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67900192C1EF7C7007E9774 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F679001B2C1EF7C7007E9774 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F679001E2C1EF7C7007E9774 /* ios_study_widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_study_widgetBundle.swift; sourceTree = "<group>"; };
+		F67900262C1EF7C9007E9774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F67900282C1EF7C9007E9774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComputeBaseScreen.storyboard; sourceTree = "<group>"; };
 		F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SwiftUIStoryboard.storyboard; path = SwiftUIModule/SwiftUIModule/Classes/SwiftUIStoryboard.storyboard; sourceTree = "<group>"; };
 		F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestModuleXib.xib; path = TestModule/TestModule/Assets/TestModuleXib.xib; sourceTree = "<group>"; };
@@ -127,6 +162,15 @@
 			files = (
 				F6A1E8102C1EB69000E31AEF /* CoreData.framework in Frameworks */,
 				F76C1620A21F921391F2CACE /* libPods-ios-study.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67900152C1EF7C7007E9774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F679001C2C1EF7C7007E9774 /* SwiftUI.framework in Frameworks */,
+				F679001A2C1EF7C7007E9774 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +216,8 @@
 			children = (
 				F6A1E80F2C1EB69000E31AEF /* CoreData.framework */,
 				0662DA8AC4817FACEA9AAD86 /* libPods-ios-study.a */,
+				F67900192C1EF7C7007E9774 /* WidgetKit.framework */,
+				F679001B2C1EF7C7007E9774 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -270,6 +316,7 @@
 				F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */,
 				F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */,
 				F646CD992C1735E90029E950 /* ios-study */,
+				F679001D2C1EF7C7007E9774 /* ios-study widget */,
 				F646CD982C1735E90029E950 /* Products */,
 				157D38DA63005021815F5CFE /* Pods */,
 				C432FD7372ED179792800F36 /* Frameworks */,
@@ -280,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				F646CD972C1735E90029E950 /* ios-study.app */,
+				F67900182C1EF7C7007E9774 /* ios-study widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,6 +363,16 @@
 			path = baseController;
 			sourceTree = "<group>";
 		};
+		F679001D2C1EF7C7007E9774 /* ios-study widget */ = {
+			isa = PBXGroup;
+			children = (
+				F679001E2C1EF7C7007E9774 /* ios_study_widgetBundle.swift */,
+				F67900262C1EF7C9007E9774 /* Assets.xcassets */,
+				F67900282C1EF7C9007E9774 /* Info.plist */,
+			);
+			path = "ios-study widget";
+			sourceTree = "<group>";
+		};
 		F6A1E80D2C1E078700E31AEF /* lottie */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,15 +405,34 @@
 				72771DD1CD6B7A9403E88344 /* [CP] Embed Pods Frameworks */,
 				CCD2C8F772C508D433FBB902 /* [CP] Copy Pods Resources */,
 				38E2A9A6AAD72D46A3D0A9DA /* [CP-User] Embed Flutter Build my_flutter Script */,
+				F679002B2C1EF7C9007E9774 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F679002A2C1EF7C9007E9774 /* PBXTargetDependency */,
 			);
 			name = "ios-study";
 			productName = "ios-study";
 			productReference = F646CD972C1735E90029E950 /* ios-study.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F67900172C1EF7C7007E9774 /* ios-study widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F679002D2C1EF7C9007E9774 /* Build configuration list for PBXNativeTarget "ios-study widgetExtension" */;
+			buildPhases = (
+				F67900142C1EF7C7007E9774 /* Sources */,
+				F67900152C1EF7C7007E9774 /* Frameworks */,
+				F67900162C1EF7C7007E9774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-study widgetExtension";
+			productName = "ios-study widgetExtension";
+			productReference = F67900182C1EF7C7007E9774 /* ios-study widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -370,6 +447,9 @@
 					F646CD962C1735E90029E950 = {
 						CreatedOnToolsVersion = 15.1;
 						LastSwiftMigration = 1510;
+					};
+					F67900172C1EF7C7007E9774 = {
+						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
@@ -387,6 +467,7 @@
 			projectRoot = "";
 			targets = (
 				F646CD962C1735E90029E950 /* ios-study */,
+				F67900172C1EF7C7007E9774 /* ios-study widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -413,6 +494,14 @@
 				39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */,
 				F65E50792C1B683900AB0F72 /* main.jsbundle in Resources */,
 				9DE53BB87AE45CF7980AC662 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67900162C1EF7C7007E9774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67900272C1EF7C9007E9774 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +626,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F67900142C1EF7C7007E9774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F679001F2C1EF7C7007E9774 /* ios_study_widgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F679002A2C1EF7C9007E9774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F67900172C1EF7C7007E9774 /* ios-study widgetExtension */;
+			targetProxy = F67900292C1EF7C9007E9774 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F646CDA02C1735E90029E950 /* Main.storyboard */ = {
@@ -696,6 +801,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF0DB23283CA55620B0E6FC3 /* Pods-ios-study.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -731,6 +837,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1AF92899C40C1C2EF5FF3EB /* Pods-ios-study.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -761,6 +868,62 @@
 			};
 			name = Release;
 		};
+		F679002E2C1EF7C9007E9774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84F8R9TAQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-study widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ios-study widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study.ios-study-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F679002F2C1EF7C9007E9774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84F8R9TAQN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-study widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ios-study widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study.ios-study-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -778,6 +941,15 @@
 			buildConfigurations = (
 				F646CDAC2C1735EA0029E950 /* Debug */,
 				F646CDAD2C1735EA0029E950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F679002D2C1EF7C9007E9774 /* Build configuration list for PBXNativeTarget "ios-study widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F679002E2C1EF7C9007E9774 /* Debug */,
+				F679002F2C1EF7C9007E9774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
