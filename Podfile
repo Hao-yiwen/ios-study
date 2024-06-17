@@ -33,6 +33,7 @@ target 'ios-study' do
   # Pods for ios-study
   pod 'TestModule', :path => './TestModule'
   pod 'SwiftUIModule', :path => './SwiftUIModule'
+  pod 'LemoFoundation', :path => './LemoFoundation'
   pod 'lottie-ios'
   pod 'Toast-Swift', '~> 5.1.1'
   

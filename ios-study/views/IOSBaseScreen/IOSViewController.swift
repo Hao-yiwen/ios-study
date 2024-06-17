@@ -18,7 +18,7 @@ class IOSViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var label1 = UILabel()
+        let label1 = UILabel()
         label1.text = "通过代码方式添加"
         label1.textColor = .black
         label1.translatesAutoresizingMaskIntoConstraints = false
@@ -28,7 +28,8 @@ class IOSViewController: UIViewController {
             label1.topAnchor.constraint(equalTo: xibSubContainer.bottomAnchor, constant: 20)
         ])
         
-        var keyboardDissmissButton = UIButton(type: .system)
+        // 添加键盘隐藏按钮 -> 键盘隐藏示例页面
+        let keyboardDissmissButton = UIButton(type: .system)
         keyboardDissmissButton.setTitle("键盘隐藏设置", for: .normal)
         keyboardDissmissButton.translatesAutoresizingMaskIntoConstraints = false
         keyboardDissmissButton.addTarget(self, action: #selector(keyboardDissmissButtonTapped), for: .touchUpInside)
@@ -36,13 +37,29 @@ class IOSViewController: UIViewController {
         NSLayoutConstraint.activate([
             keyboardDissmissButton.topAnchor.constraint(equalTo: centerButton.bottomAnchor, constant: 20),
             keyboardDissmissButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            keyboardDissmissButton.bottomAnchor.constraint(equalTo: scrollInlineView.bottomAnchor, constant: -20)
+        ])
+        
+        // 添加notification按钮 -> 通知示例页面
+        let notificationButton = UIButton(type: .system)
+        notificationButton.setTitle("通知示例页面", for: .normal)
+        notificationButton.translatesAutoresizingMaskIntoConstraints = false
+        notificationButton.addTarget(self, action: #selector(notificationButtonTapped), for: .touchUpInside)
+        scrollInlineView.addSubview(notificationButton)
+        NSLayoutConstraint.activate([
+            notificationButton.topAnchor.constraint(equalTo: keyboardDissmissButton.bottomAnchor, constant: 20),
+            notificationButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            notificationButton.bottomAnchor.constraint(equalTo: scrollInlineView.bottomAnchor, constant: -20)
         ])
     }
     
     @objc func keyboardDissmissButtonTapped(){
         let keyboardDissmissController = KeyboardDissmissController()
         self.navigationController?.pushViewController(keyboardDissmissController, animated: true)
+    }
+    
+    @objc func notificationButtonTapped(){
+        let notificationController = NotificationViewController()
+        self.navigationController?.pushViewController(notificationController, animated: true)
     }
 
 }

@@ -54,6 +54,8 @@
 		F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */; };
 		F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */; };
 		F6849AAA2C1EB9A100B3442B /* DataStoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6849AA92C1EB9A100B3442B /* DataStoreUtils.swift */; };
+		F69BFE142C2098E0009C1EE6 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF95A72C2097E6002833F5 /* NotificationViewController.m */; };
+		F69BFE182C20A1A6009C1EE6 /* H5UrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F69BFE172C20A1A6009C1EE6 /* H5UrlHandler.m */; };
 		F6A1E8052C1DE7D300E31AEF /* LottieIOSScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1E8042C1DE7D300E31AEF /* LottieIOSScreenController.swift */; };
 		F6A1E8072C1E03BA00E31AEF /* LottieScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1E8062C1E03BA00E31AEF /* LottieScreenController.swift */; };
 		F6A1E80C2C1E05C500E31AEF /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A1E80B2C1E05C500E31AEF /* loading.json */; };
@@ -63,6 +65,8 @@
 		F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9185E2C17DFA100B4DC90 /* SecondController.m */; };
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 		F6B7986D2C1F557D007253BB /* Info-Profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6B7986C2C1F557D007253BB /* Info-Profile.plist */; };
+		F6EF959D2C208C44002833F5 /* LFNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF959C2C208C44002833F5 /* LFNotificationCenter.m */; };
+		F6EF95A12C208D63002833F5 /* RNUlrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF95A02C208D63002833F5 /* RNUlrlHandler.m */; };
 		F76C1620A21F921391F2CACE /* libPods-ios-study.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662DA8AC4817FACEA9AAD86 /* libPods-ios-study.a */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +149,8 @@
 		F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SwiftUIStoryboard.storyboard; path = SwiftUIModule/SwiftUIModule/Classes/SwiftUIStoryboard.storyboard; sourceTree = "<group>"; };
 		F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestModuleXib.xib; path = TestModule/TestModule/Assets/TestModuleXib.xib; sourceTree = "<group>"; };
 		F6849AA92C1EB9A100B3442B /* DataStoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreUtils.swift; sourceTree = "<group>"; };
+		F69BFE162C20A191009C1EE6 /* H5UrlHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5UrlHandler.h; sourceTree = "<group>"; };
+		F69BFE172C20A1A6009C1EE6 /* H5UrlHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5UrlHandler.m; sourceTree = "<group>"; };
 		F6A1E8042C1DE7D300E31AEF /* LottieIOSScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieIOSScreenController.swift; sourceTree = "<group>"; };
 		F6A1E8062C1E03BA00E31AEF /* LottieScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieScreenController.swift; sourceTree = "<group>"; };
 		F6A1E80B2C1E05C500E31AEF /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
@@ -157,6 +163,13 @@
 		F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationTest.storyboard; sourceTree = "<group>"; };
 		F6B7986C2C1F557D007253BB /* Info-Profile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Profile.plist"; sourceTree = "<group>"; };
 		F6CC0D372C1F33CE007810E6 /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
+		F6EF959B2C208C17002833F5 /* LFNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFNotificationCenter.h; sourceTree = "<group>"; };
+		F6EF959C2C208C44002833F5 /* LFNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFNotificationCenter.m; sourceTree = "<group>"; };
+		F6EF959F2C208D55002833F5 /* RNUrlHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNUrlHandler.h; sourceTree = "<group>"; };
+		F6EF95A02C208D63002833F5 /* RNUlrlHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNUlrlHandler.m; sourceTree = "<group>"; };
+		F6EF95A22C208DA4002833F5 /* LFNatificationBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFNatificationBase.h; sourceTree = "<group>"; };
+		F6EF95A62C2097D1002833F5 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		F6EF95A72C2097E6002833F5 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +224,7 @@
 		39F5967C2C1A98CE00A05634 /* RNScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F6EF959E2C208D3D002833F5 /* bus */,
 				39F5967D2C1A98E300A05634 /* RNScreenController.swift */,
 			);
 			path = RNScreen;
@@ -252,6 +266,8 @@
 		F62CE0E22C189B81003D7C5E /* IOSBaseScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F69BFE152C20A175009C1EE6 /* bus */,
+				F6EF95A52C2097A2002833F5 /* notificationScreen */,
 				F63DE1952C1C9B0D00B1BF2F /* delegateScreen */,
 				F62CE0EF2C18B190003D7C5E /* XibTestModuleContainer.swift */,
 				F62CE0E62C189DE4003D7C5E /* XibScreenContainer.swift */,
@@ -340,8 +356,7 @@
 		F646CD992C1735E90029E950 /* ios-study */ = {
 			isa = PBXGroup;
 			children = (
-				F67900112C1EF44F007E9774 /* baseController */,
-				F6A1E8162C1EB7A000E31AEF /* data */,
+				F6EF95A32C209269002833F5 /* base */,
 				392221792C1C0B7700EB40E9 /* utils */,
 				F62CE0F32C18BA01003D7C5E /* resources */,
 				F62CE0DE2C189839003D7C5E /* views */,
@@ -380,6 +395,15 @@
 			path = "ios-study widget";
 			sourceTree = "<group>";
 		};
+		F69BFE152C20A175009C1EE6 /* bus */ = {
+			isa = PBXGroup;
+			children = (
+				F69BFE162C20A191009C1EE6 /* H5UrlHandler.h */,
+				F69BFE172C20A1A6009C1EE6 /* H5UrlHandler.m */,
+			);
+			path = bus;
+			sourceTree = "<group>";
+		};
 		F6A1E80D2C1E078700E31AEF /* lottie */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +419,52 @@
 				F6849AA92C1EB9A100B3442B /* DataStoreUtils.swift */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		F6EF959A2C208B74002833F5 /* notificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF959B2C208C17002833F5 /* LFNotificationCenter.h */,
+				F6EF959C2C208C44002833F5 /* LFNotificationCenter.m */,
+				F6EF95A22C208DA4002833F5 /* LFNatificationBase.h */,
+			);
+			path = notificationCenter;
+			sourceTree = "<group>";
+		};
+		F6EF959E2C208D3D002833F5 /* bus */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF959F2C208D55002833F5 /* RNUrlHandler.h */,
+				F6EF95A02C208D63002833F5 /* RNUlrlHandler.m */,
+			);
+			path = bus;
+			sourceTree = "<group>";
+		};
+		F6EF95A32C209269002833F5 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF95A42C209332002833F5 /* constrants */,
+				F6EF959A2C208B74002833F5 /* notificationCenter */,
+				F67900112C1EF44F007E9774 /* baseController */,
+				F6A1E8162C1EB7A000E31AEF /* data */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		F6EF95A42C209332002833F5 /* constrants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = constrants;
+			sourceTree = "<group>";
+		};
+		F6EF95A52C2097A2002833F5 /* notificationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F6EF95A62C2097D1002833F5 /* NotificationViewController.h */,
+				F6EF95A72C2097E6002833F5 /* NotificationViewController.m */,
+			);
+			path = notificationScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,6 +672,7 @@
 				F6482E632C1CB5E70063DF23 /* View2OverSubViewController.swift in Sources */,
 				392221782C1C08E200EB40E9 /* FlutterScreenController.swift in Sources */,
 				F62CE0E02C1898D3003D7C5E /* IOSViewController.swift in Sources */,
+				F69BFE182C20A1A6009C1EE6 /* H5UrlHandler.m in Sources */,
 				F6A1E8152C1EB78800E31AEF /* CoreDataStack.swift in Sources */,
 				F646CD9F2C1735E90029E950 /* ViewController.swift in Sources */,
 				F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */,
@@ -609,6 +680,8 @@
 				F63DE19A2C1CA51600B1BF2F /* BottomContainerController.swift in Sources */,
 				F63DE1982C1CA4FB00B1BF2F /* TopContainerController.swift in Sources */,
 				39A8A36C2C1966EC00FA1B1E /* ComputeScreenController.swift in Sources */,
+				F6EF959D2C208C44002833F5 /* LFNotificationCenter.m in Sources */,
+				F6EF95A12C208D63002833F5 /* RNUlrlHandler.m in Sources */,
 				F62CE0F02C18B190003D7C5E /* XibTestModuleContainer.swift in Sources */,
 				F62CE0E72C189DE4003D7C5E /* XibScreenContainer.swift in Sources */,
 				39D107882C1D5F9200F57D6F /* AVPlayerViewScreenController.swift in Sources */,
@@ -625,6 +698,7 @@
 				F62CE0E92C18A22F003D7C5E /* XibScreenController.swift in Sources */,
 				F6482E612C1CB5CF0063DF23 /* SubviewOverView2Controller.swift in Sources */,
 				F646CD9B2C1735E90029E950 /* AppDelegate.swift in Sources */,
+				F69BFE142C2098E0009C1EE6 /* NotificationViewController.m in Sources */,
 				39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */,
 				F6482E5F2C1CAE410063DF23 /* WKWebViewScreenController.swift in Sources */,
 				F65E507B2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift in Sources */,

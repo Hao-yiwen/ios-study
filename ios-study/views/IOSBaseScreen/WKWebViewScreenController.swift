@@ -8,8 +8,9 @@
 import UIKit
 import WebKit
 
-class WKWebViewScreenController:ViewController, WKUIDelegate{
+@objc class WKWebViewScreenController:ViewController, WKUIDelegate{
     var webView:WKWebView!
+    @objc var urlString:String!
     
     override func loadView() {
         let webviewConfig = WKWebViewConfiguration()
@@ -21,10 +22,15 @@ class WKWebViewScreenController:ViewController, WKUIDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "http://www.baidu.com")!
+        guard let urlString = urlString, let url = URL(string: urlString) else {
+            // 如果 urlString 不存在或无法转换为 URL，则使用默认的 URL
+            let defaultURL = URL(string: "http://www.baidu.com")!
+            let myRequest = URLRequest(url: defaultURL)
+            webView.load(myRequest)
+            return
+        }
+        // 使用传递来的 URL
         let myRequest = URLRequest(url: url)
         webView.load(myRequest)
     }
-    
-    
 }
