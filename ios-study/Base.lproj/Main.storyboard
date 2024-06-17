@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lXr-kn-JOT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SwiftUIStoryboard-->
+        <scene sceneID="KxK-Nt-Kbf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SwiftUIStoryboard" id="UXE-eM-GXp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="98n-K5-OYy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h17-8z-d9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1257" y="-1026"/>
+        </scene>
+        <!--RNStoryboard-->
+        <scene sceneID="oR2-2c-lVr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RNStoryboard" id="OG2-ji-kUD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Fj3-Yj-pNk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9s-aq-bwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-893" y="-1020"/>
+        </scene>
+        <!--大首页-->
+        <scene sceneID="OiH-S5-ACV">
+            <objects>
+                <viewController id="Gsu-dW-P1c" customClass="ViewController" customModule="ios_study" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F65-SH-itG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJz-Dz-SsV">
+                                <rect key="frame" x="155" y="223" width="83" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ios基础"/>
+                                <connections>
+                                    <segue destination="Ylp-er-eOi" kind="push" id="SGw-JA-8h1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuV-EQ-ZKF">
+                                <rect key="frame" x="141" y="278" width="111" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="swiftui模块"/>
+                                <connections>
+                                    <segue destination="UXE-eM-GXp" kind="push" id="tOi-wc-JOf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etH-3e-5c0">
+                                <rect key="frame" x="158" y="333" width="77" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="rn模块"/>
+                                <connections>
+                                    <segue destination="OG2-ji-kUD" kind="push" id="7cI-QB-127"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05I-Sy-6yf">
+                                <rect key="frame" x="141" y="388" width="111" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Flutter模块"/>
+                                <connections>
+                                    <segue destination="JJy-cZ-GKV" kind="push" id="Tdn-Pb-wN6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSX-HQ-Ume">
+                                <rect key="frame" x="125" y="443" width="143" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="第三方sdk模块"/>
+                                <connections>
+                                    <segue destination="C7d-jX-7t2" kind="push" id="oIK-t6-tfF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rGU-il-PfN"/>
+                        <color key="backgroundColor" red="0.89411771299999998" green="0.90196079019999997" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="etH-3e-5c0" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="7p6-vC-XWO"/>
+                            <constraint firstItem="05I-Sy-6yf" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="8Bw-eQ-iDR"/>
+                            <constraint firstItem="05I-Sy-6yf" firstAttribute="top" secondItem="etH-3e-5c0" secondAttribute="bottom" constant="20" id="MYq-SS-PNw"/>
+                            <constraint firstItem="kJz-Dz-SsV" firstAttribute="top" secondItem="rGU-il-PfN" secondAttribute="top" constant="120" id="Nd0-WS-GTE"/>
+                            <constraint firstItem="MSX-HQ-Ume" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="Nky-5f-ox0"/>
+                            <constraint firstItem="RuV-EQ-ZKF" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="Uyp-qN-cvM"/>
+                            <constraint firstItem="MSX-HQ-Ume" firstAttribute="top" secondItem="05I-Sy-6yf" secondAttribute="bottom" constant="20" id="YOf-40-0LT"/>
+                            <constraint firstItem="kJz-Dz-SsV" firstAttribute="centerX" secondItem="F65-SH-itG" secondAttribute="centerX" id="fNn-UC-6Jl"/>
+                            <constraint firstItem="RuV-EQ-ZKF" firstAttribute="top" secondItem="kJz-Dz-SsV" secondAttribute="bottom" constant="20" id="r2j-fC-8p8"/>
+                            <constraint firstItem="etH-3e-5c0" firstAttribute="top" secondItem="RuV-EQ-ZKF" secondAttribute="bottom" constant="20" id="scm-YY-bX4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="大首页" id="iIF-Ev-H0p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcz-Jb-vrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1066" y="-600"/>
+        </scene>
+        <!--ThirdSDKStoryboard-->
+        <scene sceneID="22P-7I-mvx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThirdSDKStoryboard" id="C7d-jX-7t2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="It5-3J-AIg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2n-ye-zRL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-544" y="-518"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5vj-gU-J3p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lXr-kn-JOT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kto-RA-MdL">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gsu-dW-P1c" kind="relationship" relationship="rootViewController" id="biJ-Ej-ATy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3Y-bg-EhL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1784" y="-600"/>
+        </scene>
+        <!--SubXib-->
+        <scene sceneID="TjJ-WV-Fmi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SubXib" id="Erx-wV-zs1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FIj-X8-yB5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FcL-IW-FsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="83"/>
+        </scene>
+        <!--ComputeBaseScreen-->
+        <scene sceneID="vzH-Eg-aam">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComputeBaseScreen" id="Pak-HU-q5V" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bS1-Ef-mfj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvc-lx-jrh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="-1360"/>
+        </scene>
+        <!--FlutterStoryboard-->
+        <scene sceneID="szL-rQ-Hqq">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FlutterStoryboard" storyboardName="FlutterStoryboard" id="JJy-cZ-GKV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="p0Z-jO-12l"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kN-Tb-VsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506" y="-830"/>
+        </scene>
+        <!--IOSBaseStoryboard-->
+        <scene sceneID="OCV-dL-brO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="IOSBaseStoryboard" id="Ylp-er-eOi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="g1S-5v-HVb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrM-xO-oT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="-606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
