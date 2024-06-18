@@ -13,6 +13,9 @@
 
 @interface RNUrlHandler : NSObject <LFNatificationBase>
 - (void) handleNotificationURL:(NSNotification*)notification;
+
+// 解析url 返回developurl和modulename
+- (NSDictionary*)parseUrl:(NSString*)url;
 @end
 
 

@@ -8,17 +8,18 @@
 import UIKit
 import React
 
-class RNScreenController: UIViewController, UIGestureRecognizerDelegate{
+@objc class RNScreenController: UIViewController, UIGestureRecognizerDelegate{
     var popRecognizer: InteractivePopRecognizer?
+    @objc var developUrl: String? = "http://127.0.0.1:8081/index.bundle?platform=ios"
+    @objc var moduleName: String = "rnDemo0742"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         #if DEBUG
             let jsCodeLocation: URL
-            if let debugURL = URL(string: "http://192.168.1.7:8081/index.bundle?platform=ios") {
+        if let debugURL = URL(string: developUrl ?? "") {
 //            if let debugURL = URL(string: "http://127.0.0.1:8081/index.bundle?platform=ios") {
-//                jsCodeLocation = debugURL
-                jsCodeLocation = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
+                jsCodeLocation = debugURL
             } else {
                 jsCodeLocation = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
             }
@@ -34,7 +35,7 @@ class RNScreenController: UIViewController, UIGestureRecognizerDelegate{
         
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation,
-            moduleName: "rnDemo0742",
+            moduleName: moduleName,
             initialProperties: mockData as? [AnyHashable: Any],
             launchOptions: nil
         )

@@ -22,6 +22,7 @@ class ViewController: ViewBaseController {
         textForm.placeholder = "请输入跳转链接"
         textForm.translatesAutoresizingMaskIntoConstraints = false
         textForm.borderStyle = .roundedRect
+        textForm.widthAnchor.constraint(equalToConstant: 200).isActive = true
         // 从键值对中获取值
         let value = UserDefaults.standard.string(forKey: "qrCode")
         textForm.text = value

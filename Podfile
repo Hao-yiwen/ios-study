@@ -4,7 +4,7 @@ require Pod::Executable.execute_command('node', ['-p',
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-platform :ios, min_ios_version_supported
+platform :ios, '16.0'
 prepare_react_native_project!
 
 linkage = ENV['USE_FRAMEWORKS']
@@ -14,8 +14,8 @@ if linkage != nil
 end
 
 # flutter path
-flutter_application_path = '/Users/haoyiwen/Documents/android/android-study/my_flutter'
-# flutter_application_path = '/Users/yw.hao/Documents/android/android-study/my_flutter'
+# flutter_application_path = '/Users/haoyiwen/Documents/android/android-study/my_flutter'
+flutter_application_path = '/Users/yw.hao/Documents/android/android-study/my_flutter'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 
 target 'ios-study' do
