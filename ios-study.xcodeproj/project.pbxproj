@@ -50,6 +50,7 @@
 		F679001F2C1EF7C7007E9774 /* ios_study_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679001E2C1EF7C7007E9774 /* ios_study_widgetBundle.swift */; };
 		F67900272C1EF7C9007E9774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67900262C1EF7C9007E9774 /* Assets.xcassets */; };
 		F679002C2C1EF7C9007E9774 /* ios-study widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F67900182C1EF7C7007E9774 /* ios-study widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F67BC1242C21F2C0009BCCB6 /* QrCodeHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F67BC1232C21F2C0009BCCB6 /* QrCodeHistoryController.m */; };
 		F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */; };
 		F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */; };
 		F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */; };
@@ -145,6 +146,9 @@
 		F679001E2C1EF7C7007E9774 /* ios_study_widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_study_widgetBundle.swift; sourceTree = "<group>"; };
 		F67900262C1EF7C9007E9774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F67900282C1EF7C9007E9774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F67BC1212C21EA53009BCCB6 /* libSVGKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSVGKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67BC1232C21F2C0009BCCB6 /* QrCodeHistoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QrCodeHistoryController.m; sourceTree = "<group>"; };
+		F67BC1252C21F2CF009BCCB6 /* QrCodeHistoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QrCodeHistoryController.h; sourceTree = "<group>"; };
 		F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComputeBaseScreen.storyboard; sourceTree = "<group>"; };
 		F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SwiftUIStoryboard.storyboard; path = SwiftUIModule/SwiftUIModule/Classes/SwiftUIStoryboard.storyboard; sourceTree = "<group>"; };
 		F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestModuleXib.xib; path = TestModule/TestModule/Assets/TestModuleXib.xib; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 		C432FD7372ED179792800F36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F67BC1212C21EA53009BCCB6 /* libSVGKit.a */,
 				F6A1E80F2C1EB69000E31AEF /* CoreData.framework */,
 				0662DA8AC4817FACEA9AAD86 /* libPods-ios-study.a */,
 				F67900192C1EF7C7007E9774 /* WidgetKit.framework */,
@@ -281,6 +286,8 @@
 				F67900032C1EBDE8007E9774 /* CoreDataScreenController.swift */,
 				F679000D2C1EE6D1007E9774 /* CenterController.swift */,
 				F679000F2C1EF049007E9774 /* KeyboardDissmissController.swift */,
+				F67BC1232C21F2C0009BCCB6 /* QrCodeHistoryController.m */,
+				F67BC1252C21F2CF009BCCB6 /* QrCodeHistoryController.h */,
 			);
 			path = IOSBaseScreen;
 			sourceTree = "<group>";
@@ -671,6 +678,7 @@
 			files = (
 				F6482E632C1CB5E70063DF23 /* View2OverSubViewController.swift in Sources */,
 				392221782C1C08E200EB40E9 /* FlutterScreenController.swift in Sources */,
+				F67BC1242C21F2C0009BCCB6 /* QrCodeHistoryController.m in Sources */,
 				F62CE0E02C1898D3003D7C5E /* IOSViewController.swift in Sources */,
 				F69BFE182C20A1A6009C1EE6 /* H5UrlHandler.m in Sources */,
 				F6A1E8152C1EB78800E31AEF /* CoreDataStack.swift in Sources */,
@@ -807,11 +815,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -874,11 +878,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1082,11 +1082,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";

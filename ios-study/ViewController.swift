@@ -68,6 +68,8 @@ class ViewController: ViewBaseController {
         if textForm.text == "" {
             return
         }
+        // 保存键值对
+        UserDefaults.standard.set(textForm.text, forKey: "qrCode")
         NotificationCenter.default.post(name: NSNotification.Name("URLHANDLE"), object: nil, userInfo: ["url":textForm.text!])
     }
     
