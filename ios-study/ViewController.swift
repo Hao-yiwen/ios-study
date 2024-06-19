@@ -15,6 +15,10 @@ class ViewController: ViewBaseController {
         super.viewDidLoad()
         addTextForm()
         addScanButton()
+        
+        //打印.a库中的日志
+        let cppWrapper = MyCppWrapper()
+        cppWrapper.printMessage()
     }
     
     func addTextForm(){

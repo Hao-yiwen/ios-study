@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "QrCodeHistoryController.h"
 
 @implementation QrCodeHistoryController
 

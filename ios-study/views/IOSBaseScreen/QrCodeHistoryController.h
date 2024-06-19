@@ -7,6 +7,7 @@
 
 #ifndef QrCodeHistoryController_h
 #define QrCodeHistoryController_h
+#import <UIKit/UIKit.h>
 
 @interface QrCodeHistoryController : UIViewController
 
