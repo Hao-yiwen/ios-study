@@ -10,6 +10,7 @@ import UIKit
 class ViewController: ViewBaseController {
     var stackView: UIStackView!
     var textForm: UITextField!
+    var scanButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,7 @@ class ViewController: ViewBaseController {
     
     func addScanButton(){
         // 添加一个扫码按钮
-        let scanButton = UIButton(type: .system)
+        scanButton = UIButton(type: .system)
         scanButton.setTitle("点击扫码", for: .normal)
         scanButton.translatesAutoresizingMaskIntoConstraints = false
         scanButton.addTarget(self, action: #selector(scanAction), for: .touchUpInside)
@@ -75,7 +76,7 @@ class ViewController: ViewBaseController {
         view.addSubview(scanHistoryButton)
         NSLayoutConstraint.activate([
             scanHistoryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            scanHistoryButton.topAnchor.constraint(equalTo: stackView.bottomAnchor,constant: 20)
+            scanHistoryButton.topAnchor.constraint(equalTo: scanButton.bottomAnchor,constant: 20)
         ])
     }
 
@@ -99,7 +100,7 @@ class ViewController: ViewBaseController {
     }
     
     @objc func scanHistoryAction() {
-        
+        self.navigationController?.pushViewController(QrCodeHistoryController(), animated: true)
     }
     
     deinit{

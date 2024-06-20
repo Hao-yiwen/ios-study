@@ -5,3 +5,4 @@
 #import "LFNotificationCenter.h"
 #import "NotificationViewController.h"
 #import "MyCppWrapper.h"
+#import "QrCodeHistoryController.h"

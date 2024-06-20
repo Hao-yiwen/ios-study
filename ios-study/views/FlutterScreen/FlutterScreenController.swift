@@ -9,6 +9,7 @@ import UIKit
 import Flutter
 import Toast_Swift
 
+@objc
 class FlutterScreenController: UIViewController, UIGestureRecognizerDelegate{
     var popRecognizer: InteractivePopRecognizer?
     

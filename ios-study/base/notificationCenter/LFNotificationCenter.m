@@ -13,6 +13,8 @@ static RNUrlHandler *urlHandler = nil;
 
 static H5UrlHandler *h5UrlHandler = nil;
 
+static AppUrlHandler *appUrlHandler = nil;
+
 + (void)registerNotificationObservers {
     if (!urlHandler) {
         urlHandler = [[RNUrlHandler alloc] init];
@@ -20,8 +22,12 @@ static H5UrlHandler *h5UrlHandler = nil;
     if (!h5UrlHandler) {
         h5UrlHandler = [[H5UrlHandler alloc] init];
     }
+    if(!appUrlHandler){
+        appUrlHandler = [[AppUrlHandler alloc] init];
+    }
     [urlHandler registerUrlHandler];
     [h5UrlHandler registerUrlHandler];
+    [appUrlHandler registerUrlHandler];
 }
 
 + (void)unregisterNotificationObservers {
@@ -30,6 +36,9 @@ static H5UrlHandler *h5UrlHandler = nil;
     }
     if (h5UrlHandler) {
         [h5UrlHandler unregisterUrlHandler];
+    }
+    if(appUrlHandler){
+        [appUrlHandler unregisterUrlHandler];
     }
 }
 

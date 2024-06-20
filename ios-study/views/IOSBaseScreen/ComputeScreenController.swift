@@ -7,6 +7,7 @@
 
 import UIKit
 
+@objc
 class ComputeScreenController:ViewController{
     @IBOutlet weak var number1: UITextField!
     @IBOutlet weak var number2: UITextField!

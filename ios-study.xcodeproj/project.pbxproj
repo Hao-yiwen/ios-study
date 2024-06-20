@@ -52,7 +52,6 @@
 		F679002C2C1EF7C9007E9774 /* ios-study widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F67900182C1EF7C7007E9774 /* ios-study widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F67BC1242C21F2C0009BCCB6 /* QrCodeHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F67BC1232C21F2C0009BCCB6 /* QrCodeHistoryController.m */; };
 		F67BC1452C233BF2009BCCB6 /* MyCppWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F67BC1442C233BF2009BCCB6 /* MyCppWrapper.mm */; };
-		F67BC1472C233FC8009BCCB6 /* libMyCppProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F67BC1462C233FC8009BCCB6 /* libMyCppProject.a */; };
 		F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */; };
 		F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */; };
 		F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */; };
@@ -68,6 +67,12 @@
 		F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9185E2C17DFA100B4DC90 /* SecondController.m */; };
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 		F6B7986D2C1F557D007253BB /* Info-Profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6B7986C2C1F557D007253BB /* Info-Profile.plist */; };
+		F6DF2D992C2478E7005038EC /* libMyCppProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DF2D982C2478E7005038EC /* libMyCppProject.a */; };
+		F6DF2D9B2C247BAF005038EC /* ViewControllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */; };
+		F6DF2DA02C247C5E005038EC /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2D9F2C247C5E005038EC /* ConfigManager.swift */; };
+		F6DF2DA32C247DC9005038EC /* AppUrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2DA22C247DC9005038EC /* AppUrlHandler.m */; };
+		F6DF2DA62C249AF2005038EC /* QrCodeHistoryController+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2DA52C249AF2005038EC /* QrCodeHistoryController+TableView.m */; };
+		F6DF2DAA2C24A0C6005038EC /* CustomTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2DA92C24A0C6005038EC /* CustomTableCellView.m */; };
 		F6EF959D2C208C44002833F5 /* LFNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF959C2C208C44002833F5 /* LFNotificationCenter.m */; };
 		F6EF95A12C208D63002833F5 /* RNUlrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF95A02C208D63002833F5 /* RNUlrlHandler.m */; };
 		F76C1620A21F921391F2CACE /* libPods-ios-study.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662DA8AC4817FACEA9AAD86 /* libPods-ios-study.a */; };
@@ -154,7 +159,6 @@
 		F67BC1412C233941009BCCB6 /* MyCppClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyCppClass.hpp; sourceTree = "<group>"; };
 		F67BC1432C233BCE009BCCB6 /* MyCppWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCppWrapper.h; sourceTree = "<group>"; };
 		F67BC1442C233BF2009BCCB6 /* MyCppWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCppWrapper.mm; sourceTree = "<group>"; };
-		F67BC1462C233FC8009BCCB6 /* libMyCppProject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMyCppProject.a; sourceTree = "<group>"; };
 		F67F146A2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComputeBaseScreen.storyboard; sourceTree = "<group>"; };
 		F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SwiftUIStoryboard.storyboard; path = SwiftUIModule/SwiftUIModule/Classes/SwiftUIStoryboard.storyboard; sourceTree = "<group>"; };
 		F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestModuleXib.xib; path = TestModule/TestModule/Assets/TestModuleXib.xib; sourceTree = "<group>"; };
@@ -173,6 +177,15 @@
 		F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationTest.storyboard; sourceTree = "<group>"; };
 		F6B7986C2C1F557D007253BB /* Info-Profile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Profile.plist"; sourceTree = "<group>"; };
 		F6CC0D372C1F33CE007810E6 /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
+		F6DF2D982C2478E7005038EC /* libMyCppProject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMyCppProject.a; sourceTree = "<group>"; };
+		F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ViewControllerConfig.json; sourceTree = "<group>"; };
+		F6DF2D9F2C247C5E005038EC /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		F6DF2DA12C247DB7005038EC /* AppUrlHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppUrlHandler.h; sourceTree = "<group>"; };
+		F6DF2DA22C247DC9005038EC /* AppUrlHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppUrlHandler.m; sourceTree = "<group>"; };
+		F6DF2DA42C249AE6005038EC /* QrCodeHistoryController+TableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QrCodeHistoryController+TableView.h"; sourceTree = "<group>"; };
+		F6DF2DA52C249AF2005038EC /* QrCodeHistoryController+TableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "QrCodeHistoryController+TableView.m"; sourceTree = "<group>"; };
+		F6DF2DA82C24A0AF005038EC /* CustomTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableCellView.h; sourceTree = "<group>"; };
+		F6DF2DA92C24A0C6005038EC /* CustomTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableCellView.m; sourceTree = "<group>"; };
 		F6EF959B2C208C17002833F5 /* LFNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFNotificationCenter.h; sourceTree = "<group>"; };
 		F6EF959C2C208C44002833F5 /* LFNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFNotificationCenter.m; sourceTree = "<group>"; };
 		F6EF959F2C208D55002833F5 /* RNUrlHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNUrlHandler.h; sourceTree = "<group>"; };
@@ -187,7 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F67BC1472C233FC8009BCCB6 /* libMyCppProject.a in Frameworks */,
+				F6DF2D992C2478E7005038EC /* libMyCppProject.a in Frameworks */,
 				F6A1E8102C1EB69000E31AEF /* CoreData.framework in Frameworks */,
 				F76C1620A21F921391F2CACE /* libPods-ios-study.a in Frameworks */,
 			);
@@ -278,6 +291,7 @@
 		F62CE0E22C189B81003D7C5E /* IOSBaseScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F6DF2DA72C249F6D005038EC /* qrcodeHistory */,
 				F69BFE152C20A175009C1EE6 /* bus */,
 				F6EF95A52C2097A2002833F5 /* notificationScreen */,
 				F63DE1952C1C9B0D00B1BF2F /* delegateScreen */,
@@ -293,8 +307,6 @@
 				F67900032C1EBDE8007E9774 /* CoreDataScreenController.swift */,
 				F679000D2C1EE6D1007E9774 /* CenterController.swift */,
 				F679000F2C1EF049007E9774 /* KeyboardDissmissController.swift */,
-				F67BC1232C21F2C0009BCCB6 /* QrCodeHistoryController.m */,
-				F67BC1252C21F2CF009BCCB6 /* QrCodeHistoryController.h */,
 			);
 			path = IOSBaseScreen;
 			sourceTree = "<group>";
@@ -378,6 +390,7 @@
 				F646CD9A2C1735E90029E950 /* AppDelegate.swift */,
 				F646CD9C2C1735E90029E950 /* SceneDelegate.swift */,
 				F646CD9E2C1735E90029E950 /* ViewController.swift */,
+				F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */,
 				F646CDA02C1735E90029E950 /* Main.storyboard */,
 				F646CDA32C1735EA0029E950 /* Assets.xcassets */,
 				F646CDA52C1735EA0029E950 /* LaunchScreen.storyboard */,
@@ -421,7 +434,7 @@
 		F67BC1422C233B96009BCCB6 /* MyCppProject */ = {
 			isa = PBXGroup;
 			children = (
-				F67BC1462C233FC8009BCCB6 /* libMyCppProject.a */,
+				F6DF2D982C2478E7005038EC /* libMyCppProject.a */,
 				F67BC1412C233941009BCCB6 /* MyCppClass.hpp */,
 				F67BC1432C233BCE009BCCB6 /* MyCppWrapper.h */,
 				F67BC1442C233BF2009BCCB6 /* MyCppWrapper.mm */,
@@ -434,6 +447,8 @@
 			children = (
 				F69BFE162C20A191009C1EE6 /* H5UrlHandler.h */,
 				F69BFE172C20A1A6009C1EE6 /* H5UrlHandler.m */,
+				F6DF2DA12C247DB7005038EC /* AppUrlHandler.h */,
+				F6DF2DA22C247DC9005038EC /* AppUrlHandler.m */,
 			);
 			path = bus;
 			sourceTree = "<group>";
@@ -453,6 +468,27 @@
 				F6849AA92C1EB9A100B3442B /* DataStoreUtils.swift */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		F6DF2D9C2C247BD6005038EC /* appUrlConfig */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF2D9F2C247C5E005038EC /* ConfigManager.swift */,
+			);
+			path = appUrlConfig;
+			sourceTree = "<group>";
+		};
+		F6DF2DA72C249F6D005038EC /* qrcodeHistory */ = {
+			isa = PBXGroup;
+			children = (
+				F67BC1232C21F2C0009BCCB6 /* QrCodeHistoryController.m */,
+				F67BC1252C21F2CF009BCCB6 /* QrCodeHistoryController.h */,
+				F6DF2DA42C249AE6005038EC /* QrCodeHistoryController+TableView.h */,
+				F6DF2DA52C249AF2005038EC /* QrCodeHistoryController+TableView.m */,
+				F6DF2DA82C24A0AF005038EC /* CustomTableCellView.h */,
+				F6DF2DA92C24A0C6005038EC /* CustomTableCellView.m */,
+			);
+			path = qrcodeHistory;
 			sourceTree = "<group>";
 		};
 		F6EF959A2C208B74002833F5 /* notificationCenter */ = {
@@ -477,6 +513,7 @@
 		F6EF95A32C209269002833F5 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				F6DF2D9C2C247BD6005038EC /* appUrlConfig */,
 				F6EF95A42C209332002833F5 /* constrants */,
 				F6EF959A2C208B74002833F5 /* notificationCenter */,
 				F67900112C1EF44F007E9774 /* baseController */,
@@ -604,6 +641,7 @@
 				F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */,
 				39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */,
 				F65E50792C1B683900AB0F72 /* main.jsbundle in Resources */,
+				F6DF2D9B2C247BAF005038EC /* ViewControllerConfig.json in Resources */,
 				F6B7986D2C1F557D007253BB /* Info-Profile.plist in Resources */,
 				9DE53BB87AE45CF7980AC662 /* PrivacyInfo.xcprivacy in Resources */,
 			);
@@ -703,6 +741,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DF2DA62C249AF2005038EC /* QrCodeHistoryController+TableView.m in Sources */,
 				F6482E632C1CB5E70063DF23 /* View2OverSubViewController.swift in Sources */,
 				392221782C1C08E200EB40E9 /* FlutterScreenController.swift in Sources */,
 				F67BC1242C21F2C0009BCCB6 /* QrCodeHistoryController.m in Sources */,
@@ -726,6 +765,7 @@
 				F63DE19C2C1CA54400B1BF2F /* DelegateScreenController.swift in Sources */,
 				F679000E2C1EE6D1007E9774 /* CenterController.swift in Sources */,
 				F63DE18F2C1C7B6700B1BF2F /* ScanCodeScreenController.swift in Sources */,
+				F6DF2DA02C247C5E005038EC /* ConfigManager.swift in Sources */,
 				F6A1E8052C1DE7D300E31AEF /* LottieIOSScreenController.swift in Sources */,
 				F63DE18D2C1C79D100B1BF2F /* ThirdSDKHomeController.swift in Sources */,
 				F6A1E8072C1E03BA00E31AEF /* LottieScreenController.swift in Sources */,
@@ -734,12 +774,14 @@
 				F6482E612C1CB5CF0063DF23 /* SubviewOverView2Controller.swift in Sources */,
 				F646CD9B2C1735E90029E950 /* AppDelegate.swift in Sources */,
 				F69BFE142C2098E0009C1EE6 /* NotificationViewController.m in Sources */,
+				F6DF2DA32C247DC9005038EC /* AppUrlHandler.m in Sources */,
 				39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */,
 				F6482E5F2C1CAE410063DF23 /* WKWebViewScreenController.swift in Sources */,
 				F67BC1452C233BF2009BCCB6 /* MyCppWrapper.mm in Sources */,
 				F65E507B2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift in Sources */,
 				F63DE1912C1C8C3100B1BF2F /* BaseController.swift in Sources */,
 				F67900102C1EF049007E9774 /* KeyboardDissmissController.swift in Sources */,
+				F6DF2DAA2C24A0C6005038EC /* CustomTableCellView.m in Sources */,
 				F646CD9D2C1735E90029E950 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
