@@ -7,6 +7,7 @@
 
 import UIKit
 
+@objc
 class LottieIOSScreenController:ViewController{
     override func viewDidLoad() {
         super.viewDidLoad()

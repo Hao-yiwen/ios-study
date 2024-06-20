@@ -7,6 +7,7 @@
 
 import UIKit
 
+@objc
 class view2OverSubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()

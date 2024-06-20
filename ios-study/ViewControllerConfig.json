@@ -1,0 +1,9 @@
+{
+    "homePage": "ios_study.ViewController",
+    "flutterPage": "ios_study.FlutterScreenController",
+    "ComputePage": "ios_study.ComputeScreenController",
+    "view2page": "ios_study.View2OverSubViewController",
+    "AVPlayerPage": "ios_study.AVPlayerViewScreenController",
+    "LottiePage": "ios_study.LottieIOSScreenController",
+    "KeyboardDissmissPage": "ios_study.KeyboardDissmissController"
+}

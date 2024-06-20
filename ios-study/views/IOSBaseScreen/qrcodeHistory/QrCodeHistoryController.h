@@ -11,6 +11,8 @@
 
 @interface QrCodeHistoryController : UIViewController
 
+@property UITableView *tableView;
+
 @end
 
 #endif /* QrCodeHistoryController_h */

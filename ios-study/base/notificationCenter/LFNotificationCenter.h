@@ -12,6 +12,7 @@
 
 #import "RNUrlHandler.h"
 #import "H5UrlHandler.h"
+#import "AppUrlHandler.h"
 
 @interface LFNotificationCenter : NSObject
 
