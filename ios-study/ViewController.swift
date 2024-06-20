@@ -15,7 +15,11 @@ class ViewController: ViewBaseController {
         super.viewDidLoad()
         addTextForm()
         addScanButton()
-        
+        printMessageFromLibs()
+        addScanHistoryButton()
+    }
+    
+    func printMessageFromLibs(){
         //打印.a库中的日志
         let cppWrapper = MyCppWrapper()
         cppWrapper.printMessage()
@@ -63,6 +67,19 @@ class ViewController: ViewBaseController {
         ])
     }
     
+    func addScanHistoryButton(){
+        let scanHistoryButton = UIButton(type: .system)
+        scanHistoryButton.setTitle("扫码历史", for: .normal)
+        scanHistoryButton.translatesAutoresizingMaskIntoConstraints = false
+        scanHistoryButton.addTarget(self, action: #selector(scanHistoryAction), for: .touchUpInside)
+        view.addSubview(scanHistoryButton)
+        NSLayoutConstraint.activate([
+            scanHistoryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            scanHistoryButton.topAnchor.constraint(equalTo: stackView.bottomAnchor,constant: 20)
+        ])
+    }
+
+    
     @objc func scanAction() {
         let scanController = ScanCodeScreenController()
         self.navigationController?.pushViewController(scanController, animated: true)
@@ -79,6 +96,10 @@ class ViewController: ViewBaseController {
     
     @objc func setTextForm() {
         textForm.text = UserDefaults.standard.string(forKey: "qrCode")
+    }
+    
+    @objc func scanHistoryAction() {
+        
     }
     
     deinit{
