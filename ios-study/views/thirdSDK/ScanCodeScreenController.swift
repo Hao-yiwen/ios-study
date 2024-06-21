@@ -165,7 +165,9 @@ class ScanCodeScreenController: BaseController {
             let qrcode = Qrcode(context: CoreDataStack.shared.viewContext)
             qrcode.qrcode = code
             qrcode.describe = self.getNowString()
-            DataStoreUtils.saveQrCode(qrcode: qrcode)
+            if(!DataStoreUtils.isHaveQrcode(qrCode: qrcode)){
+                DataStoreUtils.saveQrCode(qrcode: qrcode)
+            }
             NotificationCenter.default.post(name: NSNotification.Name("qrcode"), object: nil)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                 self.navigationController?.popViewController(animated: true)
