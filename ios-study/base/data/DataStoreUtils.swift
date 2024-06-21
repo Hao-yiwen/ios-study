@@ -27,6 +27,9 @@ class DataStoreUtils: NSObject{
     }
     
     static func saveQrCode(qrcode: Qrcode){
+        if(DataStoreUtils.isHaveQrcode(qrCode: qrcode)){
+            return
+        }
         let context = CoreDataStack.shared.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Qrcode", in: context)!
         let newObject = NSManagedObject(entity: entity, insertInto: context)
@@ -36,7 +39,24 @@ class DataStoreUtils: NSObject{
         CoreDataStack.shared.saveContext()
     }
     
+    @objc static func deleteQrcode(qrcode: Qrcode){
+        let context = CoreDataStack.shared.viewContext
+        context.delete(qrcode)
+        CoreDataStack.shared.saveContext()
+    }
+    
     @objc static func fetchAllQrcode() -> [Qrcode] {
         return CoreDataStack.shared.fetch(Qrcode.self)
+    }
+    
+    static func isHaveQrcode(qrCode: Qrcode) -> Bool {
+        let predicate = NSPredicate(format: "qrcode == %@", qrCode.qrcode!)
+        
+        let qrcodes = CoreDataStack.shared.fetch(Qrcode.self, predicate: predicate)
+        if qrcodes.count > 0 {
+            return true
+        } else {
+            return false
+        }
     }
 }

@@ -95,7 +95,9 @@ class ViewController: ViewBaseController {
         let qrcode = Qrcode(context: CoreDataStack.shared.viewContext)
         qrcode.qrcode = textForm.text!
         qrcode.describe = getNowString()
-        DataStoreUtils.saveQrCode(qrcode: qrcode)
+        if(DataStoreUtils.isHaveQrcode(qrCode: qrcode) == false){
+            DataStoreUtils.saveQrCode(qrcode: qrcode)
+        }
         NotificationCenter.default.post(name: NSNotification.Name("URLHANDLE"), object: nil, userInfo: ["url":textForm.text!])
     }
     

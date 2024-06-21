@@ -36,9 +36,11 @@
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     if (indexPath) {
         // 在数据源中删除该行的数据
-        NSLog(@"删除按钮点击，行号：%ld", (long)indexPath.row);
-        // 然后在表视图中删除该行
+        NSLog(@"删除按钮点击，行号：%ld url: %@", (long)indexPath.row, self.qrcodes[indexPath.row].qrcode);
         
+        // 然后在表视图中删除该行
+        [DataStoreUtils deleteQrcodeWithQrcode:self.qrcodes[indexPath.row]];
+        [self viewDidLoad];
     }
 }
 
