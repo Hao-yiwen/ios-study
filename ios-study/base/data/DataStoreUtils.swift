@@ -27,7 +27,7 @@ class DataStoreUtils: NSObject{
     }
     
     static func saveQrCode(qrcode: Qrcode){
-        if(DataStoreUtils.isHaveQrcode(qrCode: qrcode)){
+        if(DataStoreUtils.isHaveQrcode(qrCode: qrcode.qrcode ?? "")){
             return
         }
         let context = CoreDataStack.shared.viewContext
@@ -49,8 +49,8 @@ class DataStoreUtils: NSObject{
         return CoreDataStack.shared.fetch(Qrcode.self)
     }
     
-    static func isHaveQrcode(qrCode: Qrcode) -> Bool {
-        let predicate = NSPredicate(format: "qrcode == %@", qrCode.qrcode!)
+    static func isHaveQrcode(qrCode: String) -> Bool {
+        let predicate = NSPredicate(format: "qrcode == %@", qrCode)
         
         let qrcodes = CoreDataStack.shared.fetch(Qrcode.self, predicate: predicate)
         if qrcodes.count > 0 {

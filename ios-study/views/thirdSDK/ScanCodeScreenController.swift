@@ -161,11 +161,11 @@ class ScanCodeScreenController: ViewBaseController {
             let alert = UIAlertController(title: "扫码结果", message: code, preferredStyle: .alert)
             // 将扫码结果存储到键值对
             UserDefaults.standard.set(code, forKey: "qrCode")
-            // 将扫码结果存储到codedata
-            let qrcode = Qrcode(context: CoreDataStack.shared.viewContext)
-            qrcode.qrcode = code
-            qrcode.describe = self.getNowString()
-            if(!DataStoreUtils.isHaveQrcode(qrCode: qrcode)){
+            if(!DataStoreUtils.isHaveQrcode(qrCode: code)){
+                // 将扫码结果存储到codedata
+                let qrcode = Qrcode(context: CoreDataStack.shared.viewContext)
+                qrcode.qrcode = code
+                qrcode.describe = self.getNowString()
                 DataStoreUtils.saveQrCode(qrcode: qrcode)
             }
             NotificationCenter.default.post(name: NSNotification.Name("qrcode"), object: nil)
