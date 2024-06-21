@@ -8,7 +8,7 @@
 import UIKit
 
 @objc
-class ComputeScreenController:ViewController{
+class ComputeScreenController:ViewBaseController{
     @IBOutlet weak var number1: UITextField!
     @IBOutlet weak var number2: UITextField!
     @IBOutlet weak var sumButton: UIButton!

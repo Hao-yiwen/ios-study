@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CenterController:UIViewController{
+class CenterController:ViewBaseController{
     @IBOutlet weak var stackview: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()

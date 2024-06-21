@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IOSViewController: UIViewController {
+class IOSViewController: ViewBaseController {
     
     @IBOutlet weak var xibSubContainer: UIButton!
     
