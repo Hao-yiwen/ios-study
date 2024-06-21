@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-@objc class WKWebViewScreenController:UIViewController, WKUIDelegate{
+@objc class WKWebViewScreenController:ViewBaseController, WKUIDelegate{
     var webView:WKWebView!
     @objc var urlString:String!
     

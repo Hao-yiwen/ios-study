@@ -10,11 +10,11 @@ import Flutter
 import Toast_Swift
 
 @objc
-class FlutterScreenController: UIViewController, UIGestureRecognizerDelegate{
-    var popRecognizer: InteractivePopRecognizer?
+class FlutterScreenController: ViewBaseController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.isShowHeader = false
         // flutter引擎无预热情况
         let flutterViewController = FlutterViewController(project: nil, nibName: nil, bundle: nil)
         
@@ -22,23 +22,5 @@ class FlutterScreenController: UIViewController, UIGestureRecognizerDelegate{
         flutterViewController.view.frame = view.bounds
         view.addSubview(flutterViewController.view)
         flutterViewController.didMove(toParent: self)
-    }
-    
-    public override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setInteractiveRecognizer()
-    }
-    
-    private func setInteractiveRecognizer() {
-        guard let controller = navigationController else { return }
-        popRecognizer = InteractivePopRecognizer(controller: controller)
-        controller.interactivePopGestureRecognizer?.delegate = popRecognizer
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-    
-    public override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
-        self.navigationController?.setNavigationBarHidden(false, animated: false)   
     }
 }

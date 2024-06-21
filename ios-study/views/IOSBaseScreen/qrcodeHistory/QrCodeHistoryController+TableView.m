@@ -30,6 +30,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"Row %ld selected", (long)indexPath.row);
+    // 跳转到对应的url页面
+    if(self.qrcodes[indexPath.row] && self.qrcodes[indexPath.row].qrcode) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"URLHANDLE" object:nil userInfo:@{@"url": self.qrcodes[indexPath.row].qrcode}];
+    }
 }
 
 - (void)deleteCell:(CustomTableCellView *)cell didTapDeleteButton:(UIButton*)button{

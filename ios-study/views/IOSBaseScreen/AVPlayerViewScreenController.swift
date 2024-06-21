@@ -9,7 +9,7 @@ import UIKit
 import AVKit
 
 @objc
-class AVPlayerViewScreenController:UIViewController,AVPlayerViewControllerDelegate {
+class AVPlayerViewScreenController:ViewBaseController,AVPlayerViewControllerDelegate {
     @IBOutlet weak var videoallscreen: UIButton!
     var playerViewControllerIfLoaded:AVPlayerViewController!
     var playerViewControllerInline:AVPlayerViewController!

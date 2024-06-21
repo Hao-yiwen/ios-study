@@ -8,14 +8,14 @@
 import UIKit
 import AVFoundation
 
-class ScanCodeScreenController: BaseController {
+class ScanCodeScreenController: ViewBaseController {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     var qrString: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.isShowHeader = false
         view.backgroundColor = .black
         
         // 建立一个会话

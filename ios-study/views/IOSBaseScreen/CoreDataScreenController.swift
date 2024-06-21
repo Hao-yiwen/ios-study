@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 import Toast_Swift
 
-class CoreDataScreenController:UIViewController,UITextFieldDelegate {
+class CoreDataScreenController:ViewBaseController {
     let defaults = UserDefaults.standard
     @IBOutlet weak var textfieldName: UITextField!
     @IBOutlet weak var textfieldAge: UITextField!
@@ -64,7 +64,7 @@ class CoreDataScreenController:UIViewController,UITextFieldDelegate {
         keyvalueLabel.text = "key: \(key), value: \(String(describing: value))"
     }
     // UITextFieldDelegate 方法，按下 return 键时关闭键盘
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    override func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }

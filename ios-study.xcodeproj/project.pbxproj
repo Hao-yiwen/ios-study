@@ -24,7 +24,6 @@
 		F63DE18B2C1C79A100B1BF2F /* ThirdSDKStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63DE18A2C1C79A100B1BF2F /* ThirdSDKStoryboard.storyboard */; };
 		F63DE18D2C1C79D100B1BF2F /* ThirdSDKHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DE18C2C1C79D100B1BF2F /* ThirdSDKHomeController.swift */; };
 		F63DE18F2C1C7B6700B1BF2F /* ScanCodeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DE18E2C1C7B6700B1BF2F /* ScanCodeScreenController.swift */; };
-		F63DE1912C1C8C3100B1BF2F /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DE1902C1C8C3100B1BF2F /* BaseController.swift */; };
 		F63DE1942C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63DE1932C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard */; };
 		F63DE1982C1CA4FB00B1BF2F /* TopContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DE1972C1CA4FB00B1BF2F /* TopContainerController.swift */; };
 		F63DE19A2C1CA51600B1BF2F /* BottomContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DE1992C1CA51600B1BF2F /* BottomContainerController.swift */; };
@@ -124,7 +123,6 @@
 		F63DE18A2C1C79A100B1BF2F /* ThirdSDKStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdSDKStoryboard.storyboard; sourceTree = "<group>"; };
 		F63DE18C2C1C79D100B1BF2F /* ThirdSDKHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSDKHomeController.swift; sourceTree = "<group>"; };
 		F63DE18E2C1C7B6700B1BF2F /* ScanCodeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCodeScreenController.swift; sourceTree = "<group>"; };
-		F63DE1902C1C8C3100B1BF2F /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		F63DE1932C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IOSBaseStoryboard.storyboard; sourceTree = "<group>"; };
 		F63DE1972C1CA4FB00B1BF2F /* TopContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopContainerController.swift; sourceTree = "<group>"; };
 		F63DE1992C1CA51600B1BF2F /* BottomContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomContainerController.swift; sourceTree = "<group>"; };
@@ -240,7 +238,6 @@
 			isa = PBXGroup;
 			children = (
 				F65E507A2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift */,
-				F63DE1902C1C8C3100B1BF2F /* BaseController.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -779,7 +776,6 @@
 				F6482E5F2C1CAE410063DF23 /* WKWebViewScreenController.swift in Sources */,
 				F67BC1452C233BF2009BCCB6 /* MyCppWrapper.mm in Sources */,
 				F65E507B2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift in Sources */,
-				F63DE1912C1C8C3100B1BF2F /* BaseController.swift in Sources */,
 				F67900102C1EF049007E9774 /* KeyboardDissmissController.swift in Sources */,
 				F6DF2DAA2C24A0C6005038EC /* CustomTableCellView.m in Sources */,
 				F646CD9D2C1735E90029E950 /* SceneDelegate.swift in Sources */,

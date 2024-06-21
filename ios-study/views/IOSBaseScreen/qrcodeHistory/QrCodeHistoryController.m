@@ -10,7 +10,6 @@
 #import "QrCodeHistoryController+TableView.h"
 #import "CustomTableCellView.h"
 #import "ios_study-Swift.h"
-
 @implementation QrCodeHistoryController
 
 - (void)viewDidLoad {
@@ -29,6 +28,7 @@
 
 - (void)loadQrcodes{
     self.qrcodes = [DataStoreUtils fetchAllQrcode];
+    NSLog(@"loadQrcodes: %@", self.qrcodes);
 }
 
 @end
