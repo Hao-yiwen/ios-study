@@ -92,6 +92,10 @@ class ViewController: ViewBaseController {
         }
         // 保存键值对
         UserDefaults.standard.set(textForm.text, forKey: "qrCode")
+        let qrcode = Qrcode(context: CoreDataStack.shared.viewContext)
+        qrcode.qrcode = textForm.text!
+        qrcode.describe = getNowString()
+        DataStoreUtils.saveQrCode(qrcode: qrcode)
         NotificationCenter.default.post(name: NSNotification.Name("URLHANDLE"), object: nil, userInfo: ["url":textForm.text!])
     }
     
@@ -106,6 +110,16 @@ class ViewController: ViewBaseController {
     deinit{
         // 移除观察者
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name("qrcode"), object: nil)
+    }
+    
+    func getNowString() -> String{
+        // 获取当前日期和时间
+        let now = Date()
+        // 创建日期格式化器
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        // 将日期格式化为字符串
+        return dateFormatter.string(from: now)
     }
 }
 

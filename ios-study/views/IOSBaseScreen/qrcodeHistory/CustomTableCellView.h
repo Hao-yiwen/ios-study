@@ -23,6 +23,8 @@
 
 @property UIButton *customButton;
 
+@property UILabel *customDesciption;
+
 @property id<CustomTableCellDelegate> delegate;
 
 - (void)handleDeleteButton:(UIButton *)sender;

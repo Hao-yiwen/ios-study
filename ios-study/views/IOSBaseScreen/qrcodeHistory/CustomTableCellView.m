@@ -15,12 +15,36 @@
     if(self){
         _customLabel = [[UILabel alloc] init];
         _customLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        _customLabel.numberOfLines = 0; // 允许多行
+        _customLabel.lineBreakMode = NSLineBreakByWordWrapping; // 按单词换行
+        _customLabel.font = [UIFont systemFontOfSize:14];
         [self.contentView addSubview:_customLabel];
+
         [NSLayoutConstraint activateConstraints:@[
-            [_customLabel.centerYAnchor constraintEqualToAnchor:self.contentView.centerYAnchor],
-            [_customLabel.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor constant:15]
+            [_customLabel.topAnchor constraintEqualToAnchor:self.contentView.topAnchor constant:10],
+            [_customLabel.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor constant:15],
+            [_customLabel.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor constant:-55],
+        ]];
+
+        // 设置 content hugging 和 compression resistance 优先级
+        [_customLabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+        [_customLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+        
+        // 添加customDesciption
+        _customDesciption = [[UILabel alloc] init];
+        _customDesciption.translatesAutoresizingMaskIntoConstraints = NO;
+        _customDesciption.font = [UIFont systemFontOfSize:12];
+        _customDesciption.textColor = [UIColor grayColor];
+        [self.contentView addSubview:_customDesciption];
+        [NSLayoutConstraint activateConstraints:@[
+            [_customDesciption.topAnchor constraintEqualToAnchor:_customLabel.bottomAnchor constant:5],
+            [_customDesciption.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor constant:15],
+            [_customDesciption.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor constant:-55],
+            [_customDesciption.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor constant:-10],
+            [_customDesciption.heightAnchor constraintEqualToConstant:20],
         ]];
         
+        // 添加删除按钮
         _customButton = [UIButton buttonWithType:UIButtonTypeSystem];
         _customButton.translatesAutoresizingMaskIntoConstraints = NO;
         [_customButton setTitle:@"删除" forState:UIControlStateNormal];
@@ -29,8 +53,6 @@
         [NSLayoutConstraint activateConstraints:@[
             [_customButton.centerYAnchor constraintEqualToAnchor:self.contentView.centerYAnchor],
             [_customButton.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor constant:-25],
-            [_customLabel.heightAnchor constraintEqualToConstant:30],
-            [_customLabel.widthAnchor constraintEqualToConstant:60]
         ]];
     }
     return self;

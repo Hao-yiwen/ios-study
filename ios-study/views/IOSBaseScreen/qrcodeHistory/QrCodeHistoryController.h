@@ -8,10 +8,16 @@
 #ifndef QrCodeHistoryController_h
 #define QrCodeHistoryController_h
 #import <UIKit/UIKit.h>
+// 前向声明 Swift 类
+@class Qrcode;
 
 @interface QrCodeHistoryController : UIViewController
 
 @property UITableView *tableView;
+
+@property NSArray<Qrcode *> *qrcodes;
+
+- (void)loadQrcodes;
 
 @end
 

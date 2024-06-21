@@ -161,6 +161,11 @@ class ScanCodeScreenController: BaseController {
             let alert = UIAlertController(title: "扫码结果", message: code, preferredStyle: .alert)
             // 将扫码结果存储到键值对
             UserDefaults.standard.set(code, forKey: "qrCode")
+            // 将扫码结果存储到codedata
+            let qrcode = Qrcode(context: CoreDataStack.shared.viewContext)
+            qrcode.qrcode = code
+            qrcode.describe = self.getNowString()
+            DataStoreUtils.saveQrCode(qrcode: qrcode)
             NotificationCenter.default.post(name: NSNotification.Name("qrcode"), object: nil)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                 self.navigationController?.popViewController(animated: true)
@@ -178,5 +183,13 @@ class ScanCodeScreenController: BaseController {
 }
 
 extension ScanCodeScreenController: AVCaptureMetadataOutputObjectsDelegate {
-    
+    func getNowString() -> String{
+        // 获取当前日期和时间
+        let now = Date()
+        // 创建日期格式化器
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        // 将日期格式化为字符串
+        return dateFormatter.string(from: now)
+    }
 }

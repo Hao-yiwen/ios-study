@@ -9,6 +9,7 @@
 #import "QrCodeHistoryController.h"
 #import "QrCodeHistoryController+TableView.h"
 #import "CustomTableCellView.h"
+#import "ios_study-Swift.h"
 
 @implementation QrCodeHistoryController
 
@@ -23,6 +24,11 @@
     self.tableView.delegate = self;
     
     [self.tableView registerClass:[CustomTableCellView class] forCellReuseIdentifier:@"cell"];
+    [self loadQrcodes];
+}
+
+- (void)loadQrcodes{
+    self.qrcodes = [DataStoreUtils fetchAllQrcode];
 }
 
 @end
