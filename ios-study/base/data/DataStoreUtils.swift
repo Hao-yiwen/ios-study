@@ -7,8 +7,9 @@
 
 import CoreData
 
-class DataStoreUtils{
-    static func saveData(person: Person){
+@objc
+class DataStoreUtils: NSObject{
+    static func savePerson(person: Person){
         let context = CoreDataStack.shared.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Person", in: context)!
         let newObject = NSManagedObject(entity: entity, insertInto: context)
@@ -21,7 +22,21 @@ class DataStoreUtils{
         CoreDataStack.shared.saveContext()
     }
     
-    static func fetchAllData() -> [Person] {
+    static func fetchAllPerson() -> [Person] {
         return CoreDataStack.shared.fetch(Person.self)
+    }
+    
+    static func saveQrCode(qrcode: Qrcode){
+        let context = CoreDataStack.shared.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Qrcode", in: context)!
+        let newObject = NSManagedObject(entity: entity, insertInto: context)
+        
+        newObject.setValue(qrcode.qrcode, forKey: "qrcode")
+        newObject.setValue(qrcode.describe, forKey: "describe")
+        CoreDataStack.shared.saveContext()
+    }
+    
+    @objc static func fetchAllQrcode() -> [Qrcode] {
+        return CoreDataStack.shared.fetch(Qrcode.self)
     }
 }

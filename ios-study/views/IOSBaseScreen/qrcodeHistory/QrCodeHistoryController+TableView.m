@@ -7,6 +7,7 @@
 
 #import "QrCodeHistoryController+TableView.h"
 #import "CustomTableCellView.h"
+#import "ios_study-Swift.h"
 
 @implementation QrCodeHistoryController (TableView)
 
@@ -14,13 +15,15 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath { 
     CustomTableCellView *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.customLabel.text = [NSString stringWithFormat:@"Row %ld",(long)indexPath.row];
+    Qrcode* qrcode = self.qrcodes[indexPath.row];
+    cell.customLabel.text = qrcode.qrcode;
+    cell.customDesciption.text = qrcode.describe;
     cell.delegate = self;
     return cell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section { 
-    return 20;
+    return self.qrcodes.count;
 }
 
 # pragma mark - UITableViewDelegate

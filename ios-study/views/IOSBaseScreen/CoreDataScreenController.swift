@@ -29,7 +29,7 @@ class CoreDataScreenController:UIViewController,UITextFieldDelegate {
         let person = Person(context: CoreDataStack.shared.viewContext)
         person.name = name
         person.age = Int16(age!)!
-        DataStoreUtils.saveData(person: person)
+        DataStoreUtils.savePerson(person: person)
         // 弹出提示框
         let alert = UIAlertController(title: "提示", message: "保存成功", preferredStyle: .alert)
         let action = UIAlertAction(title: "确定", style: .default, handler: nil)
@@ -40,7 +40,7 @@ class CoreDataScreenController:UIViewController,UITextFieldDelegate {
     @IBOutlet weak var keyTextField: UITextField!
     @IBOutlet weak var valueTextField: UITextField!
     @IBAction func showCoreData(_ sender: Any) {
-        let persons = DataStoreUtils.fetchAllData()
+        let persons = DataStoreUtils.fetchAllPerson()
         var tmpText = ""
         for person in persons {
             tmpText.append("name: \(person.name!) age: \(person.age)\n");
