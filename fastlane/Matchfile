@@ -1,4 +1,4 @@
-git_url("https://github.com/Hao-yiwen/ios-study-fastlane-match")
+git_url("git@github.com:Hao-yiwen/ios-study-fastlane-match.git")
 
 storage_mode("git")
 

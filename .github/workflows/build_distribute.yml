@@ -13,17 +13,42 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3.3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # 你可以根据需要更改 Node.js 的版本
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.13.9'  # 你可以根据需要更改 Flutter 的版本
+
+      - name: Install Flutter dependencies
+        run: flutter pub get
+        working-directory: ${{ github.workspace }}/my_flutter
+  
+
+      - name: Install Yarn
+        run: npm install --global yarn
+
+      - name: Install dependencies
+        run: yarn install
 
       - name: Set up fastlane
         run: gem install fastlane
 
       - name: Set up CocoaPods
         run: pod install
-        working-directory: ios
 
       - name: Decode and Install API Key
         run: |
