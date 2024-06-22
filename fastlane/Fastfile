@@ -38,7 +38,7 @@ platform :ios do
       configuration: "Debug",
       export_options: {
         provisioningProfiles: {
-          "com.yiwen.ios-study" => "match Development com.yiwen.ios-study"
+          "com.yiwen.ios-study-debug" => "match Development com.yiwen.ios-study"
         },
         generate_dsym: true, # 确保生成dSYM文件
         include_symbols: true, # 包括符号
