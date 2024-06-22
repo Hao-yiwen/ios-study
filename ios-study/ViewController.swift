@@ -92,10 +92,10 @@ class ViewController: ViewBaseController {
         }
         // 保存键值对
         UserDefaults.standard.set(textForm.text, forKey: "qrCode")
-        let qrcode = Qrcode(context: CoreDataStack.shared.viewContext)
-        qrcode.qrcode = textForm.text!
-        qrcode.describe = getNowString()
-        if(DataStoreUtils.isHaveQrcode(qrCode: qrcode) == false){
+        if(DataStoreUtils.isHaveQrcode(qrCode: textForm.text!) == false){
+            let qrcode = Qrcode(context: CoreDataStack.shared.viewContext)
+            qrcode.qrcode = textForm.text!
+            qrcode.describe = getNowString()
             DataStoreUtils.saveQrCode(qrcode: qrcode)
         }
         NotificationCenter.default.post(name: NSNotification.Name("URLHANDLE"), object: nil, userInfo: ["url":textForm.text!])

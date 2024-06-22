@@ -1,0 +1,15 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "github cicd archive"
+  lane :build_and_archive_ci do
+    match(type: "development")  # 使用 match 管理签名
+    gym(
+      scheme: "ios-study",
+      export_method: "ad-hoc",
+      output_directory: "./build",
+      output_name: "ios-study.ipa",
+      silent: false
+    )
+  end
+end
