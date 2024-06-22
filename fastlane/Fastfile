@@ -1,15 +1,51 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "github cicd archive"
-  lane :build_and_archive_ci do
-    match(type: "development")  # 使用 match 管理签名
-    gym(
+  desc "Push a new beta build to TestFlight"
+  lane :build_release do
+    setup_ci if ENV['CI']
+    match(type: "appstore", readonly: true)
+    increment_build_number(
+      xcodeproj: "ios-study.xcodeproj"
+    )
+    build_app(
       scheme: "ios-study",
-      export_method: "ad-hoc",
+      export_method: "app-store",
+      workspace: "ios-study.xcworkspace", # 使用project参数
+      xcargs: "-allowProvisioningUpdates" # 允许Xcode自动处理配置文件
+    )
+    upload_to_testflight(
+      # api_key_path: ENV['API_KEY_PATH']
+      api_key_path: "./ios-study-api-key.json"
+    )
+  end
+
+  desc "increment build version"
+  lane :increment_version do
+    increment_build_number(
+      xcodeproj: "ios-study.xcodeproj"
+    )
+  end
+
+  desc "Build and sign a Debug package"
+  lane :build_debug do
+    setup_ci if ENV['CI']
+    match(type: "development", readonly: true)
+    build_app(
+      scheme: "ios-study",
+      export_method: "development",
+      workspace: "ios-study.xcworkspace", # 使用project参数
+      configuration: "Debug",
+      export_options: {
+        provisioningProfiles: {
+          "com.yiwen.ios-study" => "match Development com.yiwen.ios-study"
+        },
+        generate_dsym: true, # 确保生成dSYM文件
+        include_symbols: true, # 包括符号
+        compileBitcode: false, # 根据需要设置，如果你不需要bitcode，可以设置为false
+      },
       output_directory: "./build",
-      output_name: "ios-study.ipa",
-      silent: false
+      output_name: "ios-study-debug.ipa"
     )
   end
 end

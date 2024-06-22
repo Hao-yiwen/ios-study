@@ -15,21 +15,29 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
-### ios build_and_archive
+### ios build_release
 
 ```sh
-[bundle exec] fastlane ios build_and_archive
+[bundle exec] fastlane ios build_release
 ```
 
-本地自动archive
+Push a new beta build to TestFlight
 
-### ios build_and_archive_ci
+### ios increment_version
 
 ```sh
-[bundle exec] fastlane ios build_and_archive_ci
+[bundle exec] fastlane ios increment_version
 ```
 
-github cicd archive
+increment build version
+
+### ios build_debug
+
+```sh
+[bundle exec] fastlane ios build_debug
+```
+
+Build and sign a Debug package
 
 ----
 
