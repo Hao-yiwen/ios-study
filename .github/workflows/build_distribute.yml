@@ -1,0 +1,71 @@
+name: Build and Distribute iOS App
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - name: Set up fastlane
+        run: gem install fastlane
+
+      - name: Set up CocoaPods
+        run: pod install
+        working-directory: ios
+
+      - name: Decode and Install API Key
+        run: |
+          echo ${{ secrets.APP_STORE_CONNECT_API_KEY }} | base64 --decode > ios-study-api-key.json
+        shell: bash
+
+      - name: Build and Archive
+        run: fastlane build_and_archive_ci
+        env:
+          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
+          FASTLANE_PASSWORD: ${{ secrets.FASTLANE_PASSWORD }}
+          GIT_URL: ${{ secrets.MATCH_REPO_URL }}
+          GIT_BRANCH: main
+          APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
+          APP_STORE_CONNECT_API_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_API_ISSUER_ID }}
+          API_KEY_PATH: ios-study-api-key.json
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+      - name: Upload IPA to GitHub Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./iOS/build/ios-study.ipa
+          asset_name: ios-study.ipa
+          asset_content_type: application/octet-stream
+
+    #   - name: Generate and Upload QR Code
+    #     run: |
+    #       QR_URL=https://github.com/${{ github.repository }}/releases/download/${{ github.ref }}/ios-study.ipa
+    #       echo $QR_URL
+    #       curl -o qrcode.png "https://api.qrserver.com/v1/create-qr-code/?data=${QR_URL}&size=300x300"
+    #       echo "![QRCode](qrcode.png)" >> $GITHUB_STEP_SUMMARY

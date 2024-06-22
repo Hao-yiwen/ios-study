@@ -83,3 +83,7 @@ GoogleService-Info.plist
 *.generated.swift
 
 .xcode.env.local
+
+AuthKey_83LF7G9FC2.p8
+
+ios-study-api-key.json
