@@ -23,7 +23,6 @@ jobs:
 
       - name: Set up CocoaPods
         run: pod install
-        working-directory: ios
 
       - name: Decode and Install API Key
         run: |
