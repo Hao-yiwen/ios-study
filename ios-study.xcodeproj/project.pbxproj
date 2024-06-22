@@ -38,7 +38,6 @@
 		F6482E5F2C1CAE410063DF23 /* WKWebViewScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6482E5E2C1CAE410063DF23 /* WKWebViewScreenController.swift */; };
 		F6482E612C1CB5CF0063DF23 /* SubviewOverView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6482E602C1CB5CF0063DF23 /* SubviewOverView2Controller.swift */; };
 		F6482E632C1CB5E70063DF23 /* View2OverSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6482E622C1CB5E70063DF23 /* View2OverSubViewController.swift */; };
-		F65E50792C1B683900AB0F72 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = F65E50782C1B683900AB0F72 /* main.jsbundle */; };
 		F65E507B2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E507A2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift */; };
 		F67900042C1EBDE8007E9774 /* CoreDataScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67900032C1EBDE8007E9774 /* CoreDataScreenController.swift */; };
 		F679000E2C1EE6D1007E9774 /* CenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679000D2C1EE6D1007E9774 /* CenterController.swift */; };
@@ -66,6 +65,7 @@
 		F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9185E2C17DFA100B4DC90 /* SecondController.m */; };
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 		F6B7986D2C1F557D007253BB /* Info-Profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6B7986C2C1F557D007253BB /* Info-Profile.plist */; };
+		F6D001AD2C27685400BF5A50 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = F6D001AC2C27685400BF5A50 /* main.jsbundle */; };
 		F6DF2D992C2478E7005038EC /* libMyCppProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DF2D982C2478E7005038EC /* libMyCppProject.a */; };
 		F6DF2D9B2C247BAF005038EC /* ViewControllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */; };
 		F6DF2DA02C247C5E005038EC /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2D9F2C247C5E005038EC /* ConfigManager.swift */; };
@@ -139,7 +139,6 @@
 		F6482E5E2C1CAE410063DF23 /* WKWebViewScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewScreenController.swift; sourceTree = "<group>"; };
 		F6482E602C1CB5CF0063DF23 /* SubviewOverView2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubviewOverView2Controller.swift; sourceTree = "<group>"; };
 		F6482E622C1CB5E70063DF23 /* View2OverSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2OverSubViewController.swift; sourceTree = "<group>"; };
-		F65E50782C1B683900AB0F72 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = "../../../rn/reactNative-study/rnDemo0742/ios/main.jsbundle"; sourceTree = "<group>"; };
 		F65E507A2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractivePopRecognizer.swift; sourceTree = "<group>"; };
 		F67900032C1EBDE8007E9774 /* CoreDataScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataScreenController.swift; sourceTree = "<group>"; };
 		F679000D2C1EE6D1007E9774 /* CenterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterController.swift; sourceTree = "<group>"; };
@@ -175,6 +174,7 @@
 		F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationTest.storyboard; sourceTree = "<group>"; };
 		F6B7986C2C1F557D007253BB /* Info-Profile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Profile.plist"; sourceTree = "<group>"; };
 		F6CC0D372C1F33CE007810E6 /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
+		F6D001AC2C27685400BF5A50 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		F6DF2D982C2478E7005038EC /* libMyCppProject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMyCppProject.a; sourceTree = "<group>"; };
 		F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ViewControllerConfig.json; sourceTree = "<group>"; };
 		F6DF2D9F2C247C5E005038EC /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
@@ -394,10 +394,10 @@
 				F6CC0D372C1F33CE007810E6 /* Info-Debug.plist */,
 				F6B7986C2C1F557D007253BB /* Info-Profile.plist */,
 				F646CDA82C1735EA0029E950 /* Info-Release.plist */,
+				F6D001AC2C27685400BF5A50 /* main.jsbundle */,
 				F6A9185D2C17DFA000B4DC90 /* ios-study-Bridging-Header.h */,
 				A6302CFD6DD636CEF8F87DD2 /* PrivacyInfo.xcprivacy */,
 				F6A1E8112C1EB6A300E31AEF /* ios_study.xcdatamodeld */,
-				F65E50782C1B683900AB0F72 /* main.jsbundle */,
 			);
 			path = "ios-study";
 			sourceTree = "<group>";
@@ -622,6 +622,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D001AD2C27685400BF5A50 /* main.jsbundle in Resources */,
 				F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */,
 				F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */,
 				F63DE1942C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard in Resources */,
@@ -637,7 +638,6 @@
 				39A8A3662C195C2000FA1B1E /* SubXib.storyboard in Resources */,
 				F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */,
 				39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */,
-				F65E50792C1B683900AB0F72 /* main.jsbundle in Resources */,
 				F6DF2D9B2C247BAF005038EC /* ViewControllerConfig.json in Resources */,
 				F6B7986D2C1F557D007253BB /* Info-Profile.plist in Resources */,
 				9DE53BB87AE45CF7980AC662 /* PrivacyInfo.xcprivacy in Resources */,
@@ -663,7 +663,7 @@
 			name = "[CP-User] Embed Flutter Build my_flutter Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../android/android-study/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
 		};
 		616D32438BA472C27FE091D6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -729,7 +729,7 @@
 			name = "[CP-User] Run Flutter Build my_flutter Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../android/android-study/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -961,8 +961,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 84F8R9TAQN;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
@@ -1043,7 +1043,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios-study/libs/MyCppProject",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.4;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1131,6 +1131,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study.debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.yiwen.ios-study";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1150,10 +1151,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 84F8R9TAQN;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 84F8R9TAQN;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1234,7 +1236,7 @@
 					"$(PROJECT_DIR)/ios-study/libs",
 					"$(PROJECT_DIR)/ios-study/libs/MyCppProject",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.4;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1322,8 +1324,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.yiwen.ios-study";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.yiwen.ios-study";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.yiwen.ios-study";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1340,8 +1342,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 84F8R9TAQN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-study widget/Info.plist";
@@ -1355,6 +1357,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study.debug.ios-study-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.yiwen.ios-study.ios-study-widget";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1368,12 +1371,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 84F8R9TAQN;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 84F8R9TAQN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-study widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ios-study widget";
@@ -1386,8 +1387,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study.ios-study-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.yiwen.ios-study.ios-study-widget";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.yiwen.ios-study.ios-study-widget";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1473,8 +1473,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 84F8R9TAQN;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
@@ -1560,7 +1560,7 @@
 					"$(PROJECT_DIR)/ios-study/libs",
 					"$(PROJECT_DIR)/ios-study/libs/MyCppProject",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.4;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1648,6 +1648,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study.profile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.yiwen.ios-study";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1665,8 +1666,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 84F8R9TAQN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-study widget/Info.plist";
@@ -1680,6 +1681,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiwen.ios-study.profile.ios-study-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.yiwen.ios-study.ios-study-widget";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -13,59 +13,106 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: 3.3.3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # 你可以根据需要更改 Node.js 的版本
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.13.9'  # 你可以根据需要更改 Flutter 的版本
+
+      - name: Install Flutter dependencies
+        run: flutter pub get
+        working-directory: ${{ github.workspace }}/my_flutter
+  
+      - name: Install Yarn
+        run: npm install --global yarn
+
+      - name: Install dependencies
+        run: yarn install
 
       - name: Set up fastlane
         run: gem install fastlane
 
       - name: Set up CocoaPods
         run: pod install
-        working-directory: ios
 
       - name: Decode and Install API Key
         run: |
-          echo ${{ secrets.APP_STORE_CONNECT_API_KEY }} | base64 --decode > ios-study-api-key.json
+          echo ${{ secrets.BASE64_API_KEY_CONTENT }} | base64 --decode > ios-study-api-key.json
         shell: bash
 
-      - name: Build and Archive
-        run: fastlane build_and_archive_ci
+      - name: Run Fastlane build_release lane
+        run: fastlane build_release
         env:
+          API_KEY_PATH: ios-study-api-key.json
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
           FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
-          FASTLANE_PASSWORD: ${{ secrets.FASTLANE_PASSWORD }}
-          GIT_URL: ${{ secrets.MATCH_REPO_URL }}
-          GIT_BRANCH: main
-          APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
-          APP_STORE_CONNECT_API_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_API_ISSUER_ID }}
-          API_KEY_PATH: ios-study-api-key.json
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+          KEY_ID: ${{ secrets.KEY_ID }}
+          ISSUER_ID: ${{ secrets.ISSUER_ID }}
+      
+      - name: Install qrencode
+        run: brew install qrencode
+  
+      - name: Generate QR code for ios-study-debug.ipa
+        run: |
+          qrencode -o ios-study-debug-qr.png "https://github.com/${{ github.repository }}/releases/download/${{ github.ref }}/ios-study-debug.ipa"
+          qrencode -o ios-study-qr.png "https://github.com/${{ github.repository }}/releases/download/${{ github.ref }}/ios-study.ipa"
 
-      - name: Create GitHub Release
+      - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
+          body: |
+            Release notes for ${{ github.ref_name }}
+            Release IPA QR Code:
+            ![Release IPA QR Code](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/ios-study-qr.png)
           draft: false
           prerelease: false
-
-      - name: Upload IPA to GitHub Release
+  
+      - name: Upload IPA to Release
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./iOS/build/ios-study.ipa
+          asset_path: /Users/runner/work/ios-study/ios-study/ios-study.ipa
           asset_name: ios-study.ipa
           asset_content_type: application/octet-stream
 
-    #   - name: Generate and Upload QR Code
-    #     run: |
-    #       QR_URL=https://github.com/${{ github.repository }}/releases/download/${{ github.ref }}/ios-study.ipa
-    #       echo $QR_URL
-    #       curl -o qrcode.png "https://api.qrserver.com/v1/create-qr-code/?data=${QR_URL}&size=300x300"
-    #       echo "![QRCode](qrcode.png)" >> $GITHUB_STEP_SUMMARY
+      - name: Upload dSYM to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: /Users/runner/work/ios-study/ios-study/ios-study.app.dSYM.zip
+          asset_name: ios-study.dSYM.zip
+          asset_content_type: application/zip
+
+      - name: Upload QR codes to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./ios-study-qr.png
+          asset_name: ios-study-qr.png
+          asset_content_type: image/png
