@@ -7,4 +7,6 @@
     "LottiePage": "ios_study.LottieIOSScreenController",
     "KeyboardDissmissPage": "ios_study.KeyboardDissmissController",
     "scanHistoryController": "QrCodeHistoryController",
+    "iosbaseHomePage": "ios_study.IOSViewController",
+    "thirdHomePage": "ios_study.ThirdSDKHomeController"
 }

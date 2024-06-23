@@ -47,7 +47,11 @@ class ViewBaseController: UIViewController, UITextFieldDelegate, UIGestureRecogn
                 debugView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20)
             ])
             
-            self.appUrl = getAppUrl()
+            // 获取当前页面的app url
+            let url = getAppUrl()
+            if(url != ""){
+                self.appUrl = "yiwen://app?moduleName=" + url
+            }
         #endif
     }
     
@@ -114,9 +118,9 @@ class ViewBaseController: UIViewController, UITextFieldDelegate, UIGestureRecogn
         }
         let showUrlAction = UIAlertAction(title: "显示页面URL", style: .default) { (action) in
             // 获取当前页面的app url
-            let alert = UIAlertController(title: "页面URL", message: self.appUrl, preferredStyle: .alert)
+            let alert = UIAlertController(title: "页面URL", message: self.appUrl + "\n当前ViewController:\n" + String(describing: type(of: self)), preferredStyle: .alert)
             let action = UIAlertAction(title: "确定", style: .default, handler: nil)
-            let copyAction = UIAlertAction(title: "复制", style: .default) { (action) in
+            let copyAction = UIAlertAction(title: "复制页面URL", style: .default) { (action) in
                 UIPasteboard.general.string = self.appUrl
                 self.view.makeToast("已复制到剪贴板", duration: 2.0, position: .bottom)
             }
@@ -147,7 +151,10 @@ class ViewBaseController: UIViewController, UITextFieldDelegate, UIGestureRecogn
                 } else {
                     print("Failed to cast JSON as [String: String]")
                 }
-                return viewControllerMap[currentViewControllerClassName] ?? ""
+                // 如何根据value获取key
+                let url = viewControllerMap.first(where: { $0.value == currentViewControllerClassName || $0.value == ("ios_study." + currentViewControllerClassName) })?.key ?? "当前页面不在json配置中"
+                print("Current view controller URL: \(url)")
+                return url
             } catch {
                 print("Failed to load config: \(error)")
                 return ""

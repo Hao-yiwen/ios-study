@@ -39,8 +39,8 @@
         NSDictionary *params = [self parseUrl:url];
         NSString *viewControllerName = nil;
         
-        if(params[@"pageName"]) {
-            viewControllerName = [[ConfigManager shared] getViewControllerNameFor:params[@"pageName"]];
+        if(params[@"moduleName"]) {
+            viewControllerName = [[ConfigManager shared] getViewControllerNameFor:params[@"moduleName"]];
         }
         
         if(viewControllerName == nil) {
@@ -78,7 +78,7 @@
 }
 
 - (NSDictionary *)parseUrl:(NSString *)url {
-    // rn示例url: http://127.0.0.1:8081/index.bundle?platform=ios&isRN=1&moduleName=rnDemo
+    // rn示例url: http://127.0.0.1:8081/index.bundle?platform=ios&isRN=true&moduleName=rnDemo
     // 解析url中的参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     NSURLComponents *urlComponents = [NSURLComponents componentsWithString:url];

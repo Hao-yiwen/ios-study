@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdSDKHomeController: UIViewController{
+class ThirdSDKHomeController: ViewBaseController{
     
     override func viewDidLoad() {
         super.viewDidLoad()

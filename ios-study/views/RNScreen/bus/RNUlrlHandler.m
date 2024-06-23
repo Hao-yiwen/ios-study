@@ -22,8 +22,8 @@
     NSDictionary *urlInfo = notification.userInfo;
     NSString *url = urlInfo[@"url"];
     NSLog(@"url is %@", url);
-    // 解析url 如果url中存在isRN=1 则需要跳转到rn页面
-    if ([url containsString:@"isRN=1"]) {
+    // 解析url 如果url中存在isRN=true 则需要跳转到rn页面
+    if ([url containsString:@"isRN=true"]) {
         // 解析url中的参数
         NSDictionary *params = [self parseUrl:url];
         // 获取rootNavigationController
@@ -60,7 +60,7 @@
 }
 
     - (NSDictionary *)parseUrl:(NSString *)url {
-        // rn示例url: http://127.0.0.1:8081/index.bundle?platform=ios&isRN=1&moduleName=rnDemo
+        // rn示例url: http://127.0.0.1:8081/index.bundle?platform=ios&isRN=true&moduleName=rnDemo
         // 解析url中的参数
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         NSURLComponents *urlComponents = [NSURLComponents componentsWithString:url];

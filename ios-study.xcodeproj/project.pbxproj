@@ -54,6 +54,7 @@
 		F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */; };
 		F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */; };
 		F6849AAA2C1EB9A100B3442B /* DataStoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6849AA92C1EB9A100B3442B /* DataStoreUtils.swift */; };
+		F68F7F682C288DA60006281F /* rnDemo0742.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = F68F7F672C288DA60006281F /* rnDemo0742.jsbundle */; };
 		F69BFE142C2098E0009C1EE6 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF95A72C2097E6002833F5 /* NotificationViewController.m */; };
 		F69BFE182C20A1A6009C1EE6 /* H5UrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F69BFE172C20A1A6009C1EE6 /* H5UrlHandler.m */; };
 		F6A1E8052C1DE7D300E31AEF /* LottieIOSScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1E8042C1DE7D300E31AEF /* LottieIOSScreenController.swift */; };
@@ -65,7 +66,6 @@
 		F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9185E2C17DFA100B4DC90 /* SecondController.m */; };
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 		F6B7986D2C1F557D007253BB /* Info-Profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6B7986C2C1F557D007253BB /* Info-Profile.plist */; };
-		F6D001AD2C27685400BF5A50 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = F6D001AC2C27685400BF5A50 /* main.jsbundle */; };
 		F6DF2D992C2478E7005038EC /* libMyCppProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DF2D982C2478E7005038EC /* libMyCppProject.a */; };
 		F6DF2D9B2C247BAF005038EC /* ViewControllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */; };
 		F6DF2DA02C247C5E005038EC /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2D9F2C247C5E005038EC /* ConfigManager.swift */; };
@@ -160,6 +160,7 @@
 		F67F146C2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SwiftUIStoryboard.storyboard; path = SwiftUIModule/SwiftUIModule/Classes/SwiftUIStoryboard.storyboard; sourceTree = "<group>"; };
 		F67F14712C1A1C73007C2F74 /* TestModuleXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestModuleXib.xib; path = TestModule/TestModule/Assets/TestModuleXib.xib; sourceTree = "<group>"; };
 		F6849AA92C1EB9A100B3442B /* DataStoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreUtils.swift; sourceTree = "<group>"; };
+		F68F7F672C288DA60006281F /* rnDemo0742.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rnDemo0742.jsbundle; sourceTree = "<group>"; };
 		F69BFE162C20A191009C1EE6 /* H5UrlHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5UrlHandler.h; sourceTree = "<group>"; };
 		F69BFE172C20A1A6009C1EE6 /* H5UrlHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5UrlHandler.m; sourceTree = "<group>"; };
 		F6A1E8042C1DE7D300E31AEF /* LottieIOSScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieIOSScreenController.swift; sourceTree = "<group>"; };
@@ -174,7 +175,6 @@
 		F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationTest.storyboard; sourceTree = "<group>"; };
 		F6B7986C2C1F557D007253BB /* Info-Profile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Profile.plist"; sourceTree = "<group>"; };
 		F6CC0D372C1F33CE007810E6 /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
-		F6D001AC2C27685400BF5A50 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		F6DF2D982C2478E7005038EC /* libMyCppProject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMyCppProject.a; sourceTree = "<group>"; };
 		F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ViewControllerConfig.json; sourceTree = "<group>"; };
 		F6DF2D9F2C247C5E005038EC /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
@@ -379,6 +379,8 @@
 		F646CD992C1735E90029E950 /* ios-study */ = {
 			isa = PBXGroup;
 			children = (
+				F68F7F662C288C680006281F /* rn_weapp */,
+				F683D6912C287DC300163D3C /* rnBridge */,
 				F67BC13E2C2338CC009BCCB6 /* libs */,
 				F6EF95A32C209269002833F5 /* base */,
 				392221792C1C0B7700EB40E9 /* utils */,
@@ -394,7 +396,6 @@
 				F6CC0D372C1F33CE007810E6 /* Info-Debug.plist */,
 				F6B7986C2C1F557D007253BB /* Info-Profile.plist */,
 				F646CDA82C1735EA0029E950 /* Info-Release.plist */,
-				F6D001AC2C27685400BF5A50 /* main.jsbundle */,
 				F6A9185D2C17DFA000B4DC90 /* ios-study-Bridging-Header.h */,
 				A6302CFD6DD636CEF8F87DD2 /* PrivacyInfo.xcprivacy */,
 				F6A1E8112C1EB6A300E31AEF /* ios_study.xcdatamodeld */,
@@ -437,6 +438,21 @@
 				F67BC1442C233BF2009BCCB6 /* MyCppWrapper.mm */,
 			);
 			path = MyCppProject;
+			sourceTree = "<group>";
+		};
+		F683D6912C287DC300163D3C /* rnBridge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = rnBridge;
+			sourceTree = "<group>";
+		};
+		F68F7F662C288C680006281F /* rn_weapp */ = {
+			isa = PBXGroup;
+			children = (
+				F68F7F672C288DA60006281F /* rnDemo0742.jsbundle */,
+			);
+			path = rn_weapp;
 			sourceTree = "<group>";
 		};
 		F69BFE152C20A175009C1EE6 /* bus */ = {
@@ -622,7 +638,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6D001AD2C27685400BF5A50 /* main.jsbundle in Resources */,
 				F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */,
 				F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */,
 				F63DE1942C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard in Resources */,
@@ -636,6 +651,7 @@
 				F646CDA22C1735E90029E950 /* Main.storyboard in Resources */,
 				F62CE0E52C189BB0003D7C5E /* XibScreen.xib in Resources */,
 				39A8A3662C195C2000FA1B1E /* SubXib.storyboard in Resources */,
+				F68F7F682C288DA60006281F /* rnDemo0742.jsbundle in Resources */,
 				F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */,
 				39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */,
 				F6DF2D9B2C247BAF005038EC /* ViewControllerConfig.json in Resources */,

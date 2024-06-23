@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class LottieScreenController:UIViewController{
+class LottieScreenController:ViewBaseController{
     var animatedView: LottieAnimationView!
     
     

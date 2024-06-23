@@ -25,7 +25,7 @@
     NSString* url = userInfo[@"url"];
     NSLog(@"url is %@", url);
     // 如果url以http开头，说明是一个网页链接，则传递给WKWebViewScreenController 让其打开
-    if([url hasPrefix:@"http"] && ![url containsString:@"isRN=1"]){
+    if([url hasPrefix:@"http"] && ![url containsString:@"isRN=true"]){
         // 获取rootNavigationController
         // 获取根导航控制器
         UIWindow *window = nil;

@@ -9,28 +9,52 @@ import UIKit
 import React
 import Toast_Swift
 
+/**
+ * 处理RN的URL
+ *
+ * @param context
+ * @param url
+ * @decription 本地url 例如 http://localhost:8081/index.bundle?platform=android&isRN=true&moduleName=xxx
+ * @decription 静态url 例如 /rn_xxx/yyyy.jsbundle?isRN=true
+ * 解释: xxx是component的名字
+ * index.jsbundle是静态资源名字
+ * isRN=true表示是RN的URL
+ */
 @objc class RNScreenController: ViewBaseController{
     @objc var developUrl: String? = "http://127.0.0.1:8081/index.bundle?platform=ios"
     @objc var moduleName: String = "rnDemo0742"
     
     override func viewDidLoad() {
-        #if DEBUG
-            let jsCodeLocation: URL
-        if let debugURL = URL(string: developUrl ?? "") {
-//            if let debugURL = URL(string: "http://127.0.0.1:8081/index.bundle?platform=ios") {
-                jsCodeLocation = debugURL
-            } else {
-                jsCodeLocation = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
+        let jsCodeLocation: URL
+        if developUrl?.contains("http") == false {
+            // 静态rn资源格式是 /rn_xxx/yyyy.jsbundle?isRN=true
+            guard let rangeofrn = developUrl?.range(of: "rn_") else {
+                self.view.makeToast("URL不合法", duration: 2.0, position: .bottom)
+                return
             }
-        #else
-            let jsCodeLocation = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
-        #endif
+            let staticUrl = String(developUrl?[rangeofrn.upperBound...] ?? "")
+            // 返回前缀与第二个 '/' 之间的子字符串 例如 xxx
+            let range = staticUrl.range(of: "/")
+            self.moduleName = String(staticUrl[..<range!.lowerBound])
+            // 获取静态资源名称 例如 yyyy.jsbundle
+            let otherurl = String(staticUrl[range!.upperBound...])
+            let staticName = otherurl.components(separatedBy: ".jsbundle").first ?? ""
+            if let tmpUrl = Bundle.main.url(forResource: staticName, withExtension: "jsbundle")  {
+                jsCodeLocation = tmpUrl
+            } else {
+                self.view.makeToast("URL不合法", duration: 2.0, position: .bottom)
+                return
+            }
+        } else {
+            if let debugURL = URL(string: developUrl ?? "") {
+                    jsCodeLocation = debugURL
+            } else {
+                self.view.makeToast("URL不合法", duration: 2.0, position: .bottom)
+                return
+            }
+        }
                 
         let mockData: NSDictionary = ["scores": ["test": 1]]
-        
-        // 如果是debug环境就用url 但是有静态文件兜底
-        
-        // 如果是生产环境 则用静态文件
         
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation,
