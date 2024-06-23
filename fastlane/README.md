@@ -31,6 +31,14 @@ Push a new beta build to TestFlight
 
 increment build version
 
+### ios clean_build
+
+```sh
+[bundle exec] fastlane ios clean_build
+```
+
+clean build artifacts
+
 ### ios build_debug
 
 ```sh
