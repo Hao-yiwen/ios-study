@@ -4,13 +4,13 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :build_release do
     setup_ci if ENV['CI']
-    match(type: "appstore", readonly: true)
+    match(type: "adhoc", readonly: true)
     increment_build_number(
       xcodeproj: "ios-study.xcodeproj"
     )
     build_app(
       scheme: "ios-study",
-      export_method: "app-store",
+      export_method: "ad-hoc",
       workspace: "ios-study.xcworkspace", # 使用project参数
       xcargs: "-allowProvisioningUpdates" # 允许Xcode自动处理配置文件
     )
@@ -18,6 +18,8 @@ platform :ios do
       # api_key_path: ENV['API_KEY_PATH']
       api_key_path: "./ios-study-api-key.json"
     )
+
+    clean_build_artifacts
   end
 
   desc "increment build version"
@@ -27,19 +29,23 @@ platform :ios do
     )
   end
 
+
+  desc "clean build artifacts"
+  lane :clean_build do
+    clean_build_artifacts
+  end
+
   desc "Build and sign a Debug package"
   lane :build_debug do
     setup_ci if ENV['CI']
-    match(type: "development", readonly: true)
+    # match(type: "development", readonly: true)
     build_app(
       scheme: "ios-study",
       export_method: "development",
       workspace: "ios-study.xcworkspace", # 使用project参数
       configuration: "Debug",
+      xcargs: "-allowProvisioningUpdates", # 允许Xcode自动处理配置文件
       export_options: {
-        provisioningProfiles: {
-          "com.yiwen.ios-study-debug" => "match Development com.yiwen.ios-study"
-        },
         generate_dsym: true, # 确保生成dSYM文件
         include_symbols: true, # 包括符号
         compileBitcode: false, # 根据需要设置，如果你不需要bitcode，可以设置为false
