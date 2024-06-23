@@ -18,8 +18,6 @@ platform :ios do
       # api_key_path: ENV['API_KEY_PATH']
       api_key_path: "./ios-study-api-key.json"
     )
-
-    clean_build_artifacts
   end
 
   desc "increment build version"
