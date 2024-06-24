@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		391AA00E2C2933B9000E1AEE /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AA00D2C2933B9000E1AEE /* RCTCalendarModule.m */; };
-		391AA0112C293A18000E1AEE /* RCTIntentModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AA0102C293A18000E1AEE /* RCTIntentModule.m */; };
+		391AA0112C293A18000E1AEE /* RCTURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AA0102C293A18000E1AEE /* RCTURL.m */; };
 		392221762C1C08BF00EB40E9 /* FlutterStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392221752C1C08BF00EB40E9 /* FlutterStoryboard.storyboard */; };
 		392221782C1C08E200EB40E9 /* FlutterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392221772C1C08E200EB40E9 /* FlutterScreenController.swift */; };
 		39A8A3662C195C2000FA1B1E /* SubXib.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A8A3642C195C2000FA1B1E /* SubXib.storyboard */; };
@@ -68,6 +68,7 @@
 		F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9185E2C17DFA100B4DC90 /* SecondController.m */; };
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 		F6B7986D2C1F557D007253BB /* Info-Profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6B7986C2C1F557D007253BB /* Info-Profile.plist */; };
+		F6C8E1422C29AFF300B7F7FF /* xrn_0741.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = F6C8E1412C29AFF300B7F7FF /* xrn_0741.jsbundle */; };
 		F6DF2D992C2478E7005038EC /* libMyCppProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DF2D982C2478E7005038EC /* libMyCppProject.a */; };
 		F6DF2D9B2C247BAF005038EC /* ViewControllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */; };
 		F6DF2DA02C247C5E005038EC /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2D9F2C247C5E005038EC /* ConfigManager.swift */; };
@@ -107,8 +108,8 @@
 		0662DA8AC4817FACEA9AAD86 /* libPods-ios-study.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-study.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		391AA00C2C293384000E1AEE /* RCTCalendarModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
 		391AA00D2C2933B9000E1AEE /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
-		391AA00F2C293A0C000E1AEE /* RCTIntentModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTIntentModule.h; sourceTree = "<group>"; };
-		391AA0102C293A18000E1AEE /* RCTIntentModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTIntentModule.m; sourceTree = "<group>"; };
+		391AA00F2C293A0C000E1AEE /* RCTURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTURL.h; sourceTree = "<group>"; };
+		391AA0102C293A18000E1AEE /* RCTURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTURL.m; sourceTree = "<group>"; };
 		392221752C1C08BF00EB40E9 /* FlutterStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlutterStoryboard.storyboard; sourceTree = "<group>"; };
 		392221772C1C08E200EB40E9 /* FlutterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterScreenController.swift; sourceTree = "<group>"; };
 		39A8A3642C195C2000FA1B1E /* SubXib.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubXib.storyboard; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 		F6A9185E2C17DFA100B4DC90 /* SecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
 		F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationTest.storyboard; sourceTree = "<group>"; };
 		F6B7986C2C1F557D007253BB /* Info-Profile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Profile.plist"; sourceTree = "<group>"; };
+		F6C8E1412C29AFF300B7F7FF /* xrn_0741.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xrn_0741.jsbundle; sourceTree = "<group>"; };
 		F6CC0D372C1F33CE007810E6 /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
 		F6DF2D982C2478E7005038EC /* libMyCppProject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMyCppProject.a; sourceTree = "<group>"; };
 		F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ViewControllerConfig.json; sourceTree = "<group>"; };
@@ -237,8 +239,8 @@
 			children = (
 				391AA00C2C293384000E1AEE /* RCTCalendarModule.h */,
 				391AA00D2C2933B9000E1AEE /* RCTCalendarModule.m */,
-				391AA00F2C293A0C000E1AEE /* RCTIntentModule.h */,
-				391AA0102C293A18000E1AEE /* RCTIntentModule.m */,
+				391AA00F2C293A0C000E1AEE /* RCTURL.h */,
+				391AA0102C293A18000E1AEE /* RCTURL.m */,
 			);
 			path = rnBridge;
 			sourceTree = "<group>";
@@ -460,6 +462,7 @@
 		F68F7F662C288C680006281F /* rn_weapp */ = {
 			isa = PBXGroup;
 			children = (
+				F6C8E1412C29AFF300B7F7FF /* xrn_0741.jsbundle */,
 				F68F7F672C288DA60006281F /* rnDemo0742.jsbundle */,
 			);
 			path = rn_weapp;
@@ -665,6 +668,7 @@
 				F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */,
 				39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */,
 				F6DF2D9B2C247BAF005038EC /* ViewControllerConfig.json in Resources */,
+				F6C8E1422C29AFF300B7F7FF /* xrn_0741.jsbundle in Resources */,
 				F6B7986D2C1F557D007253BB /* Info-Profile.plist in Resources */,
 				9DE53BB87AE45CF7980AC662 /* PrivacyInfo.xcprivacy in Resources */,
 			);
@@ -790,7 +794,7 @@
 				F679000E2C1EE6D1007E9774 /* CenterController.swift in Sources */,
 				F63DE18F2C1C7B6700B1BF2F /* ScanCodeScreenController.swift in Sources */,
 				F6DF2DA02C247C5E005038EC /* ConfigManager.swift in Sources */,
-				391AA0112C293A18000E1AEE /* RCTIntentModule.m in Sources */,
+				391AA0112C293A18000E1AEE /* RCTURL.m in Sources */,
 				F6A1E8052C1DE7D300E31AEF /* LottieIOSScreenController.swift in Sources */,
 				F63DE18D2C1C79D100B1BF2F /* ThirdSDKHomeController.swift in Sources */,
 				F6A1E8072C1E03BA00E31AEF /* LottieScreenController.swift in Sources */,
@@ -909,11 +913,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -976,11 +976,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1504,11 +1500,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";

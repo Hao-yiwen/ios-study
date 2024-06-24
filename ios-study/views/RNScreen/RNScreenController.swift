@@ -39,7 +39,9 @@ import Toast_Swift
             // 获取静态资源名称 例如 yyyy.jsbundle
             let otherurl = String(staticUrl[range!.upperBound...])
             let staticName = otherurl.components(separatedBy: ".jsbundle").first ?? ""
-            if let tmpUrl = Bundle.main.url(forResource: staticName, withExtension: "jsbundle")  {
+            if let tmpUrl = Bundle.main.url(forResource: staticName, withExtension: "hbc") {
+                jsCodeLocation = tmpUrl
+            } else if let tmpUrl = Bundle.main.url(forResource: staticName, withExtension: "jsbundle")  {
                 jsCodeLocation = tmpUrl
             } else {
                 self.view.makeToast("URL不合法", duration: 2.0, position: .bottom)

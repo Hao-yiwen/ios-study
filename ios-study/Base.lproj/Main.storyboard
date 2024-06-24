@@ -59,7 +59,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="rn模块"/>
                                 <connections>
-                                    <segue destination="OG2-ji-kUD" kind="push" id="7cI-QB-127"/>
+                                    <action selector="jumpToRNView:" destination="Gsu-dW-P1c" eventType="touchUpInside" id="HAq-Oo-N0l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05I-Sy-6yf">
@@ -95,6 +95,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="大首页" id="iIF-Ev-H0p"/>
+                    <connections>
+                        <outlet property="rnViewBtn" destination="etH-3e-5c0" id="eYQ-Pa-61B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zcz-Jb-vrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

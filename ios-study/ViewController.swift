@@ -11,6 +11,7 @@ class ViewController: ViewBaseController {
     var stackView: UIStackView!
     var textForm: UITextField!
     var scanButton: UIButton!
+    @IBOutlet weak var rnViewBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,6 +123,9 @@ class ViewController: ViewBaseController {
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         // 将日期格式化为字符串
         return dateFormatter.string(from: now)
+    }
+    @IBAction func jumpToRNView(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name("URLHANDLE"), object: nil, userInfo: ["url":"/rn_xrn_0741/xrn_0741.jsbundle?isRN=true"])
     }
 }
 

@@ -6,15 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RCTIntentModule.h"
+#import "RCTURL.h"
 
-@implementation RCTIntentModule
+@implementation RCTURL
 
-RCT_EXPORT_MODULE(IntentModule)
+RCT_EXPORT_MODULE(URL)
 
-RCT_EXPORT_METHOD(startActivityFromJS:(NSString *)url)
+RCT_EXPORT_METHOD(openURL:(NSString *)url)
 {
-    NSLog(@"startActivityFromJS url: %@", url);
+    NSLog(@"openURL url: %@", url);
     dispatch_async(dispatch_get_main_queue(), ^{
         [[NSNotificationCenter defaultCenter] postNotificationName:@"URLHANDLE" object:nil userInfo:@{@"url": url}];
     });

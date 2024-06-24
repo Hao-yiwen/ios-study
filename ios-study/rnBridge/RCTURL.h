@@ -10,7 +10,7 @@
 
 #import <React/RCTBridgeModule.h>
 
-@interface RCTIntentModule : NSObject <RCTBridgeModule>
+@interface RCTURL : NSObject <RCTBridgeModule>
 
 @end
 
