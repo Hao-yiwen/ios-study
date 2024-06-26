@@ -6,3 +6,4 @@
 #import "NotificationViewController.h"
 #import "MyCppWrapper.h"
 #import "QrCodeHistoryController.h"
+#import "MapViewController.h"

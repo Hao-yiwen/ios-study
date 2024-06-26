@@ -18,6 +18,8 @@
 		39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5967D2C1A98E300A05634 /* RNScreenController.swift */; };
 		39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F5967F2C1AAC4900A05634 /* RNStoryboard.storyboard */; };
 		9DE53BB87AE45CF7980AC662 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A6302CFD6DD636CEF8F87DD2 /* PrivacyInfo.xcprivacy */; };
+		F6205C512C2C7C8100BD5CAF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6205C502C2C7C8100BD5CAF /* MapViewController.m */; };
+		F6205C552C2C88F600BD5CAF /* MapModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6205C542C2C88F600BD5CAF /* MapModalViewController.m */; };
 		F62CE0E02C1898D3003D7C5E /* IOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CE0DF2C1898D3003D7C5E /* IOSViewController.swift */; };
 		F62CE0E52C189BB0003D7C5E /* XibScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62CE0E42C189BB0003D7C5E /* XibScreen.xib */; };
 		F62CE0E72C189DE4003D7C5E /* XibScreenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CE0E62C189DE4003D7C5E /* XibScreenContainer.swift */; };
@@ -122,6 +124,10 @@
 		A6302CFD6DD636CEF8F87DD2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ../PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		BF0DB23283CA55620B0E6FC3 /* Pods-ios-study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.debug.xcconfig"; path = "Target Support Files/Pods-ios-study/Pods-ios-study.debug.xcconfig"; sourceTree = "<group>"; };
 		C1AF92899C40C1C2EF5FF3EB /* Pods-ios-study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.release.xcconfig"; path = "Target Support Files/Pods-ios-study/Pods-ios-study.release.xcconfig"; sourceTree = "<group>"; };
+		F6205C4F2C2C7C5000BD5CAF /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		F6205C502C2C7C8100BD5CAF /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		F6205C532C2C88EB00BD5CAF /* MapModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapModalViewController.h; sourceTree = "<group>"; };
+		F6205C542C2C88F600BD5CAF /* MapModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapModalViewController.m; sourceTree = "<group>"; };
 		F62CE0DF2C1898D3003D7C5E /* IOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSViewController.swift; sourceTree = "<group>"; };
 		F62CE0E42C189BB0003D7C5E /* XibScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibScreen.xib; sourceTree = "<group>"; };
 		F62CE0E62C189DE4003D7C5E /* XibScreenContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibScreenContainer.swift; sourceTree = "<group>"; };
@@ -282,6 +288,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F6205C522C2C88C800BD5CAF /* mapviewController */ = {
+			isa = PBXGroup;
+			children = (
+				F6205C4F2C2C7C5000BD5CAF /* MapViewController.h */,
+				F6205C502C2C7C8100BD5CAF /* MapViewController.m */,
+				F6205C532C2C88EB00BD5CAF /* MapModalViewController.h */,
+				F6205C542C2C88F600BD5CAF /* MapModalViewController.m */,
+			);
+			path = mapviewController;
+			sourceTree = "<group>";
+		};
 		F62CE0DE2C189839003D7C5E /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +372,7 @@
 		F63DE1882C1C795700B1BF2F /* thirdSDK */ = {
 			isa = PBXGroup;
 			children = (
+				F6205C522C2C88C800BD5CAF /* mapviewController */,
 				F63DE18C2C1C79D100B1BF2F /* ThirdSDKHomeController.swift */,
 				F63DE18E2C1C7B6700B1BF2F /* ScanCodeScreenController.swift */,
 				F6A1E8062C1E03BA00E31AEF /* LottieScreenController.swift */,
@@ -806,11 +824,13 @@
 				F6DF2DA32C247DC9005038EC /* AppUrlHandler.m in Sources */,
 				39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */,
 				F6482E5F2C1CAE410063DF23 /* WKWebViewScreenController.swift in Sources */,
+				F6205C552C2C88F600BD5CAF /* MapModalViewController.m in Sources */,
 				F67BC1452C233BF2009BCCB6 /* MyCppWrapper.mm in Sources */,
 				F65E507B2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift in Sources */,
 				F67900102C1EF049007E9774 /* KeyboardDissmissController.swift in Sources */,
 				F6DF2DAA2C24A0C6005038EC /* CustomTableCellView.m in Sources */,
 				F646CD9D2C1735E90029E950 /* SceneDelegate.swift in Sources */,
+				F6205C512C2C7C8100BD5CAF /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,7 +1077,7 @@
 					"\"$(PROJECT_DIR)/ios-study/libs/MyCppProject/MyCppClass.hpp\"",
 				);
 				INFOPLIST_FILE = "ios-study/Info-$(CONFIGURATION).plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "ios-study-debug";
+				INFOPLIST_KEY_CFBundleDisplayName = "ios-study-profile";
 				INFOPLIST_KEY_NSCameraUsageDescription = "相机使用权限";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "运行flutter开发调试";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "拍摄视频需要录音权限";
@@ -1249,7 +1269,7 @@
 					"\"$(PROJECT_DIR)/ios-study/libs/MyCppProject/MyCppClass.hpp\"",
 				);
 				INFOPLIST_FILE = "ios-study/Info-$(CONFIGURATION).plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "ios-study";
+				INFOPLIST_KEY_CFBundleDisplayName = "ios-study-profile";
 				INFOPLIST_KEY_NSCameraUsageDescription = "相机使用权限";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "运行flutter开发调试";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "拍摄视频需要录音权限";

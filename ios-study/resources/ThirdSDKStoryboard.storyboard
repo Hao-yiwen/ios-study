@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-w5-zBC">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-w5-zBC">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Q2-8iz">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Q2-8iz">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="800"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoj-Ha-jBO">
@@ -56,7 +56,6 @@
                                             <constraint firstItem="hoj-Ha-jBO" firstAttribute="top" secondItem="fC9-fu-sHk" secondAttribute="bottom" constant="20" id="cMR-Zg-IZZ"/>
                                             <constraint firstItem="hoj-Ha-jBO" firstAttribute="centerX" secondItem="yb1-Q2-8iz" secondAttribute="centerX" id="e5f-vd-WWF"/>
                                             <constraint firstItem="fC9-fu-sHk" firstAttribute="centerX" secondItem="yb1-Q2-8iz" secondAttribute="centerX" id="haV-Ai-bfF"/>
-                                            <constraint firstAttribute="bottom" secondItem="ld4-cp-lm9" secondAttribute="bottom" constant="655" id="uSg-fQ-wzV"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -81,6 +80,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="第三方sdk页面" id="P1Z-si-w2e"/>
+                    <connections>
+                        <outlet property="lottieBtn" destination="ld4-cp-lm9" id="Tgk-51-ffb"/>
+                        <outlet property="scrollviewContentView" destination="yb1-Q2-8iz" id="nVM-VX-8Ah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
