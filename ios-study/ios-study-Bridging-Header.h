@@ -7,3 +7,4 @@
 #import "MyCppWrapper.h"
 #import "QrCodeHistoryController.h"
 #import "MapViewController.h"
+#import "ViewModelController.h"

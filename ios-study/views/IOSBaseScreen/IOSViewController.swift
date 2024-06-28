@@ -48,7 +48,17 @@ class IOSViewController: ViewBaseController {
         NSLayoutConstraint.activate([
             notificationButton.topAnchor.constraint(equalTo: keyboardDissmissButton.bottomAnchor, constant: 20),
             notificationButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            notificationButton.bottomAnchor.constraint(equalTo: scrollInlineView.bottomAnchor, constant: -20)
+        ])
+        // viewmodel示例
+        let viewModelButton = UIButton(type: .system)
+        viewModelButton.setTitle("viewmodel示例", for: .normal)
+        viewModelButton.translatesAutoresizingMaskIntoConstraints = false
+        viewModelButton.addTarget(self, action: #selector(viewmodelButtonTapped), for: .touchUpInside)
+        scrollInlineView.addSubview(viewModelButton)
+        NSLayoutConstraint.activate([
+            viewModelButton.topAnchor.constraint(equalTo: notificationButton.bottomAnchor, constant: 20),
+            viewModelButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            viewModelButton.bottomAnchor.constraint(equalTo: scrollInlineView.bottomAnchor, constant: -20)
         ])
     }
     
@@ -59,6 +69,11 @@ class IOSViewController: ViewBaseController {
     
     @objc func notificationButtonTapped(){
         let notificationController = NotificationViewController()
+        self.navigationController?.pushViewController(notificationController, animated: true)
+    }
+    
+    @objc func viewmodelButtonTapped(){
+        let notificationController = ViewModelController()
         self.navigationController?.pushViewController(notificationController, animated: true)
     }
 

@@ -79,6 +79,12 @@
 		F6DF2DAA2C24A0C6005038EC /* CustomTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2DA92C24A0C6005038EC /* CustomTableCellView.m */; };
 		F6EF959D2C208C44002833F5 /* LFNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF959C2C208C44002833F5 /* LFNotificationCenter.m */; };
 		F6EF95A12C208D63002833F5 /* RNUlrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF95A02C208D63002833F5 /* RNUlrlHandler.m */; };
+		F6FB49802C2F128A00CC36D8 /* ViewModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FB497F2C2F128A00CC36D8 /* ViewModelController.m */; };
+		F6FB49832C2F156000CC36D8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FB49822C2F156000CC36D8 /* User.m */; };
+		F6FB49862C2F15B300CC36D8 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FB49852C2F15B300CC36D8 /* UserViewModel.m */; };
+		F6FB49892C2F2C8B00CC36D8 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6FB49882C2F2C8B00CC36D8 /* Config.plist */; };
+		F6FB498C2C2F2CD400CC36D8 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FB498B2C2F2CD400CC36D8 /* Config.m */; };
+		F6FB498E2C2F2DBF00CC36D8 /* Config-release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6FB498D2C2F2DBF00CC36D8 /* Config-release.plist */; };
 		F76C1620A21F921391F2CACE /* libPods-ios-study.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662DA8AC4817FACEA9AAD86 /* libPods-ios-study.a */; };
 /* End PBXBuildFile section */
 
@@ -205,6 +211,17 @@
 		F6EF95A22C208DA4002833F5 /* LFNatificationBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFNatificationBase.h; sourceTree = "<group>"; };
 		F6EF95A62C2097D1002833F5 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
 		F6EF95A72C2097E6002833F5 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		F6FB497E2C2F127800CC36D8 /* ViewModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelController.h; sourceTree = "<group>"; };
+		F6FB497F2C2F128A00CC36D8 /* ViewModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModelController.m; sourceTree = "<group>"; };
+		F6FB49812C2F155600CC36D8 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F6FB49822C2F156000CC36D8 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F6FB49842C2F15A800CC36D8 /* UserViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewModel.h; sourceTree = "<group>"; };
+		F6FB49852C2F15B300CC36D8 /* UserViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserViewModel.m; sourceTree = "<group>"; };
+		F6FB49872C2F2AB000CC36D8 /* UserViewModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewModelDelegate.h; sourceTree = "<group>"; };
+		F6FB49882C2F2C8B00CC36D8 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		F6FB498A2C2F2CCA00CC36D8 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		F6FB498B2C2F2CD400CC36D8 /* Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		F6FB498D2C2F2DBF00CC36D8 /* Config-release.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Config-release.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				F65E507A2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift */,
+				F6FB498A2C2F2CCA00CC36D8 /* Config.h */,
+				F6FB498B2C2F2CD400CC36D8 /* Config.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -324,6 +343,7 @@
 		F62CE0E22C189B81003D7C5E /* IOSBaseScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F6FB497D2C2F0E8400CC36D8 /* viewmodel */,
 				F6DF2DA72C249F6D005038EC /* qrcodeHistory */,
 				F69BFE152C20A175009C1EE6 /* bus */,
 				F6EF95A52C2097A2002833F5 /* notificationScreen */,
@@ -430,6 +450,8 @@
 				F646CDA02C1735E90029E950 /* Main.storyboard */,
 				F646CDA32C1735EA0029E950 /* Assets.xcassets */,
 				F646CDA52C1735EA0029E950 /* LaunchScreen.storyboard */,
+				F6FB49882C2F2C8B00CC36D8 /* Config.plist */,
+				F6FB498D2C2F2DBF00CC36D8 /* Config-release.plist */,
 				F6CC0D372C1F33CE007810E6 /* Info-Debug.plist */,
 				F6B7986C2C1F557D007253BB /* Info-Profile.plist */,
 				F646CDA82C1735EA0029E950 /* Info-Release.plist */,
@@ -582,6 +604,20 @@
 			path = notificationScreen;
 			sourceTree = "<group>";
 		};
+		F6FB497D2C2F0E8400CC36D8 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB497E2C2F127800CC36D8 /* ViewModelController.h */,
+				F6FB497F2C2F128A00CC36D8 /* ViewModelController.m */,
+				F6FB49812C2F155600CC36D8 /* User.h */,
+				F6FB49822C2F156000CC36D8 /* User.m */,
+				F6FB49842C2F15A800CC36D8 /* UserViewModel.h */,
+				F6FB49852C2F15B300CC36D8 /* UserViewModel.m */,
+				F6FB49872C2F2AB000CC36D8 /* UserViewModelDelegate.h */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -669,6 +705,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FB498E2C2F2DBF00CC36D8 /* Config-release.plist in Resources */,
 				F67F14722C1A1C73007C2F74 /* TestModuleXib.xib in Resources */,
 				F67F146D2C1A13FA007C2F74 /* SwiftUIStoryboard.storyboard in Resources */,
 				F63DE1942C1C9A0D00B1BF2F /* IOSBaseStoryboard.storyboard in Resources */,
@@ -682,6 +719,7 @@
 				F646CDA22C1735E90029E950 /* Main.storyboard in Resources */,
 				F62CE0E52C189BB0003D7C5E /* XibScreen.xib in Resources */,
 				39A8A3662C195C2000FA1B1E /* SubXib.storyboard in Resources */,
+				F6FB49892C2F2C8B00CC36D8 /* Config.plist in Resources */,
 				F68F7F682C288DA60006281F /* rnDemo0742.jsbundle in Resources */,
 				F67F146B2C1A12ED007C2F74 /* ComputeBaseScreen.storyboard in Resources */,
 				39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */,
@@ -791,9 +829,11 @@
 				F6482E632C1CB5E70063DF23 /* View2OverSubViewController.swift in Sources */,
 				392221782C1C08E200EB40E9 /* FlutterScreenController.swift in Sources */,
 				F67BC1242C21F2C0009BCCB6 /* QrCodeHistoryController.m in Sources */,
+				F6FB49862C2F15B300CC36D8 /* UserViewModel.m in Sources */,
 				F62CE0E02C1898D3003D7C5E /* IOSViewController.swift in Sources */,
 				F69BFE182C20A1A6009C1EE6 /* H5UrlHandler.m in Sources */,
 				F6A1E8152C1EB78800E31AEF /* CoreDataStack.swift in Sources */,
+				F6FB49832C2F156000CC36D8 /* User.m in Sources */,
 				F646CD9F2C1735E90029E950 /* ViewController.swift in Sources */,
 				F6A9185F2C17DFA100B4DC90 /* SecondController.m in Sources */,
 				F6A1E8132C1EB6A300E31AEF /* ios_study.xcdatamodeld in Sources */,
@@ -819,6 +859,7 @@
 				F6849AAA2C1EB9A100B3442B /* DataStoreUtils.swift in Sources */,
 				F62CE0E92C18A22F003D7C5E /* XibScreenController.swift in Sources */,
 				F6482E612C1CB5CF0063DF23 /* SubviewOverView2Controller.swift in Sources */,
+				F6FB498C2C2F2CD400CC36D8 /* Config.m in Sources */,
 				F646CD9B2C1735E90029E950 /* AppDelegate.swift in Sources */,
 				F69BFE142C2098E0009C1EE6 /* NotificationViewController.m in Sources */,
 				F6DF2DA32C247DC9005038EC /* AppUrlHandler.m in Sources */,
@@ -828,6 +869,7 @@
 				F67BC1452C233BF2009BCCB6 /* MyCppWrapper.mm in Sources */,
 				F65E507B2C1B6F4000AB0F72 /* InteractivePopRecognizer.swift in Sources */,
 				F67900102C1EF049007E9774 /* KeyboardDissmissController.swift in Sources */,
+				F6FB49802C2F128A00CC36D8 /* ViewModelController.m in Sources */,
 				F6DF2DAA2C24A0C6005038EC /* CustomTableCellView.m in Sources */,
 				F646CD9D2C1735E90029E950 /* SceneDelegate.swift in Sources */,
 				F6205C512C2C7C8100BD5CAF /* MapViewController.m in Sources */,

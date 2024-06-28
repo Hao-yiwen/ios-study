@@ -35,6 +35,9 @@ target 'ios-study' do
   pod 'LemoFoundation', :path => './LemoFoundation'
   pod 'lottie-ios'
   pod 'Toast-Swift', '~> 5.1.1'
+  pod 'ReactiveObjC'
+  pod 'AFNetworking', '~> 4.0'
+  pod 'Toast', '~> 4.1.1'
   
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
