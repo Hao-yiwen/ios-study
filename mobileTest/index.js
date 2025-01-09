@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.use("/api/users", userRoutes); // 所有以 /api/users 开头的路由都会交给 userRoutes 处理
 
 // 启动服务器
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5389;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

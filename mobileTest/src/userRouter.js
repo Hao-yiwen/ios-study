@@ -5,6 +5,7 @@ const router = express.Router();
 const users = [
   { id: 1, name: "John Doe", email: "john@example.com", age: 25 },
   { id: 2, name: "Jane Doe", email: "jane@example.com", age: 30 },
+  { id: 3, name: "Jim Doe", email: "Jim@example.com", age: 35 }
 ];
 
 // 获取所有用户
@@ -18,6 +19,7 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   const user = users.find(u => u.id === parseInt(req.params.id));
   if (user) {
+    console.log("user", user);
     res.json(user);
   } else {
     res.status(404).json({ message: "User not found" });
