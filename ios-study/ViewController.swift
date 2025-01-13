@@ -23,8 +23,8 @@ class ViewController: ViewBaseController {
     
     func printMessageFromLibs(){
         //打印.a库中的日志
-        let cppWrapper = MyCppWrapper()
-        cppWrapper.printMessage()
+//        let cppWrapper = MyCppWrapper()
+//        cppWrapper.printMessage()
     }
     
     func addTextForm(){
@@ -126,6 +126,11 @@ class ViewController: ViewBaseController {
     }
     @IBAction func jumpToRNView(_ sender: Any) {
         NotificationCenter.default.post(name: NSNotification.Name("URLHANDLE"), object: nil, userInfo: ["url":"/rn_xrn_0741/xrn_0741.jsbundle?isRN=true"])
+    }
+    
+    @IBAction func jumpToMarkdownView(_ sender: Any) {
+        let markdownScreenController = MarkdownScreenController()
+        self.navigationController?.pushViewController(markdownScreenController, animated: true)
     }
 }
 

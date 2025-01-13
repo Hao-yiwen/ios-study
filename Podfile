@@ -38,6 +38,7 @@ target 'ios-study' do
   pod 'ReactiveObjC'
   pod 'AFNetworking', '~> 4.0'
   pod 'Toast', '~> 4.1.1'
+  pod 'SnapKit', '~> 5.7.0'
   
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202

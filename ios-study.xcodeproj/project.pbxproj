@@ -17,6 +17,9 @@
 		39D107882C1D5F9200F57D6F /* AVPlayerViewScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D107872C1D5F9200F57D6F /* AVPlayerViewScreenController.swift */; };
 		39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5967D2C1A98E300A05634 /* RNScreenController.swift */; };
 		39F596802C1AAC4900A05634 /* RNStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F5967F2C1AAC4900A05634 /* RNStoryboard.storyboard */; };
+		39F68C902D34C37200748B20 /* MarkdownScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F68C8F2D34C37200748B20 /* MarkdownScreenController.swift */; };
+		39F68C962D34D3AD00748B20 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 39F68C952D34D3AD00748B20 /* MarkdownUI */; };
+		39F68C992D34DD9300748B20 /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 39F68C982D34DD9300748B20 /* Splash */; };
 		9DE53BB87AE45CF7980AC662 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A6302CFD6DD636CEF8F87DD2 /* PrivacyInfo.xcprivacy */; };
 		F6205C512C2C7C8100BD5CAF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6205C502C2C7C8100BD5CAF /* MapViewController.m */; };
 		F6205C552C2C88F600BD5CAF /* MapModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6205C542C2C88F600BD5CAF /* MapModalViewController.m */; };
@@ -71,7 +74,6 @@
 		F6B67BF42C18C4EE005CF13F /* NavigationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B67BF32C18C4EE005CF13F /* NavigationTest.storyboard */; };
 		F6B7986D2C1F557D007253BB /* Info-Profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6B7986C2C1F557D007253BB /* Info-Profile.plist */; };
 		F6C8E1422C29AFF300B7F7FF /* xrn_0741.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = F6C8E1412C29AFF300B7F7FF /* xrn_0741.jsbundle */; };
-		F6DF2D992C2478E7005038EC /* libMyCppProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DF2D982C2478E7005038EC /* libMyCppProject.a */; };
 		F6DF2D9B2C247BAF005038EC /* ViewControllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = F6DF2D9A2C247BAF005038EC /* ViewControllerConfig.json */; };
 		F6DF2DA02C247C5E005038EC /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2D9F2C247C5E005038EC /* ConfigManager.swift */; };
 		F6DF2DA32C247DC9005038EC /* AppUrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF2DA22C247DC9005038EC /* AppUrlHandler.m */; };
@@ -126,6 +128,7 @@
 		39D107872C1D5F9200F57D6F /* AVPlayerViewScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewScreenController.swift; sourceTree = "<group>"; };
 		39F5967D2C1A98E300A05634 /* RNScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNScreenController.swift; sourceTree = "<group>"; };
 		39F5967F2C1AAC4900A05634 /* RNStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RNStoryboard.storyboard; sourceTree = "<group>"; };
+		39F68C8F2D34C37200748B20 /* MarkdownScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownScreenController.swift; sourceTree = "<group>"; };
 		826C2196B69B4732E16801B7 /* Pods-ios-study.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.profile.xcconfig"; path = "Target Support Files/Pods-ios-study/Pods-ios-study.profile.xcconfig"; sourceTree = "<group>"; };
 		A6302CFD6DD636CEF8F87DD2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ../PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		BF0DB23283CA55620B0E6FC3 /* Pods-ios-study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-study.debug.xcconfig"; path = "Target Support Files/Pods-ios-study/Pods-ios-study.debug.xcconfig"; sourceTree = "<group>"; };
@@ -229,9 +232,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6DF2D992C2478E7005038EC /* libMyCppProject.a in Frameworks */,
 				F6A1E8102C1EB69000E31AEF /* CoreData.framework in Frameworks */,
+				39F68C992D34DD9300748B20 /* Splash in Frameworks */,
 				F76C1620A21F921391F2CACE /* libPods-ios-study.a in Frameworks */,
+				39F68C962D34D3AD00748B20 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +299,14 @@
 			path = RNScreen;
 			sourceTree = "<group>";
 		};
+		39F68C8E2D34C36200748B20 /* markdownScreen */ = {
+			isa = PBXGroup;
+			children = (
+				39F68C8F2D34C37200748B20 /* MarkdownScreenController.swift */,
+			);
+			path = markdownScreen;
+			sourceTree = "<group>";
+		};
 		C432FD7372ED179792800F36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +333,7 @@
 		F62CE0DE2C189839003D7C5E /* views */ = {
 			isa = PBXGroup;
 			children = (
+				39F68C8E2D34C36200748B20 /* markdownScreen */,
 				F63DE1882C1C795700B1BF2F /* thirdSDK */,
 				392221742C1C089C00EB40E9 /* FlutterScreen */,
 				39F5967C2C1A98CE00A05634 /* RNScreen */,
@@ -690,6 +703,10 @@
 				Base,
 			);
 			mainGroup = F646CD8E2C1735E90029E950;
+			packageReferences = (
+				39F68C942D34D3AD00748B20 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				39F68C972D34DD9300748B20 /* XCRemoteSwiftPackageReference "Splash" */,
+			);
 			productRefGroup = F646CD982C1735E90029E950 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -815,7 +832,7 @@
 			name = "[CP-User] Run Flutter Build my_flutter Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build\n";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -864,6 +881,7 @@
 				F69BFE142C2098E0009C1EE6 /* NotificationViewController.m in Sources */,
 				F6DF2DA32C247DC9005038EC /* AppUrlHandler.m in Sources */,
 				39F5967E2C1A98E300A05634 /* RNScreenController.swift in Sources */,
+				39F68C902D34C37200748B20 /* MarkdownScreenController.swift in Sources */,
 				F6482E5F2C1CAE410063DF23 /* WKWebViewScreenController.swift in Sources */,
 				F6205C552C2C88F600BD5CAF /* MapModalViewController.m in Sources */,
 				F67BC1452C233BF2009BCCB6 /* MyCppWrapper.mm in Sources */,
@@ -975,11 +993,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -1042,11 +1056,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1068,7 +1078,6 @@
 				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 84F8R9TAQN;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1570,11 +1579,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/.././node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -1596,7 +1601,6 @@
 				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 84F8R9TAQN;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"COCOAPODS=1",
 					"PROFILE=1",
@@ -1846,6 +1850,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39F68C942D34D3AD00748B20 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+		39F68C972D34DD9300748B20 /* XCRemoteSwiftPackageReference "Splash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Splash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.16.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39F68C952D34D3AD00748B20 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39F68C942D34D3AD00748B20 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+		39F68C982D34DD9300748B20 /* Splash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39F68C972D34DD9300748B20 /* XCRemoteSwiftPackageReference "Splash" */;
+			productName = Splash;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F6A1E8112C1EB6A300E31AEF /* ios_study.xcdatamodeld */ = {

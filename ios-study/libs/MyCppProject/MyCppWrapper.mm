@@ -11,8 +11,8 @@
 @implementation MyCppWrapper
 
 - (void)printMessage {
-    MyCppClass mycpp;
-    mycpp.printMessage();
+//    MyCppClass mycpp;
+//    mycpp.printMessage();
 }
 
 @end

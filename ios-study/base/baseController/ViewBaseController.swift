@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewBaseController: UIViewController, UITextFieldDelegate, UIGestureRecognizerDelegate {
     var popRecognizer: InteractivePopRecognizer?
@@ -27,25 +28,22 @@ class ViewBaseController: UIViewController, UITextFieldDelegate, UIGestureRecogn
         #if DEBUG
             // 在页面右侧中间位置添加一个调试图标
             let debugView = UIImageView(image: UIImage(named: "debug"))
-            debugView.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
             debugView.contentMode = .scaleAspectFit
             // 设置为圆形图片
             debugView.layer.cornerRadius = 20
             debugView.layer.masksToBounds = true
             debugView.layer.borderColor = UIColor.gray.cgColor
             debugView.layer.borderWidth = 1
-            debugView.translatesAutoresizingMaskIntoConstraints = false
-            debugView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(toggleDebug)))
             debugView.isUserInteractionEnabled = true
-        debugView.layer.zPosition = 100
+            debugView.layer.zPosition = 100
+            debugView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(toggleDebug)))
             
             view.addSubview(debugView)
-            NSLayoutConstraint.activate([
-                debugView.widthAnchor.constraint(equalToConstant: 40),
-                debugView.heightAnchor.constraint(equalToConstant: 40),
-                debugView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100),
-                debugView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20)
-            ])
+            debugView.snp.makeConstraints { make in
+                make.width.height.equalTo(40)
+                make.centerY.equalToSuperview().offset(100)
+                make.trailing.equalTo(view.safeAreaLayoutGuide).offset(-20)
+            }
             
             // 获取当前页面的app url
             let url = getAppUrl()
